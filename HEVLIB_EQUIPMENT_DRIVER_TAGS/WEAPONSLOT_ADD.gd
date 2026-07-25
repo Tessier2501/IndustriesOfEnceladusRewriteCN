@@ -1,5 +1,3 @@
-extends Node
-
 const SYSTEM_DND_HARVTUG = {
 	"name":"SYSTEM_DND_HARVTUG",
 	"path":"res://IndustriesOfEnceladusRewrite/weapons/HarvTug.tscn",

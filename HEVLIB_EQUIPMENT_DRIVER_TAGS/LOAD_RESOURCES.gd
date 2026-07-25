@@ -1,5 +1,3 @@
-extends Node
-
 const LOAD_RESOURCES = {
 	"ships/modules/MineralProcessingUnit.patch.gd":{"load_type":"script"},
 	"hud/trtl/ShipParams.tscn":{"load_type":"resource"},

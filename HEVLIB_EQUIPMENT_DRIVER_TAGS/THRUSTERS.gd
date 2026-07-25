@@ -1,5 +1,3 @@
-extends Node
-
 const SYSTEM_THRUSTER_PIN150 = {
 	"slots":["propulsion.rcs"],
 	"type":"RCS",

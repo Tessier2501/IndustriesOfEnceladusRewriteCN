@@ -1,5 +1,3 @@
-extends Node
-
 const WEAPONSLOT_SHIP_TEMPLATES = {
 	"SHIP_OCP209":{
 		"leftBay1":{

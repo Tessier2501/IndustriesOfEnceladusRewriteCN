@@ -1,5 +1,3 @@
-extends Node
-
 # FORMATTING NOTES - How each constant's dictionary should be formatted.
 # 
 # This driver is intended to provide additional logic to the creation of a random config of a ship.

@@ -1,5 +1,3 @@
-extends Node
-
 const CREW = [
 	["usa","Pauline","Vo",0],
 	["usa","Brayden","Nguyen",1],

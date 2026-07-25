@@ -1,5 +1,3 @@
-extends Node
-
 const HOLD_MODIFIER_DIVIDED = {
 	"system_slot":"cargo.modifierDivided",
 	"slot_node_name":"HoldModifiersDivided",

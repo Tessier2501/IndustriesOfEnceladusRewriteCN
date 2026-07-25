@@ -1,5 +1,3 @@
-extends Node
-
 const SALVAGE_LIGHT = {
 	"system":"SYSTEM_SALVAGE_ARM_LIGHT",
 	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",

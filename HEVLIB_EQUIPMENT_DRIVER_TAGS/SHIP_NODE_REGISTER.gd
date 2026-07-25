@@ -1,5 +1,3 @@
-extends Node
-
 const SHIP_TRTL = {
 	"ship_name":"SHIP_TRTL",
 	"node_definitions":{

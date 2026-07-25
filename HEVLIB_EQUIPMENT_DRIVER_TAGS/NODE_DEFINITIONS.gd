@@ -1,5 +1,3 @@
-extends Node
-
 const IOE_PREPROC_0x30 = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProc0x30.tscn",
 	"position":[-32,-92],

@@ -1,5 +1,3 @@
-extends Node
-
 const OPS = {
 	"slots":["aux.power"],
 	"type":"SMES",

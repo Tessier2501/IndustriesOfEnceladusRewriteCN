@@ -1,5 +1,3 @@
-extends Node
-
 const EQUIPMENT_TAGS = {
 	"slot_types":[
 		"HOLD_MODIFIERS",

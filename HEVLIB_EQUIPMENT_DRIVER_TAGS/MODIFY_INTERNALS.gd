@@ -1,5 +1,3 @@
-extends Node
-
 const MODIFY_INTERNALS = [
 	{
 		"system":"SYSTEM_CARGO_AUX_STORPROC_8K",

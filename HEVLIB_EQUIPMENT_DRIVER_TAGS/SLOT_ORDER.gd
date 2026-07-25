@@ -1,5 +1,3 @@
-extends Node
-
 const SLOT_ORDER = [
 	"CargoAccessories",
 	"HoldModifiersDivided",

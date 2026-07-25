@@ -1,5 +1,3 @@
-extends Node
-
 const Tsukuyomi_Decom = {
 	"name":"Tsukuyomi-Decom",
 	"alias":"TSUKUYOMI",

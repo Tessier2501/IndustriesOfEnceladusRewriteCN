@@ -1,5 +1,3 @@
-extends Node
-
 const WEAPONSLOT_MODIFY_TEMPLATES = {
 	"CRADLES":{
 		"equipment":[
