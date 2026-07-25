@@ -1,3 +1,8 @@
+[2.9.5]
+
+1=* Added register for the resell prices of propellant tanks
+2=* Reduced memory footprint of driver files
+
 [2.9.4]
 
 1=* Added new ship: the EIMB "Bubba"
