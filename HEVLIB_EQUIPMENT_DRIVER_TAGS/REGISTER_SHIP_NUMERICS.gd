@@ -1,5 +1,3 @@
-extends Node
-
 const REGISTER_AMMO = {
 #	200:{
 #		"price":500,
@@ -52,5 +50,14 @@ const REGISTER_TURBINES = {
 	320.0:{
 		"price":200000,
 		"mass":1200
+	}
+}
+
+const REGISTER_PROPELLANT = {
+	1000000:{
+		"price":750000
+	},
+	2000000:{
+		"price":1950000
 	}
 }
