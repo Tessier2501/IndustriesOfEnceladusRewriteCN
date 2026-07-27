@@ -627,7 +627,7 @@ angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CargoHoldArea"]
 light_mask = 0
-polygon = PoolVector2Array( -246, -156, -44, -156, -36, -164, 36, -164, 44, -156, 246, -156, 246, 110, 110, 110, 110, 120, -110, 120, -110, 110, -246, 110 )
+polygon = PoolVector2Array( -246, -156, -44, -156, -36, -164, 36, -164, 44, -156, 246, -156, 246, 110, 110, 110, 110, 115, -110, 115, -110, 110, -246, 110 )
 
 [node name="CargoHoldAreaHull" type="Area2D" parent="."]
 visible = false
@@ -1056,7 +1056,7 @@ margin_left = -250.0
 margin_top = -160.0
 margin_right = 250.0
 margin_bottom = 120.0
-color = Color( 1, 1, 0.9, 0.498039 )
+color = Color( 1, 1, 0.95, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, 150 )
