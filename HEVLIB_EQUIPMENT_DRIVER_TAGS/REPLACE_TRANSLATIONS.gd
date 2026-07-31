@@ -1,5 +1,5 @@
 # This translation file is generated automatically
-# Do not modify anything directly, as this can break things for those working on them
+# Do not modify anything directly, as this will break things for translators
 # Please use Translation Tracker to modify these yourself, and contact the mod author to implement them
 # https://github.com/rwqfsfasxc100/TranslationTracker/releases/latest
 
@@ -968,8 +968,8 @@ const TRANSLATIONS = {
 			"version_hash": 2574788091
 		},
 		"SYSTEM_CAPACITOR_100_DESC": {
-			"string": "A graphene fractal ultracapacitor cylinder for storing excess generated power, for availability during peak usage. Compact unit at a reasonable price.",
-			"version_hash": 684393582
+			"string": "A graphene fractal ultracapacitor cylinder for storing excess generated power, for availability during peak usage. Compact unit at a reasonable price.\n\nSome StarCAT energy management systems have been known to mistake the low-energy factor for a brownout, and will turn off various non-essential software features in an attempt to prevent it.",
+			"version_hash": 3017059897
 		},
 		"SYSTEM_CAPACITOR_100_SPECS": {
 			"string": "Capacity: 100 MJ \nPeak power: 10 GW \nMass: 400 kg\nManufacturer: Obonto Microengineering",
