@@ -1,3 +1,10 @@
+[2.9.7]
+
+1=* Fixed Z-axis layering for hardpoints on the UMC Oberon.
+2=* Removed 200 MJ minimum capacitor balance for the Y-ME as that is only a limitation present for fusion ships.
+3=* Added note on the light ultracap description for it's interaction with fusion reactors.
+4=* Fixed incorrect formatting for the TR-60's equipment tags.
+
 [2.9.6]
 
 1=* Fixed cargo bay area on all CERFs to no longer consider objects pushing up against the cargo bay doors as inside the cargo bay.
