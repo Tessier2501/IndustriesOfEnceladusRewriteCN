@@ -181,7 +181,6 @@ autopilotRotationAssumption = 4.0
 autopilotRotationPriority = 1.0
 rotationCabinOffsetPx = 80.0
 reactiveMass = 30000
-minimumPowerBalance = 200000
 aiCatchDistance = 400
 aiExcavationTimeLimit = 7
 dialogTree = NodePath("UberConversation")
