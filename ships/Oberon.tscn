@@ -220,6 +220,7 @@ closeForce = 25000
 [node name="ShipCamera" parent="." instance=ExtResource( 17 )]
 
 [node name="Collider" type="CollisionPolygon2D" parent="."]
+visible = false
 light_mask = 0
 z_index = 50
 polygon = PoolVector2Array( -74, -104, -74, -152, -44, -188, -28, -222, -18, -218, -18, -194, -24, -182, -24, -116, 24, -116, 24, -182, 18, -194, 18, -218, 28, -222, 44, -188, 74, -152, 74, -104, 74, -62, 97, -58, 104, -52, 108, -41, 108, 87, 98, 100, 78.3392, 99.7407, 86, 124, 62, 144, 58, 160, 40, 166, -40, 166, -58, 160, -62, 144, -86, 124, -78.4496, 100.09, -98, 100, -108, 85, -108, -39, -105, -50, -98, -58, -74, -62 )
@@ -254,6 +255,7 @@ polygon = PoolVector2Array( -68, -54, -68, -140, -22, -218, 22, -218, 68, -140, 
 
 [node name="MainLeft" parent="." instance=ExtResource( 30 )]
 position = Vector2( -36, -194 )
+z_index = 20
 __meta__ = {
 "_editor_description_": ""
 }
@@ -275,6 +277,7 @@ weaponPath = NodePath("Pivot/laster-pulse")
 
 [node name="MainRight" parent="." instance=ExtResource( 30 )]
 position = Vector2( 36, -194 )
+z_index = 20
 __meta__ = {
 "_editor_description_": ""
 }
@@ -295,7 +298,7 @@ weaponPath = NodePath("Pivot/laster-pulse")
 
 [node name="drone-mid" parent="." instance=ExtResource( 30 )]
 position = Vector2( 0, -170 )
-z_index = 18
+z_index = 20
 __meta__ = {
 "_editor_description_": ""
 }
@@ -415,6 +418,7 @@ light_mask = 0
 polygon = PoolVector2Array( -24, 28, 24, 28, 24, -38, 0, -64, -24, -38 )
 
 [node name="MineralProcessingUnit_DRY" parent="." instance=ExtResource( 31 )]
+visible = false
 position = Vector2( 0, -146 )
 polygon = PoolVector2Array( -26, -34, -22, -40, -20, 12, -10, 24, 10, 24, 20, 12, 22, -40, 26, -34, 26, 32, -26, 32 )
 
@@ -518,6 +522,7 @@ shape = SubResource( 6 )
 
 [node name="CargoBayCoverageVisual" type="CanvasLayer" parent="."]
 layer = 128
+visible = false
 script = SubResource( 13 )
 
 [node name="Center" type="Node2D" parent="CargoBayCoverageVisual"]

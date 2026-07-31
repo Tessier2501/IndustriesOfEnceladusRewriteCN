@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=66 format=2]
 
 [ext_resource path="res://ships/shipHull.phymat" type="PhysicsMaterial" id=1]
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=2]
@@ -53,6 +53,7 @@
 [ext_resource path="res://ships/k225-cd.png" type="Texture" id=51]
 [ext_resource path="res://ships/k225-m.png" type="Texture" id=52]
 [ext_resource path="res://ships/k225-n.png" type="Texture" id=53]
+[ext_resource path="res://ships/modules/ThrusterSlot.tscn" type="PackedScene" id=54]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 200.0
@@ -803,40 +804,40 @@ position = Vector2( 0, 64 )
 [node name="SYSTEM_EXMONO-R" parent="WeaponRight" index="28"]
 position = Vector2( 0, 64 )
 
-[node name="thruster-lb" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+[node name="thruster-lb" parent="." instance=ExtResource( 54 )]
 position = Vector2( -60, 120 )
 command = "f"
 
-[node name="thruster-lt" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+[node name="thruster-lt" parent="." instance=ExtResource( 54 )]
 position = Vector2( -120, -10 )
 rotation = -3.14159
 command = "b"
 
-[node name="thruster-rt" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+[node name="thruster-rt" parent="." instance=ExtResource( 54 )]
 position = Vector2( 120, -10 )
 rotation = -3.14159
 command = "b"
 
-[node name="thruster-rb" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+[node name="thruster-rb" parent="." instance=ExtResource( 54 )]
 position = Vector2( 60, 120 )
 command = "f"
 
-[node name="thruster-br" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+[node name="thruster-br" parent="." instance=ExtResource( 54 )]
 position = Vector2( 70, 105 )
 rotation = -1.5708
 command = "r<"
 
-[node name="thruster-bl" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+[node name="thruster-bl" parent="." instance=ExtResource( 54 )]
 position = Vector2( -70, 105 )
 rotation = 1.5708
 command = "l>"
 
-[node name="thruster-tl" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+[node name="thruster-tl" parent="." instance=ExtResource( 54 )]
 position = Vector2( -100, -45 )
 rotation = 1.5708
 command = "r>"
 
-[node name="thruster-tr" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+[node name="thruster-tr" parent="." instance=ExtResource( 54 )]
 position = Vector2( 100, -45 )
 rotation = -1.5708
 command = "l<"
