@@ -1,3 +1,7 @@
+[2.9.8]
+
+1=* Moved coilguns and railguns forward by 9m on the UMC Oberon to prevent the excavator from being shot when rotating
+
 [2.9.7]
 
 1=* Fixed Z-axis layering for hardpoints on the UMC Oberon.
