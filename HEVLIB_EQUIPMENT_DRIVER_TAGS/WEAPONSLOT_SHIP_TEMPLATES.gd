@@ -56,7 +56,13 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 					"property":"flip",
 					"value":"true"
 				}
-			]
+			],
+			"MASSDRIVERS":[
+				{
+					"property":"position",
+					"value":"Vector2( 0,-90 )"
+				}
+			],
 		},
 		"mainRight":{
 			"MANIPULATION_ARMS":[
@@ -64,7 +70,13 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 					"property":"feedVelocity",
 					"value":"Vector2( 60, -280 )"
 				}
-			]
+			],
+			"MASSDRIVERS":[
+				{
+					"property":"position",
+					"value":"Vector2( 0,-90 )"
+				}
+			],
 		},
 	},
 	"SHIP_PROSPECTOR":{
