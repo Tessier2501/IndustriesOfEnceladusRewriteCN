@@ -1,3 +1,9 @@
+[2.9.9]
+
+1=* Fixed shading of hull sprites for the following ships: K225-Stub; ATLAS Wasp; CK65; CK69; Cothon-2200-XL; Pigeon Prospector; OK720; OCK Peeper
+2=* KX37 RAM can now use paint jobs again
+3=* Fixed the occasional blank ammunition magazine from ship builds
+
 [2.9.8]
 
 1=* Moved coilguns and railguns forward by 9m on the UMC Oberon to prevent the excavator from being shot when rotating
