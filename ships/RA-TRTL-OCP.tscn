@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -58,7 +58,7 @@ shader_param/shine = 1.0
 shader_param/charges = ExtResource( 3 )
 shader_param/map = ExtResource( 29 )
 
-[sub_resource type="ShaderMaterial" id=2]
+[sub_resource type="ShaderMaterial" id=5]
 shader = ExtResource( 2 )
 shader_param/maskScale = Vector2( 11, 1 )
 shader_param/frames = Vector2( 1, 1 )
@@ -78,44 +78,6 @@ shader_param/charges = ExtResource( 3 )
 shader_param/map = ExtResource( 4 )
 
 [sub_resource type="ShaderMaterial" id=3]
-shader = ExtResource( 2 )
-shader_param/maskScale = Vector2( 11, 1 )
-shader_param/frames = Vector2( 1, 1 )
-shader_param/paintJobFactor = 0.0
-shader_param/paintJobBrightAdjust = 16.0
-shader_param/maxval = 5.0
-shader_param/sparkBias = 0.0
-shader_param/scale = Vector2( 1, 0.5 )
-shader_param/sparkColor = Vector3( 50, 10, 100 )
-shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
-shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
-shader_param/ref = 0.1
-shader_param/roughness = 0.5
-shader_param/reflectiveness = 0.25
-shader_param/shine = 1.0
-shader_param/charges = ExtResource( 3 )
-shader_param/map = ExtResource( 4 )
-
-[sub_resource type="ShaderMaterial" id=4]
-shader = ExtResource( 2 )
-shader_param/maskScale = Vector2( 11, 1 )
-shader_param/frames = Vector2( 1, 1 )
-shader_param/paintJobFactor = 0.0
-shader_param/paintJobBrightAdjust = 16.0
-shader_param/maxval = 5.0
-shader_param/sparkBias = 0.0
-shader_param/scale = Vector2( 1, 0.5 )
-shader_param/sparkColor = Vector3( 50, 10, 100 )
-shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
-shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
-shader_param/ref = 0.1
-shader_param/roughness = 0.5
-shader_param/reflectiveness = 0.25
-shader_param/shine = 1.0
-shader_param/charges = ExtResource( 3 )
-shader_param/map = ExtResource( 4 )
-
-[sub_resource type="ShaderMaterial" id=5]
 shader = ExtResource( 2 )
 shader_param/maskScale = Vector2( 11, 1 )
 shader_param/frames = Vector2( 1, 1 )
@@ -310,7 +272,7 @@ shockAbsorber = 0.15
 autopilotRotationAssumption = 4.0
 rotationCabinOffsetPx = 170.0
 colliderPaths = [ "Collider", "LeftForeCollider", "RightForeCollider", "LeftShell", "RightShell" ]
-spriteHullPaths = PoolStringArray( "Hull", "HullFront", "OCPCircleLeft", "OCPCircleRight", "OCPSupportAft", "OCPSupportFore", "HullForeUnder", "HullAftUnder" )
+spriteHullPaths = PoolStringArray( "Hull", "HullFront", "OCPCircleLeft", "OCPCircleRight", "OCPSupportAft", "OCPSupportAft2", "OCPSupportFore", "OCPSupportFore2" )
 dialogTree = NodePath("UberConversation")
 cargoHoldArea = Rect2( -150, -210, 300, 360 )
 cargoHoldOffset = Vector2( 0, 105 )
@@ -344,6 +306,19 @@ region_enabled = true
 region_rect = Rect2( 0, 973, 3630, 202 )
 script = ExtResource( 7 )
 
+[node name="OCPSupportAft2" type="Sprite" parent="."]
+light_mask = 5
+material = SubResource( 1 )
+position = Vector2( 0.0235553, 75 )
+rotation = 3.14159
+scale = Vector2( 0.764065, -1 )
+z_index = 20
+texture = ExtResource( 27 )
+normal_map = ExtResource( 28 )
+offset = Vector2( -21, 0 )
+region_enabled = true
+region_rect = Rect2( 113, 310, 62, 150 )
+
 [node name="OCPSupportAft" type="Sprite" parent="."]
 light_mask = 5
 material = SubResource( 1 )
@@ -356,10 +331,12 @@ offset = Vector2( -21, 0 )
 region_enabled = true
 region_rect = Rect2( 113, 310, 62, 150 )
 
-[node name="OCPSupportAft" type="Sprite" parent="OCPSupportAft"]
+[node name="OCPSupportFore2" type="Sprite" parent="."]
 light_mask = 5
 material = SubResource( 1 )
-scale = Vector2( -1, 1 )
+position = Vector2( 0.0235553, -75 )
+scale = Vector2( 0.764065, -1 )
+z_index = 20
 texture = ExtResource( 27 )
 normal_map = ExtResource( 28 )
 offset = Vector2( -21, 0 )
@@ -379,62 +356,28 @@ offset = Vector2( -21, 0 )
 region_enabled = true
 region_rect = Rect2( 113, 310, 62, 150 )
 
-[node name="OCPSupportFore" type="Sprite" parent="OCPSupportFore"]
+[node name="Hull" type="Sprite" parent="."]
 light_mask = 5
-material = SubResource( 1 )
-scale = Vector2( -1, 1 )
-texture = ExtResource( 27 )
-normal_map = ExtResource( 28 )
-offset = Vector2( -21, 0 )
-region_enabled = true
-region_rect = Rect2( 113, 310, 62, 150 )
-
-[node name="HullForeUnder" type="Sprite" parent="."]
-light_mask = 5
-material = SubResource( 2 )
-position = Vector2( 0, -142 )
-z_index = 17
+material = SubResource( 5 )
+position = Vector2( 0, 265 )
+z_index = 19
 texture = ExtResource( 5 )
 normal_map = ExtResource( 6 )
 hframes = 11
 region_enabled = true
-region_rect = Rect2( 0, 282, 2816, 28 )
+region_rect = Rect2( 0, 350, 2816, 301 )
 script = ExtResource( 7 )
 
 [node name="HullFront" type="Sprite" parent="."]
 light_mask = 5
 material = SubResource( 3 )
-position = Vector2( 0, -192 )
-z_index = 20
+position = Vector2( 0, -175 )
+z_index = 19
 texture = ExtResource( 5 )
 normal_map = ExtResource( 6 )
 hframes = 11
 region_enabled = true
-region_rect = Rect2( 0, 160, 2816, 88 )
-script = ExtResource( 7 )
-
-[node name="HullAftUnder" type="Sprite" parent="."]
-light_mask = 5
-material = SubResource( 4 )
-position = Vector2( 0, 140 )
-z_index = 18
-texture = ExtResource( 5 )
-normal_map = ExtResource( 6 )
-hframes = 11
-region_enabled = true
-region_rect = Rect2( 0, 322, 2816, 26 )
-script = ExtResource( 7 )
-
-[node name="Hull" type="Sprite" parent="."]
-light_mask = 5
-material = SubResource( 5 )
-position = Vector2( 0, 265 )
-z_index = 20
-texture = ExtResource( 5 )
-normal_map = ExtResource( 6 )
-hframes = 11
-region_enabled = true
-region_rect = Rect2( 0, 379, 2816, 241 )
+region_rect = Rect2( 0, 160, 2816, 120 )
 script = ExtResource( 7 )
 
 [node name="Front Bumper2" parent="." instance=ExtResource( 9 )]
@@ -499,18 +442,21 @@ shadow_item_cull_mask = 3
 [node name="ShipCamera" parent="." instance=ExtResource( 18 )]
 
 [node name="Collider" type="CollisionPolygon2D" parent="."]
+visible = false
 light_mask = 0
 position = Vector2( 0, 111 )
 z_index = 50
 polygon = PoolVector2Array( 0, 31, 38, 25, 72, 11, 70, 73, 80, 78, 80, 86, 70, 90, 70, 126, 53, 126, 20, 122, 24, 138, 20, 146, -20, 146, -24, 138, -20, 122, -59, 126, -70, 126, -70, 89, -80, 86, -80, 78, -70, 75, -72, 11, -38, 25 )
 
 [node name="LeftForeCollider" type="CollisionPolygon2D" parent="."]
+visible = false
 light_mask = 0
 position = Vector2( 0, 29 )
 z_index = 50
 polygon = PoolVector2Array( -30, -231, -30, -245, -16, -245, -16, -169, -40, -165, -72, -161, -70, -260, -56, -260, -56, -231 )
 
 [node name="RightForeCollider" type="CollisionPolygon2D" parent="."]
+visible = false
 light_mask = 0
 position = Vector2( 0, 29 )
 scale = Vector2( -1, 1 )
@@ -518,16 +464,19 @@ z_index = 50
 polygon = PoolVector2Array( -30, -231, -30, -245, -16, -245, -16, -169, -40, -165, -72, -161, -70, -260, -56, -260, -56, -231 )
 
 [node name="LeftShell" type="CollisionPolygon2D" parent="."]
+visible = false
 light_mask = 0
 z_index = 50
 polygon = PoolVector2Array( -150, 0, -144, -40, -130, -76, -108, -104, -82, -126, -72, -132, -48, -144, -35, -137, -71, -120, -95, -100, -117, -72, -131, -38, -135, 0, -131, 38, -117, 72, -95, 100, -59, 128, -71, 133, -108, 104, -130, 76, -144, 40 )
 
 [node name="RightShell" type="CollisionPolygon2D" parent="."]
+visible = false
 light_mask = 0
 z_index = 50
 polygon = PoolVector2Array( 150, 0, 144, -40, 130, -76, 108, -104, 82, -126, 72, -132, 48, -144, 35, -137, 71, -120, 95, -100, 117, -72, 131, -38, 135, 0, 131, 38, 117, 72, 95, 100, 59, 128, 71, 133, 108, 104, 130, 76, 144, 40 )
 
 [node name="CargoHoldArea" type="Area2D" parent="."]
+visible = false
 z_index = 50
 collision_layer = 524288
 collision_mask = 33
@@ -544,6 +493,7 @@ polygon = PoolVector2Array( 20, -180, -20, -180, -20, -258, -9, -293, 9, -293, 2
 shape = SubResource( 7 )
 
 [node name="CargoHoldAreaHull" type="Area2D" parent="."]
+visible = false
 position = Vector2( 0, 40 )
 z_index = 50
 collision_layer = 0
@@ -899,6 +849,7 @@ polygon = PoolVector2Array( 9, -12, 28, -6, 29, 0, 4, -4, 4, -10 )
 
 [node name="CargoBayCoverageVisual" type="CanvasLayer" parent="."]
 layer = 128
+visible = false
 script = SubResource( 22 )
 
 [node name="Center" type="Node2D" parent="CargoBayCoverageVisual"]
@@ -908,7 +859,7 @@ margin_left = -150.0
 margin_top = -210.0
 margin_right = 150.0
 margin_bottom = 150.0
-color = Color( 1, 1, 0.85, 0.498039 )
+color = Color( 1, 1, 0.9, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, 105 )

@@ -32,7 +32,7 @@
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=30]
 [ext_resource path="res://hud/prospector-alert.wav" type="AudioStream" id=31]
 
-[sub_resource type="ShaderMaterial" id=8]
+[sub_resource type="ShaderMaterial" id=10]
 shader = ExtResource( 2 )
 shader_param/maskScale = Vector2( 11, 1 )
 shader_param/frames = Vector2( 1, 1 )
@@ -70,7 +70,7 @@ shader_param/shine = 1.0
 shader_param/charges = ExtResource( 3 )
 shader_param/map = ExtResource( 4 )
 
-[sub_resource type="ShaderMaterial" id=10]
+[sub_resource type="ShaderMaterial" id=8]
 shader = ExtResource( 2 )
 shader_param/maskScale = Vector2( 11, 1 )
 shader_param/frames = Vector2( 1, 1 )
@@ -229,7 +229,7 @@ shipName = "SHIP_PROSPECTOR_PIGEON"
 baseShipName = "SHIP_PROSPECTOR"
 shipType = "fission"
 crew = 6
-hullPrice = 5752500
+hullPrice = 8752500
 processedCargoCapacity = 10000
 lifepod = ExtResource( 18 )
 model = "PROSPECTOR"
@@ -237,6 +237,7 @@ defaultAutopilot = "SYSTEM_AUTOPILOT_MK2"
 autopilotMaxRotation = 3.142
 autopilotRotationPriority = 1.0
 rotationCabinOffsetPx = 10.0
+spriteHullPaths = PoolStringArray( "Hull", "ForeBlisterLeft", "ForeBlisterRight", "FatHull" )
 aiCatchDistance = 280
 dialogTree = NodePath("UberConversation")
 cargoHoldArea = Rect2( -47, -203, 94, 235 )
@@ -247,15 +248,29 @@ cargoHoldOffset = Vector2( 0, 82 )
 [node name="Alert" parent="Noises" index="5"]
 stream = ExtResource( 31 )
 
-[node name="Hull" type="Sprite" parent="."]
-material = SubResource( 8 )
-position = Vector2( 0, 101 )
-z_index = 19
+[node name="ForeBlisterLeft" type="Sprite" parent="."]
+material = SubResource( 10 )
+position = Vector2( -24.7, -199 )
+rotation = 3.14159
+scale = Vector2( 1.3, 1.156 )
+z_index = 18
 texture = ExtResource( 5 )
 normal_map = ExtResource( 6 )
-hframes = 11
 region_enabled = true
-region_rect = Rect2( 0, 198, 2816, 317 )
+region_rect = Rect2( 163, 358, 38, 19 )
+script = ExtResource( 7 )
+hullCustomPaintFile = "user://custom-prospector.png"
+
+[node name="ForeBlisterRight" type="Sprite" parent="."]
+material = SubResource( 10 )
+position = Vector2( 24.7, -199 )
+rotation = 3.14159
+scale = Vector2( 1.3, 1.156 )
+z_index = 18
+texture = ExtResource( 5 )
+normal_map = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 55, 358, 38, 19 )
 script = ExtResource( 7 )
 hullCustomPaintFile = "user://custom-prospector.png"
 
@@ -275,29 +290,15 @@ __meta__ = {
 }
 hullCustomPaintFile = "user://custom-prospector.png"
 
-[node name="ForeBlisterLeft" type="Sprite" parent="FatHull"]
-material = SubResource( 10 )
-position = Vector2( -17, -100 )
-rotation = 3.14159
-scale = Vector2( 0.9, 0.8 )
-z_index = -1
+[node name="Hull" type="Sprite" parent="."]
+material = SubResource( 8 )
+position = Vector2( 0, 101 )
+z_index = 19
 texture = ExtResource( 5 )
 normal_map = ExtResource( 6 )
+hframes = 11
 region_enabled = true
-region_rect = Rect2( 163, 358, 38, 19 )
-script = ExtResource( 7 )
-hullCustomPaintFile = "user://custom-prospector.png"
-
-[node name="ForeBlisterRight" type="Sprite" parent="FatHull"]
-material = SubResource( 10 )
-position = Vector2( 17, -100 )
-rotation = 3.14159
-scale = Vector2( 0.9, 0.8 )
-z_index = -1
-texture = ExtResource( 5 )
-normal_map = ExtResource( 6 )
-region_enabled = true
-region_rect = Rect2( 55, 358, 38, 19 )
+region_rect = Rect2( 0, 198, 2816, 317 )
 script = ExtResource( 7 )
 hullCustomPaintFile = "user://custom-prospector.png"
 
@@ -356,6 +357,7 @@ shadow_item_cull_mask = 3
 [node name="ShipCamera" parent="." instance=ExtResource( 13 )]
 
 [node name="Collider" type="CollisionPolygon2D" parent="."]
+visible = false
 light_mask = 0
 z_index = 50
 polygon = PoolVector2Array( -50, -194, -50, 40, -74, 64, -74, 108, -61, 120, -34, 120, -38, 148, -38, 202, -30, 230, 30, 230, 38, 202, 38, 148, 34, 120, 61, 120, 74, 108, 74, 64, 50, 40, 50, -194, 36, -208, 24, -198, 24, -188, 40, -188, 40, 24, -40, 24, -40, -188, -24, -188, -24, -198, -36, -208 )
@@ -375,6 +377,7 @@ light_mask = 0
 polygon = PoolVector2Array( 44, -192, 44, 28, -44, 28, -44, -190, -28, -194, -16, -218, 16, -218, 28, -194 )
 
 [node name="CargoHoldAreaHull" type="Area2D" parent="."]
+visible = false
 z_index = 50
 collision_layer = 0
 collision_mask = 33
@@ -703,6 +706,7 @@ systemName = "SYSTEM_REACTOR_PROSPECTOR"
 
 [node name="CargoBayCoverageVisual" type="CanvasLayer" parent="."]
 layer = 128
+visible = false
 script = SubResource( 1 )
 
 [node name="Center" type="Node2D" parent="CargoBayCoverageVisual"]
@@ -712,7 +716,7 @@ margin_left = -47.0
 margin_top = -203.0
 margin_right = 47.0
 margin_bottom = 32.0
-color = Color( 1, 1, 0.9, 0.498039 )
+color = Color( 1, 1, 0.7, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, 82 )

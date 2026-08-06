@@ -38,7 +38,7 @@
 [ext_resource path="res://ships/k225-cl.png" type="Texture" id=36]
 [ext_resource path="res://ships/k225-mask-rad.png" type="Texture" id=37]
 
-[sub_resource type="ShaderMaterial" id=9]
+[sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )
 shader_param/maskScale = Vector2( 12, 1 )
 shader_param/frames = Vector2( 1, 1 )
@@ -58,7 +58,7 @@ shader_param/mask = ExtResource( 6 )
 shader_param/charges = ExtResource( 2 )
 shader_param/map = ExtResource( 7 )
 
-[sub_resource type="ShaderMaterial" id=1]
+[sub_resource type="ShaderMaterial" id=9]
 shader = ExtResource( 1 )
 shader_param/maskScale = Vector2( 12, 1 )
 shader_param/frames = Vector2( 1, 1 )
@@ -231,12 +231,25 @@ inside = -1
 lifepod = ExtResource( 33 )
 evaOffset = Vector2( -38, -282 )
 model = "COTHON"
+spriteHullPaths = PoolStringArray( "Hull", "ForeHull" )
 aiMassIgnoreFraction = 0.015
 dialogTree = NodePath("UberConversation")
 cargoHoldArea = Rect2( -40, -355, 80, 425 )
 
 [node name="Noises" parent="." instance=ExtResource( 16 )]
 position = Vector2( 0, -132 )
+
+[node name="ForeHull" type="Sprite" parent="."]
+light_mask = 5
+material = SubResource( 1 )
+position = Vector2( 0, -279 )
+texture = ExtResource( 5 )
+normal_map = ExtResource( 4 )
+hframes = 12
+region_enabled = true
+region_rect = Rect2( 0, 0, 7560, 267 )
+script = ExtResource( 3 )
+hullCustomPaintFile = "user://custom-atk-225.png"
 
 [node name="Hull" type="Sprite" parent="."]
 light_mask = 5
@@ -248,18 +261,6 @@ normal_map = ExtResource( 4 )
 hframes = 12
 region_enabled = true
 region_rect = Rect2( 0, 472, 7560, 409 )
-script = ExtResource( 3 )
-hullCustomPaintFile = "user://custom-atk-225.png"
-
-[node name="ForeHull" type="Sprite" parent="Hull"]
-light_mask = 5
-material = SubResource( 1 )
-position = Vector2( 0, -329 )
-texture = ExtResource( 5 )
-normal_map = ExtResource( 4 )
-hframes = 12
-region_enabled = true
-region_rect = Rect2( 0, 0, 7560, 267 )
 script = ExtResource( 3 )
 hullCustomPaintFile = "user://custom-atk-225.png"
 
@@ -965,7 +966,7 @@ margin_left = -40.0
 margin_top = -355.0
 margin_right = 40.0
 margin_bottom = 70.0
-color = Color( 1, 1, 0.65, 0.498039 )
+color = Color( 1, 1, 0.8, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 

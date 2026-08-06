@@ -64,25 +64,6 @@ shader_param/shine = 1.0
 [sub_resource type="CanvasItemMaterial" id=6]
 blend_mode = 1
 
-[sub_resource type="ShaderMaterial" id=1]
-shader = ExtResource( 1 )
-shader_param/maskScale = Vector2( 11, 1 )
-shader_param/frames = Vector2( 1, 1 )
-shader_param/paintJobFactor = 0.0
-shader_param/paintJobBrightAdjust = 16.0
-shader_param/maxval = 5.0
-shader_param/sparkBias = 0.0
-shader_param/scale = Vector2( 1, 1 )
-shader_param/sparkColor = Vector3( 50, 10, 100 )
-shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
-shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
-shader_param/ref = 0.1
-shader_param/roughness = 0.0
-shader_param/reflectiveness = 2.0
-shader_param/shine = 1.0
-shader_param/charges = ExtResource( 6 )
-shader_param/map = ExtResource( 19 )
-
 [sub_resource type="ShaderMaterial" id=7]
 shader = ExtResource( 1 )
 shader_param/maskScale = Vector2( 11, 1 )
@@ -120,6 +101,25 @@ shader_param/reflectiveness = 2.0
 shader_param/shine = 1.0
 shader_param/charges = ExtResource( 6 )
 shader_param/map = ExtResource( 27 )
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/maskScale = Vector2( 11, 1 )
+shader_param/frames = Vector2( 1, 1 )
+shader_param/paintJobFactor = 0.0
+shader_param/paintJobBrightAdjust = 16.0
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 1, 1 )
+shader_param/sparkColor = Vector3( 50, 10, 100 )
+shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
+shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
+shader_param/ref = 0.1
+shader_param/roughness = 0.0
+shader_param/reflectiveness = 2.0
+shader_param/shine = 1.0
+shader_param/charges = ExtResource( 6 )
+shader_param/map = ExtResource( 19 )
 
 [sub_resource type="ShaderMaterial" id=9]
 shader = ExtResource( 1 )
@@ -264,6 +264,7 @@ autopilotMaxVelocityLimit = 1950.0
 rotationCabinOffsetPx = 0.0
 gFatigueLimit = 400.0
 empShield = 320
+spriteHullPaths = PoolStringArray( "Hull", "Pod", "Reactor", "ReactorRing", "CargoBay" )
 aiHunterMaxVelocity = 1200
 aiCuriosityMaxVelocity = 500
 aiFleeMaxVelocity = 1200
@@ -338,6 +339,47 @@ shadow_filter = 5
 shadow_filter_smooth = 4.0
 shadow_item_cull_mask = 3
 
+[node name="Pod" type="Sprite" parent="."]
+light_mask = 5
+material = SubResource( 7 )
+position = Vector2( 0, -50 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 16 )
+normal_map = ExtResource( 17 )
+
+[node name="Reactor" type="Sprite" parent="."]
+light_mask = 5
+material = SubResource( 8 )
+position = Vector2( 0, 86 )
+scale = Vector2( 0.65, 0.75 )
+texture = ExtResource( 29 )
+normal_map = ExtResource( 28 )
+region_enabled = true
+region_rect = Rect2( -1, 77, 128, 146 )
+
+[node name="ReactorRing" type="Sprite" parent="."]
+light_mask = 5
+material = SubResource( 1 )
+position = Vector2( 0, 27 )
+rotation = 3.14159
+z_index = 1
+texture = ExtResource( 20 )
+normal_map = ExtResource( 21 )
+region_enabled = true
+region_rect = Rect2( 85, 256, 90, 11 )
+script = ExtResource( 11 )
+
+[node name="CargoBay" type="Sprite" parent="."]
+light_mask = 5
+material = SubResource( 9 )
+position = Vector2( 0, -141 )
+scale = Vector2( 0.5, 0.5 )
+z_index = -1
+texture = ExtResource( 29 )
+normal_map = ExtResource( 28 )
+region_enabled = true
+region_rect = Rect2( -1, 1, 128, 208 )
+
 [node name="Hull" type="Sprite" parent="."]
 light_mask = 5
 material = SubResource( 1 )
@@ -347,47 +389,6 @@ texture = ExtResource( 20 )
 normal_map = ExtResource( 21 )
 region_rect = Rect2( 35, 24, 186, 183 )
 script = ExtResource( 11 )
-
-[node name="Pod" type="Sprite" parent="Hull"]
-light_mask = 5
-material = SubResource( 7 )
-position = Vector2( 0, 14 )
-scale = Vector2( 0.32, 0.32 )
-texture = ExtResource( 16 )
-normal_map = ExtResource( 17 )
-
-[node name="Reactor" type="Sprite" parent="Hull"]
-light_mask = 5
-material = SubResource( 8 )
-position = Vector2( 0, 150 )
-scale = Vector2( 0.65, 0.75 )
-texture = ExtResource( 29 )
-normal_map = ExtResource( 28 )
-region_enabled = true
-region_rect = Rect2( -1, 77, 128, 146 )
-
-[node name="ReactorRing" type="Sprite" parent="Hull"]
-light_mask = 5
-material = SubResource( 1 )
-position = Vector2( 0, 91 )
-rotation = 3.14159
-z_index = 1
-texture = ExtResource( 20 )
-normal_map = ExtResource( 21 )
-region_enabled = true
-region_rect = Rect2( 85, 256, 90, 11 )
-script = ExtResource( 11 )
-
-[node name="CargoBay" type="Sprite" parent="Hull"]
-light_mask = 5
-material = SubResource( 9 )
-position = Vector2( 0, -77 )
-scale = Vector2( 0.5, 0.5 )
-z_index = -1
-texture = ExtResource( 29 )
-normal_map = ExtResource( 28 )
-region_enabled = true
-region_rect = Rect2( -1, 1, 128, 208 )
 
 [node name="ShipCamera" parent="." instance=ExtResource( 3 )]
 
@@ -666,7 +667,7 @@ margin_left = -28.0
 margin_top = -186.0
 margin_right = 28.0
 margin_bottom = -91.0
-color = Color( 1, 1, 0.8, 0.498039 )
+color = Color( 1, 1, 0.85, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, 12 )

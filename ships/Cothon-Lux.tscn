@@ -27,7 +27,7 @@ crew = 6
 hullPrice = 250000
 processedCargoCapacity = 25000
 model = "COTHON"
-spriteHullPaths = PoolStringArray( "Hull", "SecondPod", "UnderHull" )
+spriteHullPaths = PoolStringArray( "Hull", "Hull/SecondPod", "UnderHull" )
 
 [node name="Hull" parent="." index="1"]
 region_rect = Rect2( 0, 212, 3841, 83 )

@@ -328,7 +328,7 @@ evaOffset = Vector2( 30, -130 )
 shockAbsorber = 0.15
 autopilotRotationAssumption = 4.0
 rotationCabinOffsetPx = 170.0
-spriteHullPaths = PoolStringArray( "Hull", "HullFront", "OCPCircleLeft", "OCPCircleRight", "OCPSupportAft", "OCPSupportFore", "HullForeUnder", "HullAftUnder", "Thrustrum", "ThrustrumBottom" )
+spriteHullPaths = PoolStringArray( "Hull", "HullFront", "OCPCircleLeft", "OCPCircleRight", "OCPSupportAft", "OCPSupportFore", "HullForeUnder", "HullAftUnder", "Thrustrum", "ThrustrumBottom", "OCPSupportAft/OCPSupportAft", "OCPSupportFore/OCPSupportFore" )
 dialogTree = NodePath("UberConversation")
 cargoHoldArea = Rect2( -150, -160, 300, 290 )
 cargoHoldOffset = Vector2( 0, 160 )
@@ -349,7 +349,7 @@ light_mask = 5
 material = SubResource( 13 )
 position = Vector2( 0, -181.672 )
 scale = Vector2( 0.87, 0.87 )
-z_index = 26
+z_index = 17
 texture = ExtResource( 36 )
 normal_map = ExtResource( 34 )
 hframes = 12
@@ -586,6 +586,7 @@ shadow_item_cull_mask = 3
 [node name="ShipCamera" parent="." instance=ExtResource( 18 )]
 
 [node name="Collider" type="CollisionPolygon2D" parent="."]
+visible = false
 light_mask = 0
 position = Vector2( 0, 122.328 )
 z_index = 50
@@ -1002,6 +1003,7 @@ polygon = PoolVector2Array( 9, -12, 28, -6, 29, 0, 4, -4, 4, -10 )
 
 [node name="CargoBayCoverageVisual" type="CanvasLayer" parent="."]
 layer = 128
+visible = false
 script = SubResource( 8 )
 
 [node name="Center" type="Node2D" parent="CargoBayCoverageVisual"]
