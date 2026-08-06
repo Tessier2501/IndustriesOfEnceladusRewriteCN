@@ -471,11 +471,6 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 			"chance":0.5
 		},
 		{
-			"slot":"reactor.power",
-			"system":1.0,
-			"chance":0.0375
-		},
-		{
 			"slot":"turbine.power&&turbine.capacity",
 			"system":20.0,
 			"chance":0.0375
@@ -565,7 +560,7 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 		},
 		{
 			"slot":"ammo.capacity && ammo.initial",
-			"system":100.0,
+			"system":200.0,
 			"check_numerics":{
 				"ammo.capacity":{
 					"operation":"<",
