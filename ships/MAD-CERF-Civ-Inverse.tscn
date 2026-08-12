@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=2]
+[gd_scene load_steps=77 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -36,6 +36,7 @@
 [ext_resource path="res://ships/excavator_struggle.wav" type="AudioStream" id=34]
 [ext_resource path="res://ships/modules/SpringOperated.gd" type="Script" id=35]
 [ext_resource path="res://ships/tntrl_engine_on.wav" type="AudioStream" id=36]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/Bay-CERF.tscn" type="PackedScene" id=37]
 [ext_resource path="res://ships/tntrl_engine_off.wav" type="AudioStream" id=44]
 [ext_resource path="res://ships/tnrtl-engine_01.wav" type="AudioStream" id=45]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=46]
@@ -325,6 +326,8 @@ lifepod = ExtResource( 17 )
 evaOffset = Vector2( 0, -325 )
 shockAbsorber = 0.9
 autopilotRotationPriority = 1.0
+autopilotRotationPartOffsetPath = NodePath("Bay-CERF")
+autopilotRotationPartOffsetScale = 1.0
 colliderPaths = [ "Collider", "Cabin" ]
 aiTargetPosition = Vector2( 0, -50 )
 aiIgnoreCollisionEnergy = 7500.0
@@ -1061,7 +1064,7 @@ margin_left = -250.0
 margin_top = -120.0
 margin_right = 250.0
 margin_bottom = 160.0
-color = Color( 1, 1, 0.85, 0.498039 )
+color = Color( 1, 1, 0.9, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, 200 )
@@ -1082,6 +1085,9 @@ margin_bottom = 230.0
 border_color = Color( 0, 1, 0, 1 )
 border_width = 5.0
 editor_only = false
+
+[node name="Bay-CERF" parent="." instance=ExtResource( 37 )]
+rotation = 3.14159
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
