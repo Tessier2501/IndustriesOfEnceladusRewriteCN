@@ -1,3 +1,7 @@
+[2.9.11]
+
+1=* Fixed TR-60 not being properly tagged and impossible to install to a high-stress or spinal hardpoint
+
 [2.9.10]
 
 1=* Added `Autopilot assist for variable geometry ships` tune to both CERF variants
