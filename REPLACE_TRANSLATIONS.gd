@@ -4418,7 +4418,7 @@ const TRANSLATIONS = {
 			"version_hash": 3100542581
 		},
 		"SYSTEM_CARGO_AUX_STORAGE_4K_SPECS": {
-			"string": "货物容量：4000kg/矿物（总计24000公斤）\n弹药容量：3,000 kg\n纳米无人机容量：3,000 kg\n推进剂容量：5000kg\n质量：3000公斤\n制造商：康列多 RVM",
+			"string": "货物容量：4000kg/矿物（总计24000公斤）\n弹药容量：3,000 kg\n无人机载重量：3,000 kg\n推进剂容量：5000kg\n质量：3000公斤\n制造商：康列多 RVM",
 			"version_hash": 2492262423
 		},
 		"SYSTEM_CARGO_AUX_STORAGE_MANUAL": {
