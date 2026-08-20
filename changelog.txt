@@ -1,3 +1,8 @@
+[2.9.13]
+
+1=* Fixed issue with the MAD-CERF inverse's trajectory prediction path being rotated 180 degrees
+2=* Updated Chinese translations
+
 [2.9.12]
 
 1=* Added Chinese translations courtesy of 'NeKo! ! '
