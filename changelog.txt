@@ -1,3 +1,7 @@
+[2.9.12]
+
+1=* Added Chinese translations courtesy of 'NeKo! ! '
+
 [2.9.11]
 
 1=* Fixed TR-60 not being properly tagged and impossible to install to a high-stress or spinal hardpoint

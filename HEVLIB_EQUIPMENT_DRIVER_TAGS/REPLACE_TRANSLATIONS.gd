@@ -4207,5 +4207,1535 @@ const TRANSLATIONS = {
 			"string": "Ефективна дальність: 1,000 м \\nШІ наведення: Клас 1 \\nЕнергоспоживання (пікове): 80 MW \\nМаса: 1,500 кг \\nВиробник: Nakamura Dynamics, Coherent Light",
 			"version_hash": 0
 		}
+	},
+	"zh_CN": {
+		"SYSTEM_CARGO_AUX_FAB": {
+			"string": "SSE 旅行者级建造单元",
+			"version_hash": 3275038314
+		},
+		"SYSTEM_CARGO_AUX_FAB_DESC": {
+			"string": "这是由辛空间工程公司定制且完全未经授权的怪异装置，在2260年代深受矿场工人的喜爱。\n旅行者号RSLS MPU的制造单元已被拆除，并放置在货舱更靠上的位置，同时配备了一个小型矿物储存空间，以取代其专用的进料斗。 \n\n由于其电源总线被替换为低等级的配电盘，预计与标准单元相比，电源效率会有适度的损失。 \n\n免责声明：中村动力公司对本设备不提供任何的保修服务，也不将其视为其产品系列的一部分。使用改装设备可能会造成损坏并带来意外危险。",
+			"version_hash": 3265294764
+		},
+		"SYSTEM_CARGO_AUX_FAB_SPECS": {
+			"string": "打印功耗：120MW\n打印能力：无人机、加速器弹药\n弹药打印速度：2.5kg/s\n无人机打印速度：7.14kg/s\n载货量：2000公斤/每种矿物\n推进剂容量：6000kg\nMPU处理速度变化：最高超频至标称速度的155%\n质量：5,000 kg\n制造商：SSE-中村动力-友邦拓微电子工程",
+			"version_hash": 1787039626
+		},
+		"SYSTEM_CARGO_AUX_FAB_MANUAL": {
+			"string": "需要MPU才能正常使用。 \n被动增加机载处理货物量和推进剂储罐容量。 \n加工后的矿石被储存在单独的容器中，每种矿物的容器容量有限。 \n以一定倍率提高MPU速度。 \n更改了每个矿物块的MPU处理速度和功耗。\n以铁(Fe)与钒(V)的9:1比例生产动能弹药。 \n以铁(Fe)与铂(Pt)4:1的比例生产纳米无人机组件。 \n在货舱中占据一定空间。",
+			"version_hash": 783944584
+		},
+		"SYSTEM_CARGO_AUX_BIGFAB": {
+			"string": "RMS-PAL制造单元",
+			"version_hash": 1206647390
+		},
+		"SYSTEM_CARGO_AUX_BIGFAB_DESC": {
+			"string": "拉萨玛玛材料解决方案(RMS)的便携式装配线堪称自动化的奇迹，它融合了两个一级人工智能（阿尔忒弥斯和阿波罗），两者以对抗关系监督彼此的工作。其卓越的生产速度完全得益于两者不断的情境优化，其大型出料斗可与船舶内部弹药库相连，作为额外的弹药存储单元。\n\n免责声明：根据2184年《洛杉矶公约》，人工智能规范符合一级分类。阿尔忒弥斯和阿波罗均不具备智能或沟通能力。如发现任何异常行为，请立即向阿特拉斯报告。 ",
+			"version_hash": 4156368412
+		},
+		"SYSTEM_CARGO_AUX_BIGFAB_SPECS": {
+			"string": "打印功耗：210MW\n打印能力：无人机、加速器弹药\n弹药打印速度：5.56kg/s\n无人机打印速度：20kg/s\n弹药容量：5000kg\n纳米无人机容量：5000kg\n质量：10,500kg\n制造商：拉萨玛玛材料解决方案(RMS)",
+			"version_hash": 441347358
+		},
+		"SYSTEM_CARGO_AUX_BIGFAB_MANUAL": {
+			"string": "需要MPU才能正常使用。 \n被动增加机载处理货物量和推进剂储罐容量。 以铁(Fe)与钒(V)的9:1比例生产动能弹药。 \n以铁(Fe)与铂(Pt)4:1的比例生产纳米无人机组件。 \n在货舱中占据一定空间。",
+			"version_hash": 3130609649
+		},
+		"SLOT_CARGO_MPU": {
+			"string": "货舱主处理单元",
+			"version_hash": 2419223679
+		},
+		"SYSTEM_CARGO_MPU_FURN": {
+			"string": "俄原-安东诺夫MPU Mk2",
+			"version_hash": 2471399476
+		},
+		"SYSTEM_CARGO_MPU_FURN_DESC": {
+			"string": "这款由俄罗斯国家原子能与安东诺夫公司联合研发的矿物处理单元Mark-2型变体，被矿场工人亲切地称为“吞噬者”，它结合了前代产品的优良品质，配备了入口护套和额外的加热元件，在降低作业范围的同时，提高了整体效率和回收率。",
+			"version_hash": 2643942531
+		},
+		"SYSTEM_CARGO_MPU_FURN_SPECS": {
+			"string": "处理能力：25kg/s\n功率消耗：25MW / 块\n矿物加工效率：60%\n推进剂回收效率：40%\n质量：3000kg\n制造商：俄原-安东诺夫",
+			"version_hash": 243502311
+		},
+		"SYSTEM_CARGO_MPU_BULK": {
+			"string": "泰坦重工 THI 深空巨舰 MPU",
+			"version_hash": 2229332609
+		},
+		"SYSTEM_CARGO_MPU_BULK_DESC": {
+			"string": "泰坦重工的“深空巨舰”MPU于2200年代中期推向市场，但在2260年代签订贸易协议后，仅在恩塞拉迪亚矿工中得到了推广。其简洁的设计是泰坦重工“简单就是美”工程理念的经典体现。\n与其他多用途船相比，货船载货量大且笨重，但其独特之处在于其内置的存储能力。THI-CC无人机的内部结构被整合在处理区下方；虽然货箱的尺寸有所减小，但它们仍能显著提高所安装船舶的矿物运输能力。",
+			"version_hash": 2062725161
+		},
+		"SYSTEM_CARGO_MPU_BULK_SPECS": {
+			"string": "载货量：每种矿物10,000kg\n处理能力：40kg/s\n功率消耗：100MW/块\n矿物加工效率：70%\n推进剂回收效率：20%\n质量：8,000 千克\n制造商：泰坦重工",
+			"version_hash": 3199041299
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_0x30": {
+			"string": "拉萨玛玛 RP-25",
+			"version_hash": 2391507102
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_0x30_DESC": {
+			"string": "拉萨玛玛材料解决方案 RP-25是一款不起眼的矿石预处理器，专为在船舶货舱内熔化矿物块中的冰而设计，几乎不涉及其他功能。该装置利用反应堆涡轮机排放管线的热能，且运行所需电能极少。 \n\n通过将工艺废气通过安装在船体上的冷凝器-散热器面板进行回收，以回收剩余物质。拉萨玛玛材料解决方案建议每月进行流量测试，然后进行热气吹扫，以防止结垢。",
+			"version_hash": 1963002940
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_0x30_SPECS": {
+			"string": "冰融化速率：22.5kg/s\n推进剂回收效率：45%\n功耗：1000kw/块\n同时处理矿石数量限制：10\nMPU处理速度变化：-10千克/秒\n质量：750kg\n制造商：拉萨玛玛材料解决方案",
+			"version_hash": 1922122609
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_20x10": {
+			"string": "NDBMT(中村动力大型矿石预处理器)",
+			"version_hash": 229172282
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_20x10_DESC": {
+			"string": "中村动力的大型矿石预处理器在处理矿石块时，充分利用其基本工作原理。货舱内的自由蒸汽被该设备的大型环形散热器过热，从而快速升华冰并预热生成的金属颗粒，以实现更高效的加工。 \n虽然部分工艺蒸汽可以作为推进剂回收，但该装置的紧凑型冷凝器往往因体积庞大和温度过高而超负荷。 \n免责声明：本单元的开发过程中未伤害任何脑叶切除术患者。",
+			"version_hash": 937116593
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_20x10_SPECS": {
+			"string": "融冰速率：25kg/s\n推进剂回收效率：25%\n预处理器功耗：750kw/块\n同时处理矿石数量限制：7\nMPU矿物效率乘数：x115%\nMPU处理速度变化：90%的标称微处理器速度\n质量：2000千克\n制造商：中村动力",
+			"version_hash": 3169087575
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_40x20": {
+			"string": "俄原-安东诺夫MPP-N1",
+			"version_hash": 2547585297
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_40x20_DESC": {
+			"string": "MPP-N1是市场上最好的矿物预处理器之一，通过磁流体动力学系统，可显著提高效率并实现推进剂回收的高产。 \n\n该装置将反应堆动力装置的废气作为其热源，通过其中心的加热泡将其排放到货仓中。加热泡周围的电磁线圈通过感应加热来控制温度。 \n\n加工蒸汽和微量矿物质通过带挡板的冷凝器进行回收。为确保最高效率，建议在飞行320小时后更换冷凝器组件。",
+			"version_hash": 2410067582
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_40x20_SPECS": {
+			"string": "融冰速率：10kg/s\n推进剂回收效率：20%\n预处理器功耗：375kw/块\n同时处理矿石数量限制：5\nMPU矿物效率乘数：x135%\nMPU处理速度变化：80%的标称速度\n质量：6,500 kg\n制造商：俄原-安东诺夫",
+			"version_hash": 3547577602
+		},
+		"SYSTEM_CARGO_PREPROC_P15": {
+			"string": "俄原矿物切割机",
+			"version_hash": 3627447616
+		},
+		"SYSTEM_CARGO_PREPROC_P15_DESC": {
+			"string": "RCC是在货仓改造技术的早期阶段制造出来的，与当时的大多数公司不同，它专注于使矿石通过处理器的能力，而非矿石从处理器中输出的效率。通过处理器中的点火激光器点燃一层均匀但精细的镁涂层，人为地使水熔化，从而缩短了矿石块通过处理器的时间。点火产生的额外热量会进一步轻微熔化，但过程中产生的极端杂质使其不适合用于推进剂回收。 \n\n土卫二空间站免费提供镁粉补充。",
+			"version_hash": 1943724378
+		},
+		"SYSTEM_CARGO_PREPROC_P15_SPECS": {
+			"string": "融冰速率：17.5kg/s\n预处理器功率消耗：50kw/块\nMPU处理速度变化：+25kg/s\n同时处理矿石数量限制：12\n质量：1,220kg\n制造商：俄罗斯国家原子",
+			"version_hash": 1043172955
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_MANUAL": {
+			"string": "减少大范围区域内的冰块质量。 \n增加固定数值的MPU处理速度。 \n当此装置处于通电状态时，货舱中的矿石块的水分质量会减少。 \n已标明每个矿物块的电量消耗以及处理速度。 \n不会提取矿物或破坏矿块。\n在货舱中占据一定空间。",
+			"version_hash": 4200107144
+		},
+		"SYSTEM_CARGO_PREPROC_M35": {
+			"string": "MAD加热线圈",
+			"version_hash": 378451025
+		},
+		"SYSTEM_CARGO_PREPROC_M35_DESC": {
+			"string": "这个专用处理单元利用进入槽内的矿石块进行解构性熔化，以形成更易碎的冰结构。该单元还配备了一个辅助效率单元，该单元需绑在MPU单元上，以提高处理速度和矿物回收率。 \n\n该设备确实因公司长期使用而受到大量批评，因为其专有组件在使用几个月后就会迅速分解失效。",
+			"version_hash": 137988877
+		},
+		"SYSTEM_CARGO_PREPROC_M35_SPECS": {
+			"string": "融冰速率：12.5千克/秒\n推进剂回收效率：20%\nMPU功率消耗：550千瓦/块\nMPU处理速度变化：达到额定速度的135%\n次级MPU处理速度修正：10kg/s\n同时处理矿石数量限制：7\nMPU矿物效率倍数：x110%\n质量：4,780 千克\n制造商：Machines Astro-Dynamiques",
+			"version_hash": 4274758801
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_AND_MULTI_MANUAL": {
+			"string": "减少大片区域内的冰块质量 \n补充推进剂\n以一定倍率和固定值提高MPU的效率。 \n同时处理多个矿石块 \n已标明处理每个矿物块的功率要求和处理速度\n不会提取矿物或破坏矿块\n在货舱中占据一定空间",
+			"version_hash": 60037967
+		},
+		"SYSTEM_CARGO_PREPROC_M85": {
+			"string": "MS 外套层",
+			"version_hash": 3604956203
+		},
+		"SYSTEM_CARGO_PREPROC_M85_DESC": {
+			"string": "三田屋-星际客车的外套层采用高性能线圈和模式识别芯片相结合的方式，以优化冰层的融化与穿透。模式识别AI芯片的使用源于21世纪初一种常见的地质勘测方法，该方法对大型语言模型（LLM）算法产生了浓厚兴趣，旨在观察并确定一种在不损失比基本单位更多的矿物的情况下，最优地破碎矿石的方法。因此，使用此装置会带来巨大的电力成本，因为每个矿石块在扫描区域内的全程跟踪都会产生额外的电力消耗。 \n\n后续的设备采用了专用的熔化激光器，以进一步提高加工效率，这与预处理器设备上所使用的激光器类似。虽然每个块体的功耗远高于其他设备，但其处理能力无与伦比，并且相较于其他商用设备，能进一步降低矿石中的水分含量。",
+			"version_hash": 2377866015
+		},
+		"SYSTEM_CARGO_PREPROC_M85_SPECS": {
+			"string": "MPU处理速度系数：185%的MPU速度\n融冰速率：35kg/s\nMPU功耗：12.5mw/块\n同时处理矿石数量限制：20\n人工智能：一级\n质量：12,550 kg\n制造商：三田屋-星际客车",
+			"version_hash": 3606254131
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_SPEED_MULTI_MANUAL": {
+			"string": "减少大片区域内的冰块质量\n以一定倍率提高MPU速度\n当此装置通电时，货舱中的矿石块的水分质量会减少\n每个区块列出的功率要求和处理速度\n不会提取矿物或破坏矿块\n在货舱中占据一定空间",
+			"version_hash": 3383531242
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_MANUAL": {
+			"string": "减少大片区域内的冰块质量\n补充推进剂\n以一定倍率提高MPU的效率 \n以一定倍率降低MPU的效率\n同时处理多个矿石块\n每个区块列出的功率要求和处理速度\n更改了每个矿物块的MPU处理速度和功耗\n不会提取矿物或破坏矿块\n在货舱中占据了一些空间",
+			"version_hash": 2680313502
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_NOMINERAL_MANUAL": {
+			"string": "减少大片区域内的冰块质量\n补充推进剂\n同时处理多个矿石块\n已标明处理每个矿物块的功率要求和处理速度\n更改了每个矿物块的MPU处理速度和功耗\n不会提取矿物或破坏矿块\n在货舱中占据了一定的空间",
+			"version_hash": 1926494841
+		},
+		"SYSTEM_CARGO_AUX_STORAGE_4K": {
+			"string": "康列多内部存储架",
+			"version_hash": 3133945664
+		},
+		"SYSTEM_CARGO_AUX_STORAGE_4K_DESC": {
+			"string": "康列多RVM内部存储架在22世纪初经过小行星带矿工的反复试验和测试，其设计理念相对简单，但执行过程却颇为复杂。这款模块化改装套件可将现有装置连接到市场上大多数大型船只的加工材料线上 \n\n额外的微型货舱最初是第三方改装的，然而，它们的流行程度使得Conlido公司毫不掩饰地将其融入了基本型号中",
+			"version_hash": 3100542581
+		},
+		"SYSTEM_CARGO_AUX_STORAGE_MANUAL": {
+			"string": "需要MPU才能正常使用\n被动增加船上加工货物量\n处理后的矿石被储存在单独的容器中，每种矿物的容器容量有限 \n在货舱中占用一些空间 \n无需电力或反应堆热量",
+			"version_hash": 3354652891
+		},
+		"SYSTEM_CARGO_AUX_STORPROC_8K": {
+			"string": "泰坦重工THI熔融矿罐模块",
+			"version_hash": 3193540710
+		},
+		"SYSTEM_CARGO_AUX_STORPROC_8K_DESC": {
+			"string": "泰坦重工的内部存储解决方案既新颖又具有实验性。通过利用容器散热器的反应堆热量，处理后的材料可以无限期地保持液态，从而使存储效率提高多达20%。 \n\n一些矿工已开始将该装置用作初级矿石预处理器，因为相对较薄的隔热层会向储罐之间的空间散热。但泰坦重工并不认可也不建议以这种方式使用。",
+			"version_hash": 295114866
+		},
+		"SYSTEM_CARGO_AUX_STORPROC_8K_SPECS": {
+			"string": "载货量：8,000kg/矿物（总计48,000kg）\n融冰速率：5kg/s\n推进剂回收效率：15%\nMPU功耗：250kw/块\nMPU处理速度变化：达到额定速度的110%\n同时处理矿石数量限制：8\n质量：8,000 kg\n制造商：泰坦重工",
+			"version_hash": 2929608682
+		},
+		"SYSTEM_CARGO_AUX_STORPROC_MANUAL": {
+			"string": "需要MPU才能正常使用。 \n被动增加船上已处理的货物量 \n已加工的矿石被储存在单独的容器中，每种矿物的容器容量有限 \n减少小区域内冰块的冰量\n更改了每个矿物块的MPU处理速度和功耗\n补充推进剂\n在货舱中占据一定空间",
+			"version_hash": 509096182
+		},
+		"SYSTEM_CARGO_AUX_STORAGE_12K": {
+			"string": "MPI 漫游式筒仓",
+			"version_hash": 286773463
+		},
+		"SYSTEM_CARGO_AUX_STORAGE_12K_DESC": {
+			"string": "MPI 漫游式筒仓硕大无朋，是目前为止最大的存储单元",
+			"version_hash": 2200710843
+		},
+		"SYSTEM_AMMO_200": {
+			"string": "RSM质量加速器扩展弹药夹",
+			"version_hash": 4122866846
+		},
+		"SYSTEM_AMMO_200_DESC": {
+			"string": "一套用于动能弹道武器的扩展导轨，能够处理各种口径的弹药。弹药由经济高效的齿轮齿条式驱动器供给。其底部的端口支持手动和自动装弹",
+			"version_hash": 3564362393
+		},
+		"SYSTEM_AMMO_200_SPECS": {
+			"string": "存储量：200kg\n输送量：100kg/s\n制造商：拉萨玛玛材料解决方案",
+			"version_hash": 789017528
+		},
+		"SYSTEM_AMMO_100000": {
+			"string": "居住站级弹药库",
+			"version_hash": 3522335561
+		},
+		"SYSTEM_AMMO_100000_DESC": {
+			"string": "该模块通常置于补给站，主要制造目的是在供应无法满足需求时提供大量驱动弹药。若技术熟练，该装置可改装至超重型舰船上，用于通常持续数周的作战行动。",
+			"version_hash": 551948646
+		},
+		"SYSTEM_AMMO_100000_SPECS": {
+			"string": "存储量：100,000kg\n输送量：1000kg/s\n制造商：中村动力",
+			"version_hash": 1205813461
+		},
+		"SYSTEM_DND_100000": {
+			"string": "居住站级纳米无人机存储",
+			"version_hash": 3696801861
+		},
+		"SYSTEM_DND_100000_DESC": {
+			"string": "这种存储单元最常配备于环区内的站点，其容量足够大，可在补给减少时提供充足的纳米无人机供应。也可配备于超重型船舶上，用于工业应用。",
+			"version_hash": 35071661
+		},
+		"SYSTEM_DND_100000_SPECS": {
+			"string": "存储量：100,000kg\n输送量：100kg/s\n制造商：中村动力",
+			"version_hash": 263129209
+		},
+		"SLOT_CREW_MOD": {
+			"string": "居住站工具套件",
+			"version_hash": 1106608157
+		},
+		"HUD_CREW_QUALITY": {
+			"string": "居住站质量",
+			"version_hash": 818688299
+		},
+		"SYSTEM_CREW_ADD_BUNK": {
+			"string": "康列多双层床X1",
+			"version_hash": 1778006662
+		},
+		"SYSTEM_CREW_ADD_BUNK_DESC": {
+			"string": "这是目前市面上能买到的最简单、最便宜的船员住宿扩展套件，该套件包括一个墙体表面安装的双层床，该床采用记忆海绵垫，配有基本的织物罩和防火绝缘材料。其舒适度令人惊讶，但缺乏私人空间肯定会成为船员之间争论的焦点 。\n\n土卫二空间站控制中心提醒船长们，根据规定，在计划进入环区的巡航时长内，每位船员至少需携带三倍于分配给他们的给养。若未能遵守此规定，可能会受到相关监管机构的罚款。",
+			"version_hash": 2472515037
+		},
+		"SYSTEM_CREW_ADD_BUNK_SPECS": {
+			"string": "乘员容量：+1\n船员士气每日下降：+30%（极差）\n质量：250kg\n每名乘员质量：15kg\n制造商：康列多 RVM",
+			"version_hash": 3218276506
+		},
+		"SYSTEM_CREW_ADD_BUNK2": {
+			"string": "康列多双层床X2",
+			"version_hash": 1778006663
+		},
+		"SYSTEM_CREW_ADD_BUNK2_DESC": {
+			"string": "再来一个，同样的盒子！双层床X2本质上是以更高效的配置装运的两个双层床X1单元，但它的好处也就仅此而已。 \n\n如果大多数潜在雇员在船上看到其中一个，就会望而却步，更不用说两个了。尽管如此，它们无疑是增加船员容量的一个选择，并且经常被小型月间运输船大量使用，因为这些船更看重体积和便利性，而非乘客的舒适度。",
+			"version_hash": 1189280816
+		},
+		"SYSTEM_CREW_ADD_BUNK2_SPECS": {
+			"string": "乘员容量：+2\n船员士气每日下降：+40%（极差）\n质量：500kg\n每名船员载重：35kg\n制造商：康列多 RVM",
+			"version_hash": 3111855996
+		},
+		"SYSTEM_CREW_ADD_CAPSULE": {
+			"string": "鲁纳斯米居住舱",
+			"version_hash": 659907056
+		},
+		"SYSTEM_CREW_ADD_CAPSULE_DESC": {
+			"string": "鲁纳斯米在船员居住市场上的选择一直是低端酒店市场的主流产品，由一个轻便、耐压的模块组成，内部设有两张胶囊床、一个基本的套间式卫生间，以及用于存放船员物品和给养的储物空间。内部氧气储罐和压力服架确保在非工作时间船体破裂不会立即使船员失去行动能力。 \n\n压力服需单独购买。请定期检查储气罐压力，并至少每周按照手册中的说明进行一次密封性检查。鲁纳斯米股份有限公司对因设备维护不当而造成的损坏不承担责任。",
+			"version_hash": 2777046929
+		},
+		"SYSTEM_CREW_ADD_CAPSULE_SPECS": {
+			"string": "乘员容量：+2\n船员士气每日下降：+25%（差）\n质量：1000kg\n每名乘员载重：60公斤\n制造商：鲁纳斯米股份有限公司",
+			"version_hash": 3389278370
+		},
+		"SYSTEM_CREW_ADD_MANUAL": {
+			"string": "增加或减少总载客量。 \n在运营期间，每天都会增加或减少船员士气的下降\n不快乐的船员可能会导致更糟糕的运营结果\n无需电力或反应堆热量。",
+			"version_hash": 514964407
+		},
+		"SYSTEM_CREW_MOD_HOME": {
+			"string": "康列多智能家居套件",
+			"version_hash": 512073234
+		},
+		"SYSTEM_CREW_MOD_HOME_DESC": {
+			"string": "康列多的智能家居套件是一款面向家庭船只和轻型运输船的简易模块化套件。它包括一个供船员宿舍使用的共享多通道娱乐系统、一个冰箱和厨房中改进的食品加工单元，以及对洗手间的几处调整，如多模式淋浴头和记忆海绵马桶坐垫。 \n\n注意：花洒式喷雾器不适合在零重力环境下使用。为达到最佳效果，请勿使用含次氯酸的清洁剂清洗表面或垫子。",
+			"version_hash": 68332384
+		},
+		"SYSTEM_CREW_MOD_HOME_SPECS": {
+			"string": "船员士气每日下降：-10%（良好）\n质量：200kg\n每名乘员载重量：75kg\n制造商：康列多 RVM",
+			"version_hash": 429836063
+		},
+		"SYSTEM_CREW_MOD_KMX": {
+			"string": "安东诺夫KMX升级套件",
+			"version_hash": 1009235224
+		},
+		"SYSTEM_CREW_MOD_KMX_DESC": {
+			"string": "安东诺夫KMX被宣传为一种长期飞行舒适系统，专为地月间货运机组和客运飞船设计。 \n\n其配备一套完整的水回收系统，对厨房、盥洗室和休闲甲板进行一系列改进（并在大多数常见船体样式上对其进行改造以引入这些设施，如果尚未安装的话），以及为大多数标准座椅提供座椅通风，机组人员通常会发现，与没有这些设施的飞机相比，KMX升级版的飞行体验更佳。",
+			"version_hash": 3276984242
+		},
+		"SYSTEM_CREW_MOD_KMX_SPECS": {
+			"string": "船员容量：-1\n船员士气每日下降：-20%（良好）\n质量：500kg\n每名船员载重量：150kg\n制造商：安东诺夫",
+			"version_hash": 3931711052
+		},
+		"SYSTEM_CREW_MOD_OCM": {
+			"string": "OCM-36 升级套件",
+			"version_hash": 2866422882
+		},
+		"SYSTEM_CREW_MOD_OCM_DESC": {
+			"string": "友邦拓微型工程的OCM-36彻底改造了船上居住环境，为那些曾参观或居住过其空间站的人带来熟悉的现代奢华体验。此次购买涵盖了友邦拓（或其他获得许可的）翻新商的全部劳动力成本，其中包括使用中村动力的2级人工智能系统来优化不同的内部几何结构。 \n\n如果配备可调节寝具、独立娱乐系统和独立浴室的独立船员舱还无法满足需求，那么厨房里配备的完整的大和品牌小厨房、多样且宽敞的娱乐区，以及经过全面翻新的现代时尚驾驶舱——更不用说令人愉悦的墙面覆层和用于零重力导航的低矮扶手——定能满足您的需求。",
+			"version_hash": 4137802998
+		},
+		"SYSTEM_CREW_MOD_OCM_SPECS": {
+			"string": "乘员容量：-2\n船员士气每日下降：-50%（极佳）\n质量：700kg\n每名乘员载重量：200kg\n制造商：友邦拓微型工程",
+			"version_hash": 4249652420
+		},
+		"SYSTEM_CREW_MOD_MANUAL": {
+			"string": "在环区航行的每一天，都会增加或减少船员士气的流失\n不快乐的船员可能会导致更糟糕的运营结果\n无需电力或反应堆热量",
+			"version_hash": 458050479
+		},
+		"SYSTEM_DND_HARVTUG": {
+			"string": "OT急停拖曳无人机",
+			"version_hash": 3769092629
+		},
+		"SYSTEM_DND_HARVTUG_DESC": {
+			"string": "友邦拓-泰坦急停纳米无人机运载系统是THI收割者级系统的改进版，其配置旨在使高反射率物体相对于环带实现柔和停靠。该系统最初是为OCP-209制造的专有设备，用于损失控制，自2260年代签订商业协议后，已在售后市场上销售。",
+			"version_hash": 888894848
+		},
+		"SYSTEM_DND_HARVTUG_SPECS": {
+			"string": "功率：120MW\n有效范围：800m（视距内）\n无人机发射能力：100架/s\n无人机湿重：0.1kg\n推力：1kN（每架无人机）\n质量：8,000 kg\n制造商：友邦拓-泰坦",
+			"version_hash": 1414975276
+		},
+		"SYSTEM_DND_HARVHAUL": {
+			"string": "THI收割者级运载无人机",
+			"version_hash": 2881376406
+		},
+		"SYSTEM_DND_HARVHAUL_DESC": {
+			"string": "这个庞大的硬件设备伪装成一次性纳米无人机组装器，其实是一条工业流水线。其庞大的红外激光阵列和制造单元已连接到各个低应力总线上，但当它获得足够能量时，其威力将令人叹为观止。该单元会引导无人机拦截任何高反射率物体，并将其拖向你的飞船。",
+			"version_hash": 1989403555
+		},
+		"SYSTEM_DND_HARVHAUL_SPECS": {
+			"string": "功率：120MW\n有效范围：800m（视距内）\n无人机发射能力：100架/s\n无人机湿重：0.1kg\n推力：1kN（每架无人机）\n质量：8,000 kg\n制造商：泰坦重工",
+			"version_hash": 2575506069
+		},
+		"SYSTEM_EXODYN": {
+			"string": "THI Dyna-Cargo集装箱",
+			"version_hash": 4041067218
+		},
+		"SYSTEM_EXODYN_DESC": {
+			"string": "THI货运集装箱的实验性动态变体，于2200年代中期向公众发布。需要现场矿物处理单元才能使用。购买货运吊篮设备时，会附带一份租赁协议，只要所有者持有许可证，就会持续提供新的吊舱。 \nDyna-Cargo是泰坦重工的商标版权所有。土卫二空间站控制中心警告，使用某些RCS配置进行改装可能会使货物容器的微型反应堆过热，船长需承担所有相关责任。",
+			"version_hash": 867224129
+		},
+		"SYSTEM_EXODYN_SPECS": {
+			"string": "载货量：72,000公斤（总载货量）\n用电量（名义）：20MW\n吊装机构质量：500KG\n制造商：泰坦重工",
+			"version_hash": 4265992495
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_TWIN": {
+			"string": "友邦拓七号的一些建筑工人将他们的一艘双引擎建筑船留在了外面，却从未注意到它已被“收集”。这艘船对我们来说太笨重了，所以你可以出价50万美元买下它。",
+			"version_hash": 2044666062
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_PEEPER": {
+			"string": "这里我们有一台有史以来最奇特的机器，一台OCK窥视器。它甚至比OK720还要笨重，售价25万。",
+			"version_hash": 1543415986
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_CK65": {
+			"string": "我这里正好有一艘“探矿者”级货船待售。虽然货舱很小，但巨大的居住区和加工存储空间绝对值得。只需20万美元，它就是你的了！",
+			"version_hash": 781928573
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_CK69": {
+			"string": "我这里正好有一艘“探矿者”级货船待售。虽然货舱很小，但绝对物超所值，因为它配备了一个巨大的居住区和加工存储空间，甚至还配备了可变改造设施。只需25万美元，它就是你的了！",
+			"version_hash": 275405634
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_YME": {
+			"string": "我们对埃隆星际在此地游荡的行为表示强烈不满，他们的一些无良员工试图将“奢侈”带给那些负担不起荒谬价格的人。所有部件均以45万的价格打包出售。",
+			"version_hash": 742483696
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_OCP_SALVAGE": {
+			"string": "那么，如果你想购买辛空间工程的剩余零件之一，那么这个精简版的OCP就归你了。它没有舱室，但有一个机械臂，所以可以帮助你在其他地方弥补更多的错误。只需40万，全部归你。",
+			"version_hash": 1988345572
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_TSUKUYOMI": {
+			"string": "我们发现了一艘非常旧的月读级护卫舰。它已经破败不堪，实际上可能已经只剩下一堆废铁，但船体结构仍然完整。不管怎样，它都是一艘巨型战舰，所以我们出价七百五十亿兆来收购它。",
+			"version_hash": 803594382
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_STUB": {
+			"string": "我手头有一辆短款泰坦变体。它配备了不少不错的装备，但可选装的配置非常奇怪。报价90万。",
+			"version_hash": 483749210
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_ATLAS": {
+			"string": "我们对那些封存的阿特拉斯边缘行者飞船进行了实验性的翻新。基本上就是给其中一艘绑上一个逃生舱和其他一些杂物，以便让一组人员驾驶。我不知道这合法不合法，但40万美元就归你了。",
+			"version_hash": 3893770970
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_COTHON_LUX": {
+			"string": "我们仓库里有一艘高级的科松飞船。它在大多数方面都比旧设计有了很大改进，所以我们打算在为该系列船只提供的常规价格基础上再加价。总价25万美元。",
+			"version_hash": 2514839995
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_PIDGEON": {
+			"string": "我们这里有一架铍探矿者。它基本上是勘探秃鹫的加长货仓型变体，具备勘探鹈鹕所提供的所有功能。只需55万美元，即可拥有。",
+			"version_hash": 3035471607
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_CERF": {
+			"string": "离这里不远的地方有一艘经过民用改装的MAD-CERF搜救船。它缺少一些常规功能，并且为了提供更多的采矿能力，其居住区和挂载点已被更换，这使其不太适合我们的使用。所以，如果你感兴趣的话，我们愿意以80万的价格把它卖给你。",
+			"version_hash": 1082177044
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_OBERON": {
+			"string": "我们发现了一艘高性能的赛艇。令人惊奇的是，尽管船上的一些部件受损严重，但它仍然完好无损，保持着往日的辉煌。整艘船简直太棒了。",
+			"version_hash": 3345150729
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_DEEP_DISH": {
+			"string": "这艘工程船经过采矿改装。基本上只是在原有船只的基础上增加了一些功能，让采矿作业稍微容易一些，所以对我们来说并不是特别有用。50万美元，这艘船就归你了。",
+			"version_hash": 2881377596
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_SNAP": {
+			"string": "我拿到了一艘OCP建造平台的早期版本。它的货仓门是两扇对开，而不是量产型只所拥有的单扇货仓门，这使得它的门洞更加居中。固件甚至还带有20世纪末电子游戏中的音效。这艘船售价50万美元。",
+			"version_hash": 1554913461
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_OK720": {
+			"string": "我接到了一个非常奇怪的项目，需要将一个OCP货舱焊接到一艘失效的K44船的船体上。对于其中一艘船来说，这几乎是一个巨大的货舱。整套工程费用高达30万美元。",
+			"version_hash": 254975921
+		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_RAM": {
+			"string": "我对K37进行了民用改装，使其具备了探矿船级别的多项功能。功能非常强大，非常适合采矿，但驾驶起来有点不舒服。这艘船售价25万美元。",
+			"version_hash": 2237712289
+		},
+		"SLOT_CARGOBAY_MOD": {
+			"string": "矿物保存套件",
+			"version_hash": 1868469807
+		},
+		"SYSTEM_CARGO_MOD_2K": {
+			"string": "SSE马鞍驮袋",
+			"version_hash": 2894760378
+		},
+		"SYSTEM_CARGO_MOD_2K_DESC": {
+			"string": "来自辛空间工程公司的一套基本扩展模块，可小幅增加货舱空间。免责声明：使用未经许可的设备可能会使您的船只保修失效。",
+			"version_hash": 576496090
+		},
+		"SYSTEM_CARGO_MOD_2K_SPECS": {
+			"string": "载货量：2000kg/矿（总计12000kg）\n兼容性：可被划分且动态调整\n质量：1,620kg\n制造商：辛空间工程",
+			"version_hash": 1723238486
+		},
+		"SYSTEM_CARGO_MOD_4K": {
+			"string": "E-Prime货仓加长套件",
+			"version_hash": 3295735106
+		},
+		"SYSTEM_CARGO_MOD_4K_DESC": {
+			"string": "土卫二本地船厂为您的船只提供延长加工货舱的订单。安装服务附带退款保证、特别保修附加条款以及全面的结构完整性审查，让您安心无忧。祝您飞行安全！",
+			"version_hash": 323616069
+		},
+		"SYSTEM_CARGO_MOD_4K_SPECS": {
+			"string": "载货量：4,000kg/矿物（总计24,000kg）\n兼容性：可被划分且动态调整\n质量：3,340 kg\n制造商：恩克拉多斯公司",
+			"version_hash": 2973130527
+		},
+		"SYSTEM_CARGO_MOD_6K": {
+			"string": "康列多货运级准备料斗",
+			"version_hash": 1561821356
+		},
+		"SYSTEM_CARGO_MOD_6K_DESC": {
+			"string": "一套采用专利Never-Void技术的船体嵌入式矿物容器，确保所有可用空间得到最大程度的利用。附带保修附录。该产品经过真实矿工在真实空间环境中的真实工作测试！ \n通知：安装日期晚于2237年的船舶，如涉及康列多货运级准备料斗的操作/维护/安装/拆除/使用，或与之进行视觉/听觉/味觉/嗅觉/身体/心理接触，则无法申请工伤赔偿。在执行涉及康列多货运级准备料斗的职责之前，请确保您和同事熟悉正确的操作程序。",
+			"version_hash": 83632436
+		},
+		"SYSTEM_CARGO_MOD_6K_SPECS": {
+			"string": "载货量：6,000kg/矿物（总计36,000kg）\n兼容性：可被划分且动态调整\n质量：5,560千克\n制造商：康列多 RVM",
+			"version_hash": 2600091971
+		},
+		"SYSTEM_CARGO_MOD_BOTH_MANUAL": {
+			"string": "需要MPU才能正常使用。 \n被动增加船上已处理的货物量。",
+			"version_hash": 1634567209
+		},
+		"SYSTEM_CARGO_MOD_BOLTS": {
+			"string": "货仓锁紧螺栓套组",
+			"version_hash": 227329904
+		},
+		"SYSTEM_CARGO_MOD_BOLTS_DESC": {
+			"string": "一系列适用于具有可变几何形状货舱的船舶的标准锁定螺栓，用于固定在适当的固定点上。",
+			"version_hash": 2550121865
+		},
+		"SYSTEM_CARGO_MOD_BOLTS_SPECS": {
+			"string": "转换模式：可被划分且动态调整\n转换比例：1:1（无减少）\n减重：2,650千克",
+			"version_hash": 2014312027
+		},
+		"SYSTEM_CARGO_MOD_BOLTS_MANUAL": {
+			"string": "将矿物存储容量转换为分格存储\n将总合并容量平均分成六份\n无需电力或反应堆热量",
+			"version_hash": 515379061
+		},
+		"SYSTEM_CARGO_MOD_AMORPH4": {
+			"string": "康列多“无定型”IV",
+			"version_hash": 3774452211
+		},
+		"SYSTEM_CARGO_MOD_AMORPH4_DESC": {
+			"string": "尽管科松-217“弯曲器”的实验性变形货仓收效甚微，但康列多RVM仍然对这个概念充满热情。船舶制造商之间达成了试验协议，尽管经历了多次失败的开端和错失的最后期限，“无定型”IV货舱转换套件最终还是进入了市场。 \n\n其模块化部件可适配目前市场上所有船舶系统，并采用与其原始船舶相同的基本原理。",
+			"version_hash": 2250764598
+		},
+		"SYSTEM_CARGO_MOD_AMORPH4_SPECS": {
+			"string": "转换模式：可被划分且动态调整\n转换比例：2:1（减少50%）\n质量：1500千克\n机构质量：每减少一吨储存空间，机构质量减少20kg\n制造商：康列多 RVM",
+			"version_hash": 2497420218
+		},
+		"SYSTEM_CARGO_MOD_AMORPH5": {
+			"string": "THI MD-5货舱套件",
+			"version_hash": 1415921821
+		},
+		"SYSTEM_CARGO_MOD_AMORPH5_DESC": {
+			"string": "泰坦重工的MD-5货舱套件因其可折叠式内部空间而在造船厂工程师中广为人知。在吸取以往实施经验的基础上，该套件的硬件在货舱中占用的空间大大减少，但其紧凑的线性执行器和精密装配却带来了较高的前期成本。",
+			"version_hash": 113879615
+		},
+		"SYSTEM_CARGO_MOD_AMORPH5_SPECS": {
+			"string": "转换模式：可被划分且动态调整\n转换比例：3:2（减少33%）\n质量：2,500 开关\n机构质量：每减少一吨储存空间，机构质量减少75kg\n制造商：泰坦重工",
+			"version_hash": 1955618322
+		},
+		"SYSTEM_CARGO_MOD_AMORPH6": {
+			"string": "中村动力“软体货舱保持系统”",
+			"version_hash": 229190420
+		},
+		"SYSTEM_CARGO_MOD_AMORPH6_DESC": {
+			"string": "中村动力的“软体货舱保持系统”是用于分隔货舱的终极动态转换套件，它摒弃了默认的固定隔板，转而采用了一种简单而有效的移动式隔板系统，该系统可根据船舶的规格进行定制。当隔板移动时，压缩空气会形成无摩擦的缓冲垫，而控制计算机则通过直接连接至货舱的处理单元和微震成像系统，来管理和预测未来的几何形状变化。",
+			"version_hash": 867446996
+		},
+		"SYSTEM_CARGO_MOD_AMORPH6_SPECS": {
+			"string": "转换模式：可被划分且动态调整\n转换比例：6:5（减少17%）\n质量：3,750kg\n机构质量：每减少一吨储存空间，机构质量减少165kg\n制造商：中村动力",
+			"version_hash": 2798818099
+		},
+		"SYSTEM_CARGO_MOD_AMORPH_MANUAL": {
+			"string": "MPU才能正常使用\n将矿物储量存储量转换为动态值\n根据转换比率，增加或减少总存储容量，具体百分比见规格说明 \n无需电力或反应堆热量",
+			"version_hash": 2677592350
+		},
+		"HUD_HOLD_CAP": {
+			"string": "总容纳量",
+			"version_hash": 2058380254
+		},
+		"HUD_HOLD_FILL": {
+			"string": "保持填充水平",
+			"version_hash": 3235534635
+		},
+		"SYSTEM_AUTOPILOT_337MOD": {
+			"string": "MA-337-MAX自动驾驶仪",
+			"version_hash": 507901553
+		},
+		"SYSTEM_AUTOPILOT_337MOD_DESC": {
+			"string": "MAX是MA-337自动驾驶仪的软件升级版，它将电传操纵输入向量集成到其神经网络中。",
+			"version_hash": 1586129654
+		},
+		"SYSTEM_AUTOPILOT_337MOD_SPECS": {
+			"string": "开发者：三田屋-星际客车\n功能：逆足反应限制器\n自适应角推力\n线传操纵\n激光雷达界面叠加",
+			"version_hash": 3248938369
+		},
+		"SYSTEM_AUTOPILOT_337MOD_MANUAL": {
+			"string": "在你的船周围显示激光雷达圈。 \nARL:自动抵消对相反方向推进器同时发出的指令，节约燃料。\nFBW：让所有手动驾驶指令均输入自动驾驶仪，能够高效使用矢量主推进器。\n可以使用万向推进器和发动机。 \nAAT:监控货物质量位移和推进器损坏，以计算进行机动所需的最小推力。重启舰载计算机以清除已记录的适配数据。\n重启舰载电脑以清除自适应数据。",
+			"version_hash": 981050865
+		},
+		"IOE_CONFIG_VERBOSE_LOGGING": {
+			"string": "详细日志",
+			"version_hash": 2386306626
+		},
+		"IOE_CONFIG_VERBOSE_LOGGING_TOOLTIP": {
+			"string": "是否在模组加载时生成额外的日志",
+			"version_hash": 2823070236
+		},
+		"IOE_CONFIG_OPTIONS": {
+			"string": "选项",
+			"version_hash": 3534272625
+		},
+		"IOE_CONFIG_INPUTS": {
+			"string": "键位绑定",
+			"version_hash": 216319605
+		},
+		"IOE_CONFIG_SHIP_SLOT_9": {
+			"string": "切换挂载点9",
+			"version_hash": 3395503241
+		},
+		"IOE_CONFIG_SHIP_SLOT_MINUS": {
+			"string": "切换挂载点10",
+			"version_hash": 382457041
+		},
+		"IOE_CONFIG_SHIP_SLOT_EQUAL": {
+			"string": "切换挂载点11",
+			"version_hash": 382457042
+		},
+		"IOE_CONFIG_SHIP_SLOT_9_TOOLTIP": {
+			"string": "第9个装备槽位对应的按键绑定",
+			"version_hash": 1757191987
+		},
+		"IOE_CONFIG_SHIP_SLOT_MINUS_TOOLTIP": {
+			"string": "第10个装备槽位对应的按键绑定",
+			"version_hash": 4258397947
+		},
+		"IOE_CONFIG_SHIP_SLOT_EQUAL_TOOLTIP": {
+			"string": "第11个装备槽位对应的按键绑定",
+			"version_hash": 3957858588
+		},
+		"SLOT_HULL_CONSUMABLEVAT": {
+			"string": "消耗品增值税",
+			"version_hash": 1532161049
+		},
+		"SYSTEM_HULLVAT_AMMO_1": {
+			"string": "MPI弹药罐",
+			"version_hash": 3278770497
+		},
+		"SYSTEM_HULLVAT_AMMO_1_DESC": {
+			"string": "一种轻型弹匣，传统上用于为维尔西许可船只提供额外的弹匣空间，利用船上较少使用的走廊。尽管它被安装为辅助系统，但仍需利用弹药输送舱口将弹药运送到挂载点，这限制了输送速度，使其与当前安装的弹匣速度相当。由于各种用于给弹匣供弹的机制会堵塞通风口，导致船员报告轻微的“闷热感”，长时间使用后，他们可能会觉得装有这些装置的船只不舒服。",
+			"version_hash": 179636556
+		},
+		"SYSTEM_HULLVAT_AMMO_1_SPECS": {
+			"string": "弹药容量：6000kg\n纳米无人机存储容量减少：25%\n干重：3000kg\n制造商：火星动力工业公司",
+			"version_hash": 951120095
+		},
+		"SYSTEM_HULLVAT_AMMO_MANUAL": {
+			"string": "质量驱动器的附加弹药，与质量驱动器和轨道炮兼容\n弹药供应速率取决于所安装的弹匣\n弹药在潜环开始时单独出售\n任何消耗品减少都不适用于存储的前三分之一\nHUD传感器显示屏可能无法正确显示最新的备弹量\n由于严格的操作限制，Minding虚拟飞行服务可能不会考虑兼容此设备，仅提供弹药库中列出的确切数量。",
+			"version_hash": 1125439870
+		},
+		"SYSTEM_HULLVAT_AMMO_2": {
+			"string": "中村动力空心弹仓",
+			"version_hash": 1950802853
+		},
+		"SYSTEM_HULLVAT_AMMO_2_DESC": {
+			"string": "中村动力空心弹仓（业内人士常称之为“Ham”）最初基于冲突期间使用的走私机制，利用船体内部多余空间以及大部分纳米无人机弹药舱空间，可装载多达15吨的额外质量驱动弹药。尽管该弹仓通常仅供维尔西许可的专业人士使用，但由于最近对中小型船只集装箱限制的重新评估，Ham已进入民用市场。对弹药供给系统的修改确实去除了所有减震设备，包括那些与通信模块保护相关的设备，导致许多船员感到不适。",
+			"version_hash": 1007879920
+		},
+		"SYSTEM_HULLVAT_AMMO_2_SPECS": {
+			"string": "弹药容量：15,000kg\n纳米无人机存储容量减少：50%\n干重：10,000kg\n制造商：中村动力",
+			"version_hash": 140690425
+		},
+		"SYSTEM_HULLVAT_AMMO_EXTEND_1": {
+			"string": "安东诺夫弹药扩展套件",
+			"version_hash": 4085650142
+		},
+		"SYSTEM_HULLVAT_AMMO_EXTEND_1_DESC": {
+			"string": "该套件利用已处理的存储空间，根据当前已安装的套件来存储额外的弹药。由于恩克拉多斯公司当前的装备标签法规定，无论船只大小，成品矿物容量的减少百分比都是相同的，这可能导致许多船只的空间被浪费。然而，对于内部货舱较小或弹药库容量较大的船只而言，这将是有利的，因为它们损失较小或收益较大。",
+			"version_hash": 2860227491
+		},
+		"SYSTEM_HULLVAT_AMMO_EXTEND_1_SPECS": {
+			"string": "弹药容量修正值：+33%\n弹药容量：1000kg\n成品矿物容量扣减率：10%\n干重：9,000千克\n制造商：安东诺夫",
+			"version_hash": 2850977805
+		},
+		"SYSTEM_HULLVAT_AMMO_EXTEND_2": {
+			"string": "安东诺夫2x弹药扩展套件",
+			"version_hash": 1719166248
+		},
+		"SYSTEM_HULLVAT_AMMO_EXTEND_2_DESC": {
+			"string": "并联了一对康列多的AEK，提供了两倍的潜在容量，同时也承受了两倍的约束。由于技术限制，必须增加一些额外的质量，以使两个机构能够同时工作。",
+			"version_hash": 2771221711
+		},
+		"SYSTEM_HULLVAT_AMMO_EXTEND_2_SPECS": {
+			"string": "弹药容量修正值：+67%\n弹药容量：2000kg\n成品矿物容量扣减率：20%\n干重：20,000kg\n制造商：安东诺夫",
+			"version_hash": 2669338879
+		},
+		"SYSTEM_HULLVAT_AMMO_EXTEND_3": {
+			"string": "友邦拓弹道扩展+",
+			"version_hash": 3279727785
+		},
+		"SYSTEM_HULLVAT_AMMO_EXTEND_3_DESC": {
+			"string": "该方案采用了一种不同于早期技术的方法来扩展质量驱动器弹匣，而是选择牺牲部分推进剂储罐。由于与恩克拉多斯法相突，该方案遵循一种“一刀切”的方法来减少推进剂罐的百分比，但始终确保有10吨推进剂可用，即使这意味着推进剂必须与弹药储存在同一个容器中。",
+			"version_hash": 2006291509
+		},
+		"SYSTEM_HULLVAT_AMMO_EXTEND_3_SPECS": {
+			"string": "弹药容量修正值：+100%\n弹药容量：1000kg\n推进剂储罐缩减倍率：33%\n干重：35,000kg\n制造商：友邦拓微型工程",
+			"version_hash": 157822687
+		},
+		"SYSTEM_HULLVAT_NANO_1": {
+			"string": "鲁纳斯米无人机组件库",
+			"version_hash": 192326595
+		},
+		"SYSTEM_HULLVAT_NANO_1_DESC": {
+			"string": "与鲁纳斯米的众多商业产品一样，DCV的重点在于为现有的纳米无人机组件提供小幅提升。最初，它被设计为一个仅在紧急情况下可用的备用舱，后来经过第三方改装，它们可以连接到与船上无人机交付系统相连的料斗，从而将组件输送到装配厂。连接料斗时并不使用降噪技术。",
+			"version_hash": 2972814653
+		},
+		"SYSTEM_HULLVAT_NANO_1_SPECS": {
+			"string": "无人机部件载重能力：6000kg\n弹药库容量缩减倍率：25%\n干重：4,500kg\n制造商：鲁纳斯米股份有限公司",
+			"version_hash": 3347172749
+		},
+		"SYSTEM_HULLVAT_NANO_MANUAL": {
+			"string": "纳米无人机组装单元的附加无人机部件。兼容所有无人机发射器。 \n无人机部件的交付速率取决于所安装的弹匣。零件在潜环开始时单独出售。 \n任何消耗品的减少都不适用于存储的前三分之一。\n抬头显示器的传感器显示可能无法正确显示实际储量。\n由于严格的运营限制，Minding 虚拟飞行服务可能无法使用此设备，仅提供无人机零件存储中列出的确切数量。",
+			"version_hash": 1846628783
+		},
+		"SYSTEM_HULLVAT_NANO_2": {
+			"string": "鲁纳斯米船体贴合式纳米无人机收纳箱",
+			"version_hash": 2890336819
+		},
+		"SYSTEM_HULLVAT_NANO_2_DESC": {
+			"string": "基于DCV的成功，一种更大的装置被投入生产，以使纳米无人机重度用户能够充分利用通常闲置的质量驱动器弹匣空间，从而装载相当大比例的纳米无人机。由于缺乏任何专用的安全装置，与之前的设计相比，其零件与弹匣空间的比例更大，然而，由于质量平衡器的构造效率低下，在机动过程中容易产生噪音。",
+			"version_hash": 3524422214
+		},
+		"SYSTEM_HULLVAT_NANO_2_SPECS": {
+			"string": "无人机部件载重能力：15,000kg\n弹药库容量缩减倍率：50%\n干重：12,000千克\n制造商：鲁纳斯米股份有限公司",
+			"version_hash": 790726693
+		},
+		"SYSTEM_HULLVAT_NANO_EXTEND_1": {
+			"string": "安东诺夫纳米存储扩展装置",
+			"version_hash": 15150678
+		},
+		"SYSTEM_HULLVAT_NANO_EXTEND_1_DESC": {
+			"string": "基于与弹药线扩展改装套件类似的设计，此项改装更换了部分矿物舱，以便在船内储存更多纳米无人机部件。请注意，这些套件同样适用同样的规则，且无论船只容量如何，储存调整余量都固定为标示的数值。",
+			"version_hash": 2714536047
+		},
+		"SYSTEM_HULLVAT_NANO_EXTEND_1_SPECS": {
+			"string": "无人机部件容量修正值：+33%\n无人机部件载重能力：1000kg\n成品矿物容量扣减率：10%\n干重：10,500kg\n制造商：安东诺夫",
+			"version_hash": 2814801590
+		},
+		"SYSTEM_HULLVAT_NANO_EXTEND_2": {
+			"string": "安东诺夫双重纳米存储扩展装置",
+			"version_hash": 424000540
+		},
+		"SYSTEM_HULLVAT_NANO_EXTEND_2_DESC": {
+			"string": "与弹药套件的设计选择类似，安东诺夫为他们的NSE装备提供了双重套件。类似的限制仍然适用。",
+			"version_hash": 4235882865
+		},
+		"SYSTEM_HULLVAT_NANO_EXTEND_2_SPECS": {
+			"string": "无人机部件容量修正值：+67%\n无人机部件载重能力：2000kg\n成品矿物容量扣减率：20%\n干重：25,000kg\n制造商：安东诺夫",
+			"version_hash": 348862304
+		},
+		"SYSTEM_HULLVAT_NANO_EXTEND_3": {
+			"string": "友邦拓液体纳米机器人储存装置",
+			"version_hash": 1179264534
+		},
+		"SYSTEM_HULLVAT_NANO_EXTEND_3_DESC": {
+			"string": "友邦拓的弹道扩展+纳米无人机存储变体，该套件取代了相当大一部分推进剂罐，以存储额外的纳米无人机组件。尽管这种变体对推进剂存储造成了影响，但在建筑工人中却出奇地受欢迎，这可能是由于最近对在环形建筑中使用拖曳式纳米无人机载具的监管有所放松。",
+			"version_hash": 3081086819
+		},
+		"SYSTEM_HULLVAT_NANO_EXTEND_3_SPECS": {
+			"string": "无人机部件容量修正值：+100%\n无人机部件载重能力：1000kg\n推进剂储罐缩减倍率：33%\n干重：40,000kg\n制造商：友邦拓微型工程",
+			"version_hash": 907301783
+		},
+		"SYSTEM_HULLVAT_PROP_1": {
+			"string": "Mk. I型推进剂罐",
+			"version_hash": 3501193927
+		},
+		"SYSTEM_HULLVAT_PROP_1_DESC": {
+			"string": "这些较小的扩展套件基于康列多对动态推进剂储罐扩展器的研发，旨在供参与研究、搜救或施工的人员使用，因为未使用的加工存储空间充足，并且能够将其中的一部分改作反应质量之用。",
+			"version_hash": 480660045
+		},
+		"SYSTEM_HULLVAT_PROP_1_SPECS": {
+			"string": "推进剂容量：10,000kg\n成品矿物容量扣减率：10%\n干重：1500kg\n制造商：康列多 RVM",
+			"version_hash": 3929640900
+		},
+		"SYSTEM_HULLVAT_PROP_MANUAL": {
+			"string": "为推进器和涡轮机增加额外的反作用质量 \n反应块在潜水开始时单独出售 \n任何消耗品减少的优惠不适用于前1/3的存储时间\n抬头显示器的传感器显示可能无法正确显示实际容量\n由于严格的运行限制，Minding虚拟飞行服务可能不会考虑此设备，仅提供油箱上列出的确切油量。",
+			"version_hash": 2307990323
+		},
+		"SYSTEM_HULLVAT_PROP_2": {
+			"string": "Mk. II型推进剂罐",
+			"version_hash": 3870249968
+		},
+		"SYSTEM_HULLVAT_PROP_2_DESC": {
+			"string": "作为Mk.I的现代化改进版，该装置采用了更高效的存储方法，使其每公斤所占空间比前代产品更小。对于某些船员来说，这个套件可能仍然不是最有效的，因为其明显更重的框架让一些船长对其优势望而却步。",
+			"version_hash": 2342587130
+		},
+		"SYSTEM_HULLVAT_PROP_2_SPECS": {
+			"string": "推进剂容量：25,000kg\n加工矿物保有量减少：22.5%\n干重：7,000kg\n制造商：康列多RVM",
+			"version_hash": 3108579633
+		},
+		"SYSTEM_HULLVAT_PROP_EXTEND_1": {
+			"string": "反应物料储罐膨胀器",
+			"version_hash": 2491541107
+		},
+		"SYSTEM_HULLVAT_PROP_EXTEND_1_DESC": {
+			"string": "康列多专注于实现稳定的星际旅行，因此设计了这种设备，以替换质量驱动器弹匣和纳米无人机组件存储器中在如此远距离旅行中未使用的部分，从而在飞船中装入更多推进剂。尽管标准星际燃料箱在法律上是所需的最小容量，但增加的冗余使飞行员能够进行额外的机动操作，而无需担心燃料耗尽导致剩余路程漂移。",
+			"version_hash": 3807540147
+		},
+		"SYSTEM_HULLVAT_PROP_EXTEND_1_SPECS": {
+			"string": "推进剂容量修正值：+25%\n弹药库容量缩减倍率：17%\n纳米无人机存储容量减少：17%\n干重：3000kg\n制造商：康列多 RVM",
+			"version_hash": 4088303632
+		},
+		"SYSTEM_HULLVAT_PROP_EXTEND_2": {
+			"string": "2x 反应物料储罐扩展器",
+			"version_hash": 284167773
+		},
+		"SYSTEM_HULLVAT_PROP_EXTEND_2_DESC": {
+			"string": "康列多专注于实现持续的星际旅行，因此设计了这款设备，以替换质量驱动器弹匣和纳米无人机组件存储器中在如此远距离旅行中未使用的部分，从而在飞船中装入更多推进剂。尽管标准星际燃料箱在法律上是所需的最小燃料量，但增加的冗余使飞行员能够在不耗尽燃料箱的情况下进行额外的机动，从而完成剩余的航程。\n\n该设备的双重适配功能可为有需要的船只提供额外的推进剂存储空间。",
+			"version_hash": 1897745097
+		},
+		"SYSTEM_HULLVAT_PROP_EXTEND_2_SPECS": {
+			"string": "推进剂容量修正值：+50%\n弹药库容量缩减倍率：25%\n纳米无人机存储容量减少：25%\n干重：8000kg\n制造商：康列多 RVM",
+			"version_hash": 2332672881
+		},
+		"SYSTEM_HULLVAT_PROP_EXTEND_3": {
+			"string": "超级反应质量罐扩展器",
+			"version_hash": 251378402
+		},
+		"SYSTEM_HULLVAT_PROP_EXTEND_3_DESC": {
+			"string": "康列多专注于实现持续的星际旅行，因此设计了这种设备，以替换质量驱动器弹匣和纳米无人机组件存储装置中在如此远距离旅行中未使用的部分，从而在飞船中装入更多推进剂。尽管标准星际燃料箱在法律上是所需的最小燃料量，但增加的冗余使飞行员能够在不耗尽燃料箱的情况下进行额外的机动，从而完成剩余的航程。\n\n该设备的三重适配功能为真正需要的容器提供了额外的推进剂存储空间。",
+			"version_hash": 219850007
+		},
+		"SYSTEM_HULLVAT_PROP_EXTEND_3_SPECS": {
+			"string": "推进剂容量修正值：+75%\n弹药库容量缩减倍率：38%\n纳米无人机存储容量减少：38%\n干重：15,000kg\n制造商：康列多 RVM",
+			"version_hash": 2339944014
+		},
+		"SYSTEM_HULLVAT_CONSUMABLESPEED_1": {
+			"string": "铁雄SCARLETTE货运驱动器",
+			"version_hash": 3530444192
+		},
+		"SYSTEM_HULLVAT_CONSUMABLESPEED_1_DESC": {
+			"string": "SCARLETTE驱动器是一个模块，旨在改进向挂载点提供消耗品的方式。SCARLETTE最初用于军事应用，在与中村动力公司的合同终止后，被重新定位为工业改型产品。尽管该模块主要用于工业级大型驱动器单元，但一些对大型驱动器有特殊需求的船长也能出色地使用这个模块。",
+			"version_hash": 730057691
+		},
+		"SYSTEM_HULLVAT_CONSUMABLESPEED_1_SPECS": {
+			"string": "消耗品存储交付速度：+75%\n干重：3,800公斤\n制造商：铁雄工业",
+			"version_hash": 4144113310
+		},
+		"SYSTEM_HULLVAT_CONSUMABLESPEED_MANUAL": {
+			"string": "将适用消耗品存储的交付速度提高一定百分比\n最好与工业级设备配合使用，以免造成性能浪费",
+			"version_hash": 1507662025
+		},
+		"SYSTEM_HULLVAT_CONSUMABLESPEED_2": {
+			"string": "铁雄RAMDRIVE输送模块",
+			"version_hash": 2161624877
+		},
+		"SYSTEM_HULLVAT_CONSUMABLESPEED_2_DESC": {
+			"string": "在面向消费者市场推出其工业级大型驱动器铁雄HMX2000l的同时，一款之前仅供业内人士使用的模块也面向消费者开放，旨在帮助消费者改造其船只，使其能够使用该驱动器。尤其是对于那些无法使用其铁质输送系统或无法负担得起满足其要求的船只的船员来说，这款模块可以对船只的输送系统进行重大调整，从而能够改造大多数弹药库，使其满足HMX的苛刻弹药输送要求。\n\n多名操作员抱怨该设备在正常运行过程中产生大量噪音，但铁雄对此问题未发表任何声明。",
+			"version_hash": 1824627807
+		},
+		"SYSTEM_HULLVAT_CONSUMABLESPEED_2_SPECS": {
+			"string": "消耗品存储交付速度：+150%\n干重：9,000kg\n制造商：铁雄工业",
+			"version_hash": 3077402918
+		},
+		"SHIP_YME": {
+			"string": "Y-ME裂变改造",
+			"version_hash": 318184807
+		},
+		"SHIP_YME_SPECS": {
+			"string": "制造者：愤怒的前埃隆星际员工\n高强度挂载点：1\n低强度挂载点：2\n船员：5人\n干重：29,300kg\n货舱：140m³\n每种成品矿物存储量：11,000kg",
+			"version_hash": 2674179350
+		},
+		"SHIP_YME_DESC": {
+			"string": "这艘船是由埃隆星际公司的几名恼怒的员工创建的，他们因公司对员工和公关管理不善而离职。他们联合起来打造了一艘经济性更强的船只，使得那些非富裕阶层的人也能更容易地接触到EIME这艘耀眼的船只。 \n\n由于EIME原始船体的特性，必须安装一个定制的仿星器反应堆，这是许多终端用户对原始船只的期望。在翻新过程中，使用了从K37s退役后留下的旧反应堆，该反应堆被用于恩克拉多斯主星的栖息地建设，且属于通用能量源。",
+			"version_hash": 3765453195
+		},
+		"SYSTEM_REACTOR_EIME_REFIT": {
+			"string": "液态鼓替换反应器",
+			"version_hash": 4266291077
+		},
+		"SHIP_OCP-SALVAGE": {
+			"string": "OCP-209 打捞型",
+			"version_hash": 2389090187
+		},
+		"SHIP_OCP-SALVAGE_SPECS": {
+			"string": "制造商：友邦拓微型工程\n货仓内适配机械臂：1\n高强度挂载点：2\n低强度挂载点：2\n炮塔底座：2个\n无人机槽位：2\n船员：8人\n干重：214,000kg\n货舱：150m³\n加工货物存储（合计）：50,000kg",
+			"version_hash": 3111870258
+		},
+		"SHIP_OCP-SALVAGE_DESC": {
+			"string": "这艘船是在辛太空工程公司后面的一个偏僻小巷里发现的。我们询问是否可以带走它，在中庭工作的（无薪）实习生表示他无所谓，于是我们便拿走了。整个船舱都被挖掉，换上了一只机械臂，我们认为这在一定程度上是为了制造MAD-CERF的竞争对手，另一方面，也可能是因为辛太空工程公司在生产OK720系列船只后，不知道该如何处理剩余的OCP材料。",
+			"version_hash": 221069128
+		},
+		"SHIP_CK65": {
+			"string": "CK-65",
+			"version_hash": 216355051
+		},
+		"SHIP_CK65_SPECS": {
+			"string": "制造商：康列多 / 俄原-安东诺夫\n低强度挂载点：2\n无人机槽位：2\n船员：12人\n干重：78,700 kg\n货舱：55m³\n每种矿物的加工货物存储量：37,500kg",
+			"version_hash": 487980583
+		},
+		"SHIP_CK65_DESC": {
+			"string": "矿物加工机的兴起催生了对能够携带大量货物进行星际旅行的船只的需求。科松级船只长达一个世纪的航行历史证明了自动化船只用于旅行的可行性，而勘探鹰则被选为完成这一新航程的首选船只。其货舱的大部分被改建为6个巨大的货舱，用于存放加工后的货物，同时还有一个豪华的生活区，可容纳12名乘客。为了方便船长，勘探鹰的大部分硬件设施被保留了下来，但研磨机被替换为标准挖掘机，以确保更可靠的航行体验。",
+			"version_hash": 3960488954
+		},
+		"SHIP_CK69": {
+			"string": "CK-69",
+			"version_hash": 216355055
+		},
+		"SHIP_CK69_SPECS": {
+			"string": "制造商：康列多 / 俄原-安东诺夫\n低强度挂载点：2\n无人机槽位：2\n船员：12人\n干重：102,000kg\n货舱：55m³\n加工货物存储（合计）：200,000kg",
+			"version_hash": 1892565817
+		},
+		"SHIP_CK69_DESC": {
+			"string": "CK-65的成功催生了更先进的CK-69，它能够处理任何数量的矿石，但总容量略有降低。在恩克拉多斯矿场产量下降期间，CK-69得到了广泛应用，因为当时由于缺乏特定矿物，将空间浪费在库存CK-65上显得不划算。然而，对于那些能够更可靠地运回大量矿石的矿工来说，CK-69非常受欢迎。",
+			"version_hash": 2638684179
+		},
+		"SHIP_OCP213_TWIN": {
+			"string": "OCP-213 双胞胎",
+			"version_hash": 1918415372
+		},
+		"SHIP_OCP213_TWIN_SPECS": {
+			"string": "品牌：友邦拓微型工程\n高强度挂载点：2\n低强度挂载点：2\n停靠位：2\n炮塔底座：2\n船员：8人\n干重：188,000千克\n货舱：610m³\n加工货物存储（合计）：50,000kg",
+			"version_hash": 802088103
+		},
+		"SHIP_OCP213_TWIN_DESC": {
+			"string": "双胞胎是对标准OCP-209的细微改进，它增加了第二个货仓配件，从而可以进行更多样化的操作，尤其是在结合平移和旋转时。",
+			"version_hash": 2913326268
+		},
+		"SHIP_TRTL_PEEPER": {
+			"string": "OCK窥视者TNTRL",
+			"version_hash": 3422338455
+		},
+		"SHIP_TRTL_PEEPER_DESC": {
+			"string": "这是对辛太空工程公司OK720型号的定制化改装。船员居住区被移至货舱后方，以确保操作更加安全，使采矿活动产生的影响远离可能造成潜在伤害的区域。船首的非传统形状使挂载点大大偏离中心，但货舱上额外的结构配件使得高应力挂载点能够沿船体脊柱放置。 \n\n由于重新安置的船员居住区的特殊性，其间安装了一个大型铅辐射防护罩，同时，在本船飞行期间及飞行后一个月内，船员每天可免费获得150毫克的Ketron Isoboost抗辐射药物。",
+			"version_hash": 1793612252
+		},
+		"SHIP_TRTL_PEEPER_SPECS": {
+			"string": "品牌：康列多 / 友邦拓微型工程\n高强度挂载点：1\n低强度挂载点：4\n船员：4人\n干重：115,700kg\n货舱：555m³\n加工货物存储（综合）：55,000kg",
+			"version_hash": 3487503103
+		},
+		"SHIP_MADCERF_CIV_INVERSE_DESC": {
+			"string": "此次与友邦拓微型工程合作进行的民用改装，针对环形环境的多样化需求进行了多项改进。其紧凑的顶部安装式居住舱被移至船首，并换上了一台扩大的OCP标准离心机，使有效乘员容量增加至八人。此外，对接舱被围上了一个网篮，并移除了夹具以支持采矿作业，其后舱壁上装有一扇巨大的滑动门，用于装载大型货物。船首的大部分下部结构也被货舱空间所取代，使该船在民用市场上拥有比其他任何船只都更大的矿物处理空间。\n\n对民用版进行第三方改装后，自动驾驶仪和视觉传感器被调整为向前翻转，使其更像挖掘机。",
+			"version_hash": 1256606154
+		},
+		"SHIP_MADCERF_CIV_INVERSE_SPECS": {
+			"string": "制造商：天体力学机械 / 友邦拓微型工程\n高强度挂载点：1\n低强度挂载点：2\n炮塔挂载点：2\n无人机槽位：2\n停靠位：2\n船员：8人\n干重：241,300kg\n货舱：1,175m³\n加工货物存储量（按矿物分类）：35,000kg",
+			"version_hash": 2079811827
+		},
+		"SYSTEM_AUX_MPD_1400": {
+			"string": "OPG-14 “炽热离子”",
+			"version_hash": 1526700951
+		},
+		"SYSTEM_AUX_MPD_1400_DESC": {
+			"string": "极端电力需求，如炼油站的工业炉，需要一种极端的电力解决方案，而友邦拓微型工程的“炽热离子”正是这样的解决方案。由于其不同寻常的螺旋形转换室（该室向回收出口逐渐变窄），爱好者与电气工程师（尽管两者之间几乎没有区别）都习惯称之为“松果”。 \n\n注意：本设备在达到其最大功率输出之前，可能需要一小段时间的预热。",
+			"version_hash": 3587521427
+		},
+		"SYSTEM_AUX_MPD_1400_SPECS": {
+			"string": "功率：200MW\n热负载：2.5GW\n功率（标称）：1400MW\n预热时间：5s\n质量：12,250 kg\n类型：MPDG\n制造商：友邦拓微型工程",
+			"version_hash": 3479454563
+		},
+		"SYSTEM_AUX_MPD_2000": {
+			"string": "MPI城市级MPDG",
+			"version_hash": 2751514767
+		},
+		"SYSTEM_AUX_MPD_2000_DESC": {
+			"string": "这个MPDG（多相驱动发电机）简直是个该死的怪物，它根本无法装入大多数船只的船体，只能安装在外部，并通过多条馈线进行连接。它是火星及其他地方大型定居点的终极动力源。 \n\n注意：本装置在达到其最大功率输出之前需要一段较长的预热时间。MPI强烈建议您不要移除装置上的任何徽章、刻字或其他标记。",
+			"version_hash": 1727776522
+		},
+		"SYSTEM_AUX_MPD_2000_SPECS": {
+			"string": "功率：300MW\n热抽：4GW\n功率（标称）：2000MW\n预热时间：15 s\n质量：16,660kg\n类型：带回收涡轮组件的MPDG（多级动力发电机）\n制造商：火星动力工业公司",
+			"version_hash": 1850708562
+		},
+		"SYSTEM_AUX_SMES_10K": {
+			"string": "OPS-10电容器组",
+			"version_hash": 2269000599
+		},
+		"SYSTEM_AUX_SMES_10K_DESC": {
+			"string": "友邦拓微型工程的备用电源解决方案虽然不够优雅，但效果却令人难以置信。基本上，它只是在钢制风衣中增加了一些超大容量的超级电容器，但OPS-10却能在峰值负载时提供惊人的功率输出，同时价格却与标准超级电容器系列相当。 \n\n由于未与内部冷却系统相连，OPS-10依靠缓慢的充电速率和庞大的辐射冷却器来控制其温度。",
+			"version_hash": 3928417371
+		},
+		"SYSTEM_AUX_SMES_10K_SPECS": {
+			"string": "容量：10,000 MJ\n充电功率：50 MW\n放电功率（峰值）：10,000 MW \n质量：6,500 kg \n类型：高密度石墨烯分形超级电容器阵列\n制造商：友邦拓微型工程",
+			"version_hash": 3809545440
+		},
+		"SYSTEM_CAPACITOR_100": {
+			"string": "轻型超级电容器",
+			"version_hash": 2574788091
+		},
+		"SYSTEM_CAPACITOR_100_DESC": {
+			"string": "一种石墨烯分形超级电容器圆柱体，用于储存多余的发电量，确保在用电高峰期可用。该装置紧凑且价格合理。",
+			"version_hash": 684393582
+		},
+		"SYSTEM_CAPACITOR_100_SPECS": {
+			"string": "容量：100 MJ\n峰值功率：10 GW\n质量：400 kg\n制造商：友邦拓微型工程",
+			"version_hash": 716198507
+		},
+		"SYSTEM_CAPACITOR_700": {
+			"string": "ND-iSMB",
+			"version_hash": 436615343
+		},
+		"SYSTEM_CAPACITOR_700_DESC": {
+			"string": "中村动力内部超导磁电池是在NDAPS辅助动力单元取得成功后提出的一种替代性临时储能解决方案。尽管该电池被高度屏蔽以防止再物质等离子体扰乱磁场，但其与船舶电气总线的直接接口能够实现最大化的放电和充电速率，同时将损耗降至最低。",
+			"version_hash": 3284585865
+		},
+		"SYSTEM_CAPACITOR_700_SPECS": {
+			"string": "容量：700 MJ \n峰值功率：10 GW\n质量：1,800 kg\n制造商：中村动力",
+			"version_hash": 2004262628
+		},
+		"SYSTEM_CAPACITOR_1400": {
+			"string": "ND-iSMB双耦合电容器",
+			"version_hash": 1640893718
+		},
+		"SYSTEM_CAPACITOR_1400_DESC": {
+			"string": "两个较小的iSMB单元，通过一个重型功率平衡器连接。通过有意允许两个磁场之间的相互作用，可以在更小的硬件中有效地存储更多能量。",
+			"version_hash": 1268707516
+		},
+		"SYSTEM_CAPACITOR_1400_SPECS": {
+			"string": "容量：1,400 MJ\n峰值功率：10 GW\n质量：3,200 kg\n制造商：中村动力",
+			"version_hash": 2423955514
+		},
+		"SYSTEM_RODS_1": {
+			"string": "1xSO6燃料棒",
+			"version_hash": 1073794583
+		},
+		"SYSTEM_RODS_1_DESC": {
+			"string": "这种俄罗斯原子能公司（Rusatom）与安东诺夫（Antonoff）联合研发的SO6核燃料棒，通常被称为“太阳碎片”，是早期星际核热火箭（NTR）设计的标准燃料。SO6采用液体钍基核心，被包裹在固体外壳中。其应力和成分决定了极高的工作温度。 \n\n送给有志成为船长的理想礼物。可根据需求提供多种设计和颜色的内衬铅包装材料。",
+			"version_hash": 3850804419
+		},
+		"SYSTEM_RODS_1_SPECS": {
+			"string": "制造商：俄原-安东诺夫\n工作温度：3500 K\n融毁温度：4,500 K\n质量：400 kg\n热功率：1 GW",
+			"version_hash": 1271101530
+		},
+		"SYSTEM_TURBINE_20": {
+			"string": "热电偶阵列",
+			"version_hash": 1012257531
+		},
+		"SYSTEM_TURBINE_20_DESC": {
+			"string": "这个简单的热电偶阵列利用飞船反应堆与推进剂之间的热梯度来发电。在此过程中，只有极少量的反应物质被排放到外部。",
+			"version_hash": 2395727699
+		},
+		"SYSTEM_TURBINE_20_SPECS": {
+			"string": "功率（额定）：20 MW \n推进剂消耗量：20 g/s\n质量：100 kg \n制造商：俄原-安东诺夫",
+			"version_hash": 2160090719
+		},
+		"SYSTEM_TURBINE_160": {
+			"string": "层流涡轮机",
+			"version_hash": 4257331490
+		},
+		"SYSTEM_TURBINE_160_DESC": {
+			"string": "这款裂变动力装置利用德国工程技术的强大实力（以及人工智能优化设计），在四级再生涡轮组件中最大限度地减少流动湍流和热损失。",
+			"version_hash": 272358522
+		},
+		"SYSTEM_TURBINE_160_SPECS": {
+			"string": "功率（名义）：160 MW\n推进剂消耗量：160 g/s\n质量：600 kg\n制造商：玻尔兹曼热机",
+			"version_hash": 425762513
+		},
+		"SYSTEM_TURBINE_320": {
+			"string": "双重层流涡轮机",
+			"version_hash": 3382055112
+		},
+		"SYSTEM_TURBINE_320_DESC": {
+			"string": "这款裂变飞船发电装置利用德国工程技术的强大实力（以及人工智能优化设计），最大限度地减少了两个四级再生涡轮组件中的流动湍流和热量损失。通过新型固态阀体，质量和压力在两者之间均匀分配。",
+			"version_hash": 255502870
+		},
+		"SYSTEM_TURBINE_320_SPECS": {
+			"string": "功率（名义）：320 MW\n推进剂消耗量：320 g/s\n质量：1,200 kg\n制造商：玻尔兹曼热机",
+			"version_hash": 2696187974
+		},
+		"SHIP_TSUKUYOMI_IOT": {
+			"string": "月读级护卫舰（已退役）",
+			"version_hash": 2331768936
+		},
+		"SHIP_TSUKUYOMI_IOT_DESC": {
+			"string": "“月读”级轻型护卫舰于2190年设计，用于整个太阳系的军事行动。它们是该类型护卫舰中的首创，为现代战术护卫舰奠定了基础，其五联装反应堆为强大的推进器提供了巨大的动力来源。在军用核盐水火箭被逐步淘汰后，许多护卫舰被报废或出售给私人军事承包商和公司。 \n\n承蒙辛太空工程船厂的帮助，该单位已完全非军事化并翻新，以适应在环内运营。其海水反应堆已被三个模块化安全壳容器所取代，以进行现代NTR系统的翻新，其船首鱼雷发射管已被分隔，以扩大其货舱并增加四个辅助设备舱。\n\n值得指出的是，月读从设计上来说是一艘战舰，而非货船。这就像厢式货车比坦克有更多的载货空间一样，这就是为什么它的储物空间比同等体积的船只预期的要小。",
+			"version_hash": 2024833061
+		},
+		"SHIP_TSUKUYOMI_IOT_SPECS": {
+			"string": "制造商：辛太空工程/ 中村动力\n高强度挂载点：1\n低强度挂载点：4\n泊位：4\n炮塔底座：2\n船员：16人\n干重：1,351,900kg\n货舱：1,100m³\n成品货物存储量（按矿物分类）：81,000kg",
+			"version_hash": 3519589506
+		},
+		"SYSTEM_REACTOR_TSUYUKOMI_IOT-A": {
+			"string": "月读反应堆堆芯A",
+			"version_hash": 3308974745
+		},
+		"SYSTEM_REACTOR_TSUYUKOMI_IOT-B": {
+			"string": "月读反应堆堆芯B",
+			"version_hash": 3308974746
+		},
+		"SYSTEM_REACTOR_TSUYUKOMI_IOT-C": {
+			"string": "月读反应堆堆芯C",
+			"version_hash": 3308974747
+		},
+		"SHIP_OCP209_DD": {
+			"string": "OCP-214-DD “深盘”",
+			"version_hash": 2008633162
+		},
+		"SHIP_OCP209_DD_DESC": {
+			"string": "214-DD是OCP-209的一个版本，专门为环区内的采矿作业而设计。其支撑消耗品舱的结构被挖空并镀层，以增加原始货物容量，额外的电力基础设施则允许安装标准货舱配件。 \n\n尽管有显而易见的好处，但该船舱在处理矿石时显得笨拙，且其船上矿物储存空间减少，这意味着船长往往更依赖辅助硬件，而非大多数其他船只。",
+			"version_hash": 202641460
+		},
+		"SHIP_OCP209_DD_SPECS": {
+			"string": "制造商：Obonto Microengineering\n高强度挂载点：2\n低强度挂载点：2\n停靠位：2\n无人机槽位：2\n船员：8人\n干重：230,300 kg\n货舱：675 m³\n加工货物存储（合计）：36,000kg",
+			"version_hash": 3118196040
+		},
+		"SHIP_OCP209_SNAP": {
+			"string": "OCP-207-SNAP “食人鱼”",
+			"version_hash": 420116051
+		},
+		"SHIP_OCP209_SNAP_DESC": {
+			"string": "OCP-207-SNAP是OCP-209的一个版本，它采用了在原型开发阶段就已考虑的挖掘机设计。其重型双门设计比其对应型号更适合破碎环形机器人，但遗憾的是，它设计用于处理的设备却较为脆弱。",
+			"version_hash": 1684185953
+		},
+		"SHIP_OCP209_SNAP_SPECS": {
+			"string": "制造商：友邦拓微型工程\n高强度挂载点：2\n低强度挂载点：2\n停靠位：2\n无人机舱：2\n船员：8人\n干重：230,300 kg\n货舱：610 m³\n加工货物存储（综合）：50,000 kg",
+			"version_hash": 4089399417
+		},
+		"SHIP_COTHON_LUX": {
+			"string": "SSE 科松-2200-XL",
+			"version_hash": 4266600797
+		},
+		"SHIP_COTHON_LUX_DESC": {
+			"string": "这款科松-213三胞胎的非官方“现代化”变体配备了额外的“乘员舱”（救生舱）、一对额外的平移推进器，以及一系列“高级”功能，如组合式休息室和餐厅、带软垫的透气织物座椅以及功能齐全的卫生间。两个舱体在底部对接端口处连接在一起，并通过标准的紧急快速释放硬件固定在框架上。XL代表“Extra Love”（额外的爱）。 \n\n辛空间工程不提供任何形式的明示或暗示担保。",
+			"version_hash": 1635273044
+		},
+		"SHIP_COTHON_LUX_SPECS": {
+			"string": "制造商：辛空间工程 / 康列多 RVM\n低强度挂载点：4\n船员：6人\n干重：92,000 kg\n货舱：260 m³\n加工后货物存储量（每种矿物）：25,000kg",
+			"version_hash": 655279152
+		},
+		"SHIP_MADCERF_CIV": {
+			"string": "MAD-CERF（民用改装）",
+			"version_hash": 1400327038
+		},
+		"SHIP_MADCERF_CIV_DESC": {
+			"string": "此次与友邦拓微型工程合作进行的民用改装，针对环区环境的多样化需求进行了多项改进。其紧凑的顶部安装式居住舱已移至船首，并替换为扩大的OCP标准旋转式居住仓，有效船员容量增至八人。此外，对接舱已用网篮封闭，并移除了夹具以支持采矿作业，其后舱壁装有巨大的滑动门，可装载大型货物。船首的大部分下部结构也被货舱空间所取代，使该船比民用市场上任何其他船只拥有更多的矿物加工空间。",
+			"version_hash": 3053400826
+		},
+		"SHIP_MADCERF_CIV_SPECS": {
+			"string": "制造商：Machines Astro-Dynamiques / Obonto Microengineering\n高强度挂载点：1\n低强度挂载点：2\n炮塔挂载点：2\n无人机槽位：2\n停靠位：2\n船员：8人\n干重：241,300 kg\n货舱：1,175 m³\n加工货物存储量（按矿物分类）：35,000 kg",
+			"version_hash": 1818843315
+		},
+		"SHIP_MADCERF_DESC": {
+			"string": "“塞努诺斯天体力学模型II号”飞船，又称MAD-CERF，是土星环内救援公司的主要船只。其船头装甲厚重，可抵御小行星带穿行时的危险，虽不雅观，却能有效应对星际航行中遇到的诸多风险。飞船两侧各有一组反应堆，分别驱动一对主推进器和机动推进器。",
+			"version_hash": 906273873
+		},
+		"SHIP_OBERON": {
+			"string": "联合机械教派 奥伯龙 MLP-60",
+			"version_hash": 230539627
+		},
+		"SHIP_OBERON_DESC": {
+			"string": "奥伯龙MLP-60是由联合机械教派制造的一款奇特飞船。它最初是作为轨道赛车赛事的参赛车辆，由电磁轨道炮发射的自主飞行器。尽管后来被融合推进装置所取代，但狂热者们迅速买下了剩余的存货，最终它还是登上了赛场。飞船两侧各装有六个带式散热器，用于冷却其高性能反应堆并部分屏蔽外露的燃料箱，不过由于该飞船配备了数量惊人的平移推进器，这些散热器几乎派不上用场。 \n\n为了使这艘船更适合在环带内航行，已经进行了多项改造：其磁性接触装置被巧妙地改装成两个高强度挂载点，船首的小货舱内也内置了接口基础设施，以支持矿物处理单元（尽管空间有限，且船上分配给这些单元的空间也很少），此外，还有一个HAL-9001豪华救生舱，作为舒适的驾驶舱和船员舱。",
+			"version_hash": 1354947949
+		},
+		"SHIP_OBERON_SPECS": {
+			"string": "品牌：联合机械教派/定制\n高强度挂载点：2\n无人机槽位：1\n船员：4人\n干重：54,000 kg\n货舱：50 m³\n加工货物存储（合计）：12,000 kg",
+			"version_hash": 2288478114
+		},
+		"SYSTEM_REACTOR_OBERON": {
+			"string": "奥伯龙高性能反应堆",
+			"version_hash": 1150005196
+		},
+		"SHIP_TRTL_RAM": {
+			"string": "KX37 TNTRL \"RAM\"",
+			"version_hash": 1990258218
+		},
+		"SHIP_TRTL_RAM_DESC": {
+			"string": "KX37的“Ringa售后改装”版本，通常简称为“Ram”，是一种改装模式，自2269年由一位名为“BLKCandy”的RingChan用户发布后，便广受欢迎。该模式牺牲了一定的矿物容量，在船尾的船刺上为两个无人机挂载点引入了电源和给料轨道，用万向变体取代了固定推进器支架，并对RCS推进器进行了改造，以增强机动性。 \n\n其最显著的特点是直接从废品市场获得的探矿者型研磨机。该设备的安装仅对船员舒适度做出了微小的让步，在运行过程中噪音极大，并略微减少了娱乐区的占地面积。",
+			"version_hash": 2784651834
+		},
+		"SHIP_TRTL_RAM_SPECS": {
+			"string": "制造商：俄原-安东诺夫/定制\n高强度挂载点：1\n低强度挂载点：2\n无人机槽位：2\n船员：4人\n干重：46,000 kg\n货舱：110 m³\n加工货物存储（合计）：37,500 kg\nEMP抗性：50 MW",
+			"version_hash": 2895770113
+		},
+		"SYSTEM_REACTOR_TNTRL_FORT": {
+			"string": "K37型支撑式核反应堆",
+			"version_hash": 131474997
+		},
+		"SHIP_ATLAS_WASP": {
+			"string": "黄蜂级侦察机（已退役）",
+			"version_hash": 2881116469
+		},
+		"SHIP_ATLAS_WASP_DESC": {
+			"string": "中村动力黄蜂级自动战术侦察机制造于2200年代中期，采用[已编辑]作为动力源，并利用[已编辑]，只要车辆的[已编辑]处于[已编辑]状态，就能持续提供[已编辑]兆瓦的电能。法拉第笼网状结构为车辆提供了大部分绝缘保护，使其在密集的空间环境中免受静电放电的影响，并为[已编辑]提供了方便的电荷消散途径。 \n\n这难道不有趣吗？这个版本，由罪恶空间工程船厂独家提供，已经完全解密、退役，可能还去除了非法内容，并配备了一系列不错的功能，如高性能推进剂-质量反应轮、一个“反应堆外壳”（里面被撕掉了被编辑过的内容，我们收到时就是这样），以及一个可能还能用的货舱，所有这些都配备了康列多经典™转换式生命舱，以供她享用。 \n\n保修？门都没有。尽管开这艘该死的船吧，林加。如果有人问你这东西是从哪里来的，给我们打个电话，并发送你的航海日志，下次购买时可享受七五折优惠。",
+			"version_hash": 1477509928
+		},
+		"SHIP_ATLAS_WASP_SPECS": {
+			"string": "制造商：辛空间工程 / 中村动力\n低应力挂载点：2\n推进器安装架万向节：36 度\n船员：3人\n干重：23,250 kg\n货舱：45 m³\n加工货物存储量（每种矿物）：500 kg\nEMP抗性：320 MW",
+			"version_hash": 678981677
+		},
+		"SYSTEM_REACTOR_JURYRIG": {
+			"string": "临时拼凑的反应堆",
+			"version_hash": 644780254
+		},
+		"SYSTEM_REACTIONWHEEL_PERF": {
+			"string": "流体反作用轮",
+			"version_hash": 2469051875
+		},
+		"SHIP_PROSPECTOR_PIGEON": {
+			"string": "勘探鸽子",
+			"version_hash": 3252310328
+		},
+		"SHIP_PROSPECTOR_PIGEON_DESC": {
+			"string": "当一只鹈鹕和一只秃鹫相爱时，会发生什么呢？它们会生出这样的东西——至少传说是这样。勘探鸽子的高昂价格完全归功于其制作过程中所展现的惊人技艺；额外的支撑杆为船首的高应力挂载点提供了支撑，整个动力和设备供给系统也经过了重新设计以适应这一设计。为了应对压力，船舱也被缩短，从而得以重新安装标准研磨机，然而，由于到船员舱的距离缩短，即使关闭了研磨机的伺服系统，操作时发出的声音也大得令人不适。",
+			"version_hash": 3885822122
+		},
+		"SHIP_PROSPECTOR_PIGEON_SPECS": {
+			"string": "品牌：三田屋-星际客车 / 康列多 RVM\n高强度挂载点：1\n低强度挂载点：2\n无人机槽位：2个\n船员：6人\n干重：22,700 kg\n货舱：180 m³\n每种矿物的加工货物存储量：10,000 kg",
+			"version_hash": 4153657129
+		},
+		"SHIP_AT225_STUB": {
+			"string": "安东诺夫-泰坦K225-SH",
+			"version_hash": 1896845305
+		},
+		"SHIP_AT225_STUB_DESC": {
+			"string": "短途运输型（Short Haul variant）被系列爱好者亲切地称为“Stubby”，在其基础型号大获成功后仅三年便开始生产，旨在满足整个太阳系内的快速运输需求。短途运输型凭借其轻便、灵活的船身和双纳米无人机挂载配件弥补了其中段部分的缺失，后者使其成为采矿作业中基础型号的绝佳替代品。",
+			"version_hash": 33006397
+		},
+		"SHIP_AT225_STUB_SPECS": {
+			"string": "制造商：安东诺夫-泰坦重工\n低强度挂载点：2\n无人机槽位：2\n停靠位：4\n船员：12人\n干重：146,700 kg\n货舱：260 m³\n加工后货物存储量（每种矿物）：5,000 kg",
+			"version_hash": 4038862981
+		},
+		"SHIP_TRTL_OCP": {
+			"string": "SSE OK720 TNTRL",
+			"version_hash": 2216868439
+		},
+		"SHIP_TRTL_OCP_DESC": {
+			"string": "“哦，我的老天爷，那是什么？”，他们说。“那不会飞吧”，他们说。“别再给我们打电话了，否则我们会起诉的”，安东诺夫和友邦拓异口同声地说。正是在这种一片反对和抱怨声中，我们创造了奇迹，那就是OK720 TNTRL。\n\n由友邦拓剩余的两半备用货舱和一艘K37的残骸组合而成的这件杰作，最初是由用户snownukitro发布在RingChan /dreamship/论坛上的一个“笑话”。这个怪物拥有真正巨大的货舱以及OCP标准MPU和配件的支撑硬件、四个低强度设备挂载点，并且其货舱体积的质量极低，非常适合环区采矿——只要它不撞到任何东西。 \n\n有限保修适用。如果您在狭窄空间内遇到问题，我们不会进行更换，但会向您出售替换面板。",
+			"version_hash": 903860750
+		},
+		"SHIP_TRTL_OCP_SPECS": {
+			"string": "制造商：俄原-安东诺夫 / 友邦拓微型工程 / 辛空间工程\n低强度挂载点：4\n船员：4人\n干重：85,700 kg \n货舱：620 m³\n每种矿物的加工货物存储量：5,000 kg",
+			"version_hash": 3999817088
+		},
+		"SHIP_OCP209_SPECS": {
+			"string": "品牌：友邦拓微型工程\n高强度挂载点：2\n低强度挂载点：2\n停靠位：2个\n炮塔底座：2个\n船员：8人\n干重：184,500 kg\n货舱：610 m³\n加工货物存储（合计）：50,000 kg",
+			"version_hash": 2758248968
+		},
+		"SLOT_TURRET_LEFT": {
+			"string": "左炮塔支架",
+			"version_hash": 3411916009
+		},
+		"SLOT_TURRET_RIGHT": {
+			"string": "右炮塔支架",
+			"version_hash": 4152908156
+		},
+		"SLOT_MAIN_LARGE": {
+			"string": "大型主推进系统",
+			"version_hash": 4168458352
+		},
+		"SLOT_RCS_LARGE": {
+			"string": "大型反应控制系统",
+			"version_hash": 4107040235
+		},
+		"IOE_MOD_DESCRIPTION": {
+			"string": "“恩克拉多斯工业”模组的这一移植版旨在实现其内容与其他设备模组内容的完全兼容。\n\n（目前）尚不支持与使用原始IoE的存档兼容",
+			"version_hash": 3666305633
+		},
+		"IOE_MOD_BRIEF": {
+			"string": "对内容模组进行全面更新，包括超过十二艘船只、五十件装备物品以及更多内容。..",
+			"version_hash": 1435637786
+		},
+		"SLOT_CARGO_AUX": {
+			"string": "货舱配件",
+			"version_hash": 898983681
+		},
+		"SYSTEM_FUEL_1000000": {
+			"string": "2x 货船级推进剂储罐阵列",
+			"version_hash": 2936829597
+		},
+		"SYSTEM_FUEL_1000000_DESC": {
+			"string": "一组双层排列的货船级推进剂储罐，可容纳多达1,000,000kg的热火箭推进剂。蜂窝状结构可防止机动过程中质量偏移。",
+			"version_hash": 130411686
+		},
+		"SYSTEM_FUEL_1000000_SPECS": {
+			"string": "容量：1,000,000 kg \n推进剂类型：热核火箭",
+			"version_hash": 3150131236
+		},
+		"SYSTEM_FUEL_2000000": {
+			"string": "护卫舰推进剂储罐阵列",
+			"version_hash": 428941173
+		},
+		"SYSTEM_FUEL_2000000_DESC": {
+			"string": "这是一个庞大的、已退役的军用级燃料箱阵列，可容纳多达2,000,000kg的热火箭推进剂。其蜂窝状结构可防止在机动过程中发生质量偏移。",
+			"version_hash": 1601193690
+		},
+		"SYSTEM_FUEL_2000000_SPECS": {
+			"string": "容量：2,000,000 kg\n推进剂类型：热核火箭",
+			"version_hash": 901361093
+		},
+		"SYSTEM_THRUSTER_PIN150": {
+			"string": "RMS Pin-C50推进器",
+			"version_hash": 503674612
+		},
+		"SYSTEM_THRUSTER_PIN150_DESC": {
+			"string": "拉萨玛玛材料解决方案的Pin-C50是一种独特的固态推进器系统，它利用脉冲感应来加速和引导氢等离子体，无需任何机械部件，从而大大减少了与传统推进器相关的损伤问题。然而，在加速过程中，它们确实会承受额外的应力，并且在比传统推进器低得多的加速度下就会失效。 \n\n尽管重型等离子体导管及其配套电力基础设施的安装，以及推进器直接嵌入船体，具有极高的耐磨性，但这些工作需要专业人员的协助，而这样的协助可能难以负担。",
+			"version_hash": 1349732115
+		},
+		"SYSTEM_THRUSTER_PIN150_SPECS": {
+			"string": "推力：150 kN\n排气速度：90 km/s\n推进剂消耗量：1.6 kg/s\n耗电量：90 MW\n操作模式：矢量可变推力\n矢量推力角度：36度\n推进剂：氢等离子体\n质量：185千克（每个推进器）\n制造商：拉萨玛玛材料解决方案",
+			"version_hash": 1753116300
+		},
+		"SYSTEM_THRUSTER_BLAST": {
+			"string": "ERS-BlasTR 7200 推进器",
+			"version_hash": 657341998
+		},
+		"SYSTEM_THRUSTER_BLAST_DESC": {
+			"string": "电子驾驶系统的BlasTR与其之前的NAGHET截然不同，它采用螺旋磁等离子体加速器，在同样不可思议的排气速度下实现惊人的推力。该产品主要面向赛艇市场，同时也引起了重型船舶运营商的兴趣，因为这些船舶对推力的需求一直未能得到满足，而现有的推进器在推进剂经济性方面表现不佳。",
+			"version_hash": 1965070975
+		},
+		"SYSTEM_THRUSTER_BLAST_SPECS": {
+			"string": "推力：450 kN\n排气速度：22 km/s\n推进剂消耗量：20.5 kg/s \n耗电量：72 MW\n热耗：5.0 GW\n操作模式：可变推力\n推进剂：氧氢等离子体\n质量：145 kg（每个推进器）\n制造商：电子驾驶系统",
+			"version_hash": 1023832149
+		},
+		"SYSTEM_THRUSTER_PNTRM": {
+			"string": "ND-PNTRm 推进器",
+			"version_hash": 1339790742
+		},
+		"SYSTEM_THRUSTER_PNTRM_DESC": {
+			"string": "PNTR的显著成功向中村动力公司表明，利用固态推力矢量技术可以完全规避精密万向架这一古老问题，该公司迅速着手将该系统有效缩小规模，以用作RCS推进器。 \n\n尽管作为纯核热火箭的排气速度较差，但微型脉冲核热火箭凭借当今市场上最大的有效推力矢量范围弥补了这一不足。其低运营成本和快速预热使其成为RCS推进器布局有限的重型船只的理想选择。",
+			"version_hash": 2424136332
+		},
+		"SYSTEM_THRUSTER_PNTRM_SPECS": {
+			"string": "推力：450 kN \n排气速度：5 km/s \n推进剂消耗量：90.0 kg/s\n耗电量：40 MW\n热耗：1.8 GW \n操作模式：脉冲推力\n矢量推力角度：60度\n推进剂：氧氢等离子体\n质量：25公斤（每个推进器）\n制造商：中村动力",
+			"version_hash": 3803267296
+		},
+		"SYSTEM_SALVAGE_ARM_HEAVY": {
+			"string": "俄原-安东诺夫 ORD",
+			"version_hash": 3844473405
+		},
+		"SYSTEM_SALVAGE_ARM_HEAVY_DESC": {
+			"string": "在KTA24的合作过程中，俄原-安东诺夫公司迅速发现了三曲枝图-阿姆斯特朗AR-1500的缺陷。这款设备操作缓慢且精密，但作为矿石回收工具使用时，其精密的伺服系统和精心设计的对接适配器很快就会磨损。ORD正是他们针对这些缺陷所推出的解决方案。 \n\n尽管其笨重的支撑结构使其格外沉重且耗能，但其耐磨的电机和轴承使其成为同类产品中可行且耐用的替代品。",
+			"version_hash": 4017619073
+		},
+		"SYSTEM_SALVAGE_ARM_HEAVY_SPECS": {
+			"string": "臂力：3,200 kN \n臂程：40 m\n功率消耗（峰值）：220 MW\n安装位置：仅限高强度挂载点\n质量：14,000 kg\n制造商：俄原-安东诺夫",
+			"version_hash": 14878473
+		},
+		"SYSTEM_SALVAGE_ARM_LIGHT": {
+			"string": "鲁纳斯米 KRB-500",
+			"version_hash": 3632982126
+		},
+		"SYSTEM_SALVAGE_ARM_LIGHT_DESC": {
+			"string": "鲁纳斯米KRB-500样品操作器最初是为资金较少的研究机构的容器而开发的，但最近在采矿业找到了新的细分市场，成为纳米无人机系统的便捷替代品。 \n\n该机械手的执行器采用带制动盘的液力耦合器来模拟步进电机或伺服电机的精度，这是一种新颖的实现方式，可最大限度地降低维护费用和整体质量。此外，其抓爪可进行磁化处理，以夹紧小型铁磁物体的外壳，如无人机外壳，但其夹持力可能不足以夹紧较大的船只。 \n\n注：分析和实验套餐需单独购买。",
+			"version_hash": 2076300310
+		},
+		"SYSTEM_SALVAGE_ARM_LIGHT_SPECS": {
+			"string": "臂力：500 kN \n臂程：35 m\n功率消耗（峰值）：60 MW \n质量：2,050 kg\n制造商：鲁纳斯米股份有限公司。",
+			"version_hash": 2860574801
+		},
+		"SYSTEM_SALVAGE_ARM_LONG": {
+			"string": "TR-60 延长型机械手",
+			"version_hash": 3370268219
+		},
+		"SYSTEM_SALVAGE_ARM_LONG_DESC": {
+			"string": "三曲枝图-阿姆斯特朗面向收集操作的机械臂解决方案。智能的结构设计和巧妙的机制使其能在相对灵活的框架下产生高扭矩，但使用复杂的专有部件导致维护周期频繁且昂贵。",
+			"version_hash": 2981052471
+		},
+		"SYSTEM_SALVAGE_ARM_LONG_SPECS": {
+			"string": "臂力：700 kN\n射程：60 m\n功率消耗（峰值）：170 MW\n质量：7,750 kg\n制造商：三曲枝图-阿姆斯特朗",
+			"version_hash": 4230989901
+		},
+		"SYSTEM_MAIN_ENGINE_NANI": {
+			"string": "SSE NANI火炬兼容型",
+			"version_hash": 102908080
+		},
+		"SYSTEM_MAIN_ENGINE_NANI_DESC": {
+			"string": "这个滑稽不切实际且完全令人厌恶的主火炬，是许多个夜晚饮酒并深思人生意义后得出的最终合乎逻辑的结论。在断定人生无意义后，辛空间工程公司的团队集思广益，最终设计出了这个产品。 \n\n免责声明：Omaewamou-Shindeiru认为这非常有趣，并完全赞同将NANI用作推进解决方案。可能会使船舶保修失效。在某些船舶上将其用作主火炬可能会损坏您的反应堆。祝您使用愉快！",
+			"version_hash": 1452558551
+		},
+		"SYSTEM_MAIN_ENGINE_NANI_SPECS": {
+			"string": "推力：3,450 kN\n排气速度：132 km/s \n推进剂消耗量：0.5 kg/s \n耗电量：200 MW\n热耗：2 GW\n推进剂：超临界液态铀盐\n燃烧时间：1分钟（预计）\n质量：10,000 kg\n制造商：辛空间工程 / Omaewamou-Shindeiru",
+			"version_hash": 2648206337
+		},
+		"SYSTEM_MAIN_ENGINE_GEMINI": {
+			"string": "MA-NTR600-II双引擎",
+			"version_hash": 2716215589
+		},
+		"SYSTEM_MAIN_ENGINE_GEMINI_DESC": {
+			"string": "NTR600-II，亦称“双子星”，是一款双安装磁控等离子体动力火炬单元，能够以出色的效率和可靠性提供可观的推力。双排气布局结合基本的推力矢量系统，还具有额外的矢量控制潜力，进一步提升了火炬的潜在效率。 \n\n免责声明：三田屋-星际客车警告称，由于所需功率极高，MPD（主功率装置）将对反应堆施加过大压力，可能导致其在远高于其他消费级焊炬的温度下发生故障。本装置的维护工作仅可由三田屋-星际客车的工程师或持有执照的分包商进行。目前，外太阳系地区尚无相关保险计划。",
+			"version_hash": 1596119721
+		},
+		"SYSTEM_MAIN_ENGINE_GEMINI_SPECS": {
+			"string": "推力：1,200 kN \n排气速度：28 km/s \n推进剂消耗量：52 kg/s\n耗电量：250 MW\n热耗：16.8 GW\n矢量推力角：60度\n矢量化速度：20度/s\n运行模式：可变推力\n推进剂：氢等离子体\n质量：4,350 kg\n制造商：三田屋-星际客车",
+			"version_hash": 3065622450
+		},
+		"SYSTEM_MAIN_ENGINE_SOYUZ": {
+			"string": "RA-TNTRL-R44四引擎",
+			"version_hash": 3205954369
+		},
+		"SYSTEM_MAIN_ENGINE_SOYUZ_DESC": {
+			"string": "毫无疑问，这种“火炬”是存在的。俄罗斯国家原子能旨在通过推出自己的产品来与其他多火炬组件竞争，但开发进展缓慢，到22世纪末，许多原型都经过了尝试，但都失败了，没有可行的解决方案。 \n\n关于其发明过程，流传着各种神话，但普遍的说法是，该项目的首席设计师在梦中见到了苏联传奇火箭工程师瓦伦丁·格鲁什科的幽灵。他只说了一个词“联盟号”，便离去了，留下K44RCS推进器在设计师脚边。 \n\n这些组合单元的生产一直持续至今，这也是K44推进器仍然如此丰富的原因之一。",
+			"version_hash": 1366834651
+		},
+		"SYSTEM_MAIN_ENGINE_SOYUZ_SPECS": {
+			"string": "推力：1,600 kN \n排气速度：15 km/s\n推进剂消耗量：106.4 kg/s\n耗电量：60 MW\n热能消耗：12.0 GW\n操作模式：脉冲推力\n推进剂：氧氢等离子体\n质量：650 kg\n制造商：俄原-安东诺夫",
+			"version_hash": 98769096
+		},
+		"SYSTEM_MAIN_ENGINE_THUNDER": {
+			"string": "RA-K69V四引擎",
+			"version_hash": 3527062166
+		},
+		"SYSTEM_MAIN_ENGINE_THUNDER_DESC": {
+			"string": "这款火炬是一款定制设计的设备，它采用了R44的框架，并用K69V推进器取代了其发动机，还配备了该系列在赛道赛车手之间非常出名的万向支架。安装时可选配完全合法的“雷暴船级”应答器改装。如有特殊要求，还可提供个人抓钩。",
+			"version_hash": 2146529517
+		},
+		"SYSTEM_MAIN_ENGINE_THUNDER_SPECS": {
+			"string": "推力：1,600 kN \n排气速度：12 km/s \n推进剂消耗量：133.2 kg/s \n耗电量：100 MW \n热耗：14.4 GW \n矢量可动角度：25度\n矢量可动速度：360度/s \n运行模式：矢量脉冲推力\n推进剂：氧氢等离子体\n质量：950千克\n制造商：定制/俄原-安东诺夫",
+			"version_hash": 3513946357
+		},
+		"SYSTEM_MAIN_ENGINE_PIN1200": {
+			"string": "RMS Pin-M200引擎",
+			"version_hash": 1077983648
+		},
+		"SYSTEM_MAIN_ENGINE_PIN1200_DESC": {
+			"string": "拉萨玛玛材料解决方案的Pin-M200采用了与其Pin-C50系列固态RCS推进器相同的脉冲感应技术，但规模更大。虽然该技术的升级确实使推进器变得更加脆弱，但其可靠性仍在竞争对手的数据范围内。 \n\n升级版技术的巨大热能使得反应堆直接提供的名义燃烧需求远超60GW。考虑到其甚至超过了赛车反应堆，因此决定加入一个微型聚变反应堆来提供电源。与同类聚变火炬不同，该反应堆仅用于提供热量，而非产生推力的关键。聚变燃料的有限储量将燃烧时间限制在大约一个半小时。",
+			"version_hash": 1213295894
+		},
+		"SYSTEM_MAIN_ENGINE_PIN1200_SPECS": {
+			"string": "推力：1,200 kN\n排气速度：105 km/s\n推进剂消耗：11.4千克/秒\n耗电量：550 MW\n矢量角：40度\n运行模式：矢量可变推力\n推进剂：氢等离子体/铀盐\n燃烧时间：90分钟（预计）\n质量：550 MW\n制造商：拉萨玛玛材料解决方案",
+			"version_hash": 1157438143
+		},
+		"SYSTEM_MAIN_ENGINE_CRACK": {
+			"string": "NDDFD引擎",
+			"version_hash": 4036807547
+		},
+		"SYSTEM_MAIN_ENGINE_CRACK_DESC": {
+			"string": "中村动力公司的定向聚变爆轰发动机（是市场上最强大且最早问世的聚变推进解决方案之一。该发动机因一则现已臭名昭著的2214广告而广为人知，该广告配有文加波伊兄弟的《轰轰轰轰》背景音乐。NDDFD利用强大的电磁铁将含有加压氘和氚的再质量加热铁磁壳体压碎，然后将产生的爆轰从其类似笼子的喷嘴组件中导出。 \n\n与其竞争对手不同，NDDFD需要大量且持续的电力供应来维持推进，其相对较大的颗粒和专门的供料硬件极大地限制了其在小型船舶中的燃料容量。",
+			"version_hash": 1952062653
+		},
+		"SYSTEM_MAIN_ENGINE_CRACK_SPECS": {
+			"string": "推力：1,800 kN \n排气速度：1,850 km/s\n推进剂消耗：1 kg/s \n耗电量：445 MW\n操作模式：脉冲推力\n 推进剂：氢等离子体\n聚变燃料：氘-氚\n燃烧时间：30分钟（预计）\n质量：4,650 kg\n制造商：中村动力",
+			"version_hash": 1438267236
+		},
+		"SYSTEM_MAIN_ENGINE_ZURBIN": {
+			"string": "ND ZURBIN引擎",
+			"version_hash": 3993811975
+		},
+		"SYSTEM_MAIN_ENGINE_ZURBIN_DESC": {
+			"string": "Zurbin发动机是月读级护卫舰的高性能主发动机。这些发动机现已退役，但仍被用于护卫舰上，尽管它们早已不再参与战斗。中村动力公司确实曾尝试重新利用报废护卫舰上的发动机，将其用于其噬菌体级自主空间站。",
+			"version_hash": 601565468
+		},
+		"SYSTEM_MAIN_ENGINE_ZURBIN_SPECS": {
+			"string": "推力：6,900 kN \n排气速度：66 km/s\n推进剂消耗量：104.5 kg/s\n耗电量：50 MW\n运行模式：可变推力\n推进剂：氧氢等离子体\n质量：10,000 kg\n制造商：中村动力",
+			"version_hash": 1881930709
+		},
+		"SYSTEM_MAIN_ENGINE_PMS": {
+			"string": "ND PMS引擎",
+			"version_hash": 3240131645
+		},
+		"SYSTEM_MAIN_ENGINE_PMS_DESC": {
+			"string": "PMS是NTTR推进器的早期前身。中村动力的首款大型NTR型推进器在原始NTR的推进剂经济性和推力方面表现极差，但其可靠性仍然令人称道。PMS能够在远超市场上任何其他推进器的压力下运行，并且以其功率而言极为坚固，即使在采用替代品的情况下，其运行能力仍能满足需求。",
+			"version_hash": 2154944331
+		},
+		"SYSTEM_MAIN_ENGINE_PMS_SPECS": {
+			"string": "推力：3,000 kN\n排气速度：3 km/s \n推进剂消耗量：1,000 kg/s\n耗电量：20兆瓦\n热耗：4.5 GW\n操作模式：可变推力\n推进剂：氧氢等离子体\n质量：250 kg\n制造商：中村动力",
+			"version_hash": 285575969
+		},
+		"IOER_TRANSIT_TIP_1": {
+			"string": "预处理器单元在矿石块进入矿物处理单元之前，先从矿石块中抽出水，以缩短矿石块的加工时间。",
+			"version_hash": 1298930922
+		},
+		"IOER_TRANSIT_TIP_2": {
+			"string": "具有矿物效率加成的预处理器可增加您从矿石块中提取的金属量。",
+			"version_hash": 2657296036
+		},
+		"IOER_TRANSIT_TIP_3": {
+			"string": "想用另一艘船来运输Cothon-217的可变处理矿石储存吗？那就使用像NDSBH这样的货舱转换套件吧。",
+			"version_hash": 697902233
+		},
+		"IOER_TRANSIT_TIP_4": {
+			"string": "需要额外的加工矿石存储空间吗？安装一个货舱扩展模块或一个货舱辅助存储模块。",
+			"version_hash": 1984517216
+		},
+		"IOER_TRANSIT_TIP_5": {
+			"string": "居住舱套件可以提高船只的乘员容量，但需注意新环境可能导致的士气变化。",
+			"version_hash": 2261321500
+		},
+		"IOE_TUNE_PARAMETER_PREPROC_MELT_POWER_DRAW": {
+			"string": "（每个区块的）减水功率消耗",
+			"version_hash": 1562137441
+		},
+		"IOE_TUNE_PREPROC_RECLAIM": {
+			"string": "冰融化速度",
+			"version_hash": 3472595481
+		},
+		"IOE_TUNE_PREPROC_RECLAIM_DESC": {
+			"string": "提高预处理机的解冻速度会调整熔化机制的工作速率，同时增加功耗。由于回收单元过饱和，输出速率增加会降低回收水的含量。由于切割计算机控制矿石的加工方式，对保持矿物产量的信心降低，因此更快的速率也会提高矿块的水分含量下限。\n\n放慢处理速度可以为回收单元和切割机提供更多回旋余地，从而提高处理能力。",
+			"version_hash": 1166901174
+		},
+		"IOE_TUNE_PARAMETER_PREPROC_MELT_REMASS_EFFICIENCY": {
+			"string": "冰层回收效率",
+			"version_hash": 3782386725
+		},
+		"IOE_TUNE_PARAMETER_PREPROC_CHUNK_WATER_MASS_CEILING": {
+			"string": "最小矿物块含水量",
+			"version_hash": 840275576
+		},
+		"IOE_TUNE_FAB_SPEED": {
+			"string": "Fabrication Print Speed",
+			"version_hash": 4127227909
+		},
+		"IOE_TUNE_FAB_SPEED_DESC": {
+			"string": "调整制造单元将加工后的矿石转化为消耗品的速度。生产线中的低效环节将随着生产速度的提高而扩大，速度提升会相应增加生产过程中的电力和材料消耗。",
+			"version_hash": 3230248524
+		},
+		"IOE_TUNE_PARAMETER_PRINT_POWER_DRAW": {
+			"string": "打印功耗",
+			"version_hash": 3168425227
+		},
+		"IOE_TUNE_PARAMETER_PRINT_MATERIAL_EFFICIENCY": {
+			"string": "因效率低下而产生的额外材料成本",
+			"version_hash": 2047110542
+		},
+		"SYSTEM_MWTIGHTBEAM": {
+			"string": "RA DMW Cannon",
+			"version_hash": 2618579005
+		},
+		"SYSTEM_MWTIGHTBEAM_DESC": {
+			"string": "俄原-安东诺夫公司的定向微波炮利用一根长而管状的波导将微波汇聚成一束密集的辐照光束。其模块化和非专用组件价格低廉且易于维修，但高昂的安装成本和一般的功率效率抵消了这些优势。",
+			"version_hash": 2758148380
+		},
+		"SYSTEM_MWTIGHTBEAM_SPECS": {
+			"string": "有效范围：800 m \n耗电量：120 MW\n输出功率：90 MW\n波长：1 cm \n质量：400 kg\n制造商：俄原-安东诺夫",
+			"version_hash": 4287019540
+		},
+		"SYSTEM_MWTIGHTBEAM_PDT": {
+			"string": "RADMW-8120",
+			"version_hash": 3416819864
+		},
+		"SYSTEM_MWTIGHTBEAM_PDT_DESC": {
+			"string": "这款俄原-安东诺夫联合生产的DMW加农炮被安装在中村动力的NDPT炮塔上。它具有与42xx系列点防御轨道炮塔相似的操控特性和可调节的配置参数，不过其万向节驱动器必须降速，以妥善管理该装置沉重的交流电缆。 \n\nDMW-CT能够自动获取并跟踪目标，但与轨道炮不同，它不需要手动输入来发射。",
+			"version_hash": 1054989203
+		},
+		"SYSTEM_MWTIGHTBEAM_PDT_SPECS": {
+			"string": "有效范围：800 m \n针对人工智能：一级\n耗电量：120 MW\n输出功率：90 MW\n波长：1 cm\n质量：3,000 kg\n制造商：俄罗斯国家原子能",
+			"version_hash": 276371758
+		},
+		"SYSTEM_PDTL": {
+			"string": "NDCL-1080",
+			"version_hash": 194214876
+		},
+		"SYSTEM_PDTL_MANUAL": {
+			"string": "自动选择目标。\n自动点火。\n跨多个系统的协调。\n目标计算机并不完美。\n关闭挂载点以防止误伤友军。\n造成热损伤。",
+			"version_hash": 2781923848
+		},
+		"SYSTEM_PDTL_DESC": {
+			"string": "安装在炮塔底座上的小型激光器可以从挂载点的视角覆盖广阔的范围。虽然较低的功率意味着激光器在破碎岩石时需要额外的工作，但它能防止对目标造成过多的伤害。该激光器会自动发射，因此用户需注意对其所控制的敌我识别系统进行适当控制，以避免不必要的冲突。 \n\n硬件“按原样”提供，不附带任何形式的明示或暗示担保。用户需自行承担使用本设备的一切责任",
+			"version_hash": 1832670728
+		},
+		"SYSTEM_PDTL_SPECS": {
+			"string": "有效范围：1000米\n瞄准人工智能：一级\n耗电量（峰值）：80兆瓦\n质量：1500千克\n制造商：中村动力-相干光",
+			"version_hash": 3220629262
+		},
+		"POI_WRECKAGE_UNKNOWN": {
+			"string": "神秘的残骸",
+			"version_hash": 3678810514
+		},
+		"SYSTEM_IOE_AUX_HYBRID": {
+			"string": "RA MHFTR混合动力单元",
+			"version_hash": 1382394920
+		},
+		"SYSTEM_IOE_AUX_HYBRID_DESC": {
+			"string": "原本计划用于已失败的K44原型机内部的一套MPD发电机，被遗弃在仓库中数十年未动。为了清理闲置库存，俄罗斯国家原子能成立了一个小型工作组，研究如何利用这些旧MPDG。其中一个设计团队决定尝试恢复其最初的设计意图，即完全替代船舶的典型动力系统，利用当前的超导磁能存储技术提供短期电力存储。\n\n这些单元的生产成本相对较高，而且体积过大，无法直接取代标准动力单元——这似乎是源自最初的K44项目所遭遇的命运——然而，由于这两种技术的结合，它能够通过回收利用其动力输出，保持相对较低的输入功率，同时一个小型盐电池能够在重启后提供所需的启动电力，这使得它在科技爱好者和矿业公司中获得了相当高的赞誉。",
+			"version_hash": 1374895143
+		},
+		"SYSTEM_IOE_AUX_HYBRID_SPECS": {
+			"string": "SMES容量：13,500 MJ\nSMES充电功率：100 MW\n超导磁能存储系统放电功率（峰值）：2,000 MW\nMPDG功率：35 MW\nMPDG热抽：0.75 GW\nMPDG功率（名义）：475 MW\n质量：7,500 kg\n类型：MPDG / SMES混合型\n制造商：俄原-安东诺夫",
+			"version_hash": 3759590889
+		},
+		"SYSTEM_IOE_AUX_HYBRID_MANUAL": {
+			"string": "产生大量电力。\n储存大量电力。\n消耗热量。\n舰载计算机损坏会扰乱生产、充电和放电",
+			"version_hash": 3764219210
+		},
+		"SHIP_MADCERF_CIV_INVERSE": {
+			"string": "MAD-CERF（民用改装倒置）",
+			"version_hash": 1382038879
+		},
+		"SYSTEM_REACTOR_IOECERF": {
+			"string": "MAD-CERF核反应堆",
+			"version_hash": 2167414238
+		},
+		"IOE_TUNE_PARAMETER_PRINT_AMMO_SPEED": {
+			"string": "弹药打印速度",
+			"version_hash": 1211355364
+		},
+		"IOE_TUNE_PARAMETER_PRINT_DND_SPEED": {
+			"string": "无人机打印速度",
+			"version_hash": 1044549179
+		}
 	}
 }

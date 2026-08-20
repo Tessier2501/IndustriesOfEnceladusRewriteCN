@@ -5,13 +5,13 @@ id="hev.IndustriesOfEnceladus"
 description="IOE_MOD_DESCRIPTION"
 brief="IOE_MOD_BRIEF"
 author="__hev"
-credits=["SpaceDOTexe - original mod with a majority of the mod's functionality and content","Za'krin - mod main design and general help around the mod","   --- Supporters ---   ","GAZI - supporter (ko-fi)","Bagger dude - supporter (ko-fi)","WT - supporter (ko-fi)", "Tessier-Ashpool S.A. - supporter (ko-fi)"]
+credits=["SpaceDOTexe - original mod with a majority of the mod's functionality and content","Za'krin - mod main design and general help around the mod","WT - Ukranian translations","NeKo! !  - Chinese translations","   --- Supporters ---   ","GAZI - supporter (ko-fi)","Bagger dude - supporter (ko-fi)","WT - supporter (ko-fi)", "Tessier-Ashpool S.A. - supporter (ko-fi)"]
 
 [version]
 
 version_major=2
 version_minor=9
-version_bugfix=11
+version_bugfix=12
 version_metadata=""
 
 [tags]
