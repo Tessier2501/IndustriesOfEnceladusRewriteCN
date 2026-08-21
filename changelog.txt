@@ -1,3 +1,10 @@
+[2.9.14]
+
+1=* Updated translations
+2=* Updated credits
+3=* Significantly reduced the amount of time preprocessors take to process a physics frame
+4=* Removed a large amount of clutter from unused scenes, methods and properties from a good portion of the mod
+
 [2.9.13]
 
 1=* Fixed issue with the MAD-CERF inverse's trajectory prediction path being rotated 180 degrees
