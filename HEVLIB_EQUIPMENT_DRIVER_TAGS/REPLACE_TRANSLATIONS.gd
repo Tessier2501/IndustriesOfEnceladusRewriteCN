@@ -1578,6 +1578,18 @@ const TRANSLATIONS = {
 		"SHIP_EIME_B_DESC": {
 			"string": "A predecessor to the currently-infamous Model E, the Model B (nicknamed \"Bubba\") attempted to draw from the ever-reliable thruster design of the K37-series of vessels. Initial tests were successful, and much praise was given, however it was soon discovered that the layout proved to be unstable, and would impart forces against her reactor beyond what was recommended for nominal use, and was discontinued to the drawing board. Several vessels still remain due to a subset of pilots who enjoyed the freedom of the original design, and were careful enough pilots to overcome the instability.",
 			"version_hash": 1810821042
+		},
+		"IOE_CREDITS_CONTRIBUTORS_ZAKRIN": {
+			"string": "Za'krin - mod main design and general help around the mod",
+			"version_hash": 137382795
+		},
+		"IOE_CREDITS_CONTRIBUTORS_SPACEDOTEXE": {
+			"string": "SpaceDOTexe - original mod with a majority of the mod's functionality and content",
+			"version_hash": 2109346511
+		},
+		"IOE_CREDITS_CONTRIBUTORS_HEADER": {
+			"string": "   --- Contributors ---   ",
+			"version_hash": 3641455841
 		}
 	},
 	"ru_RU": {

@@ -5,124 +5,79 @@ id="hev.IndustriesOfEnceladus"
 description="IOE_MOD_DESCRIPTION"
 brief="IOE_MOD_BRIEF"
 author="__hev"
-credits=["SpaceDOTexe - original mod with a majority of the mod's functionality and content","Za'krin - mod main design and general help around the mod","WT - Ukranian translations","NeKo! !  - Chinese translations","   --- Supporters ---   ","GAZI - supporter (ko-fi)","Bagger dude - supporter (ko-fi)","WT - supporter (ko-fi)", "Tessier-Ashpool S.A. - supporter (ko-fi)"]
+credits=PoolStringArray( "IOE_CREDITS_CONTRIBUTORS_HEADER", "IOE_CREDITS_CONTRIBUTORS_SPACEDOTEXE", "IOE_CREDITS_CONTRIBUTORS_ZAKRIN", "", "HEVLIB_CREDITS_TRANSLATORS_HEADER", "HEVLIB_CREDITS_TRANSLATORS_1WT1", "HEVLIB_CREDITS_TRANSLATORS_HEDRAUTA", "HEVLIB_CREDITS_TRANSLATORS_NEKO!!", "", "HEVLIB_CREDITS_SUPPORTERS_HEADER", "HEVLIB_CREDITS_SUPPORTERS_KOFI_GAZI", "HEVLIB_CREDITS_SUPPORTERS_KOFI_BAGGERDUDE", "HEVLIB_CREDITS_SUPPORTERS_KOFI_1WT1", "HEVLIB_CREDITS_SUPPORTERS_KOFI_TESSIER" )
 
 [version]
 
 version_major=2
 version_minor=9
 version_bugfix=13
-version_metadata=""
 
 [tags]
 
-TAG_ALLOW_ACHIEVEMENTS={"type":"bool","value":false}
-TAG_OVERHAUL={"type":"bool","value":true}
-TAG_QOL={"type":"bool","value":true}
-TAG_ADD_TRANSIT_TIPS={"type":"array","value":["IOER_TRANSIT_TIP_1","IOER_TRANSIT_TIP_2","IOER_TRANSIT_TIP_3","IOER_TRANSIT_TIP_4","IOER_TRANSIT_TIP_5"]}
-;TAG_USING_HEVLIB_RESEARCH={"type":"array","value":[
-;{
-;	"name":"SYSTEM_PDT",
-;	"description":"SYSTEM_PDT_TOOLTIP",
-;	"story_flag":"hardware.nakamura",
-;	"story_min":0,
-;	"story_max":5,
-;	"mode":"story_only",
-;	"progress_zero":0,
-;	"progress_complete":5
-;},
-;{
-;	"name":"RESEARCH_NAME_TEMPLATE",
-;	"description":"RESEARCH_TOOLTIP_TEMPLATE",
-;	"story_flag":"example.story",
-;	"story_min":0,
-;	"story_max":-1,
-;	"tooltip_text":"STORY_EXAMPLE_TEXT",
-;	"mode":"story_progress",
-;	"progress_zero":0,
-;	"progress_complete":5,
-;	"unlock_story":"example.story.complete",
-;	"unlock_set":5,
-;},
-;{
-;	"name":"RESEARCH_NAME_TEMPLATE2",
-;	"description":"RESEARCH_TOOLTIP_TEMPLATE",
-;	"mode":"isolated",
-;	"initiation_price":100000,
-;	"tasks":[
-;		{
-;			"mode":"story",
-;			"story_flag":"example.story",
-;			"story_min":0,
-;			"story_max":10,
-;			"tooltip_text":"STORY_EXAMPLE_TEXT",
-;			"reset_on_halt":false,
-;		},
-;		{
-;			"mode":"payment",
-;			"story_flag":"example.payment",
-;			"amount":1000000,
-;			"tooltip_text":"STORY_EXAMPLE_TEXT",
-;			"reset_on_halt":false,
-;		},
-;		{
-;			"mode":"time",
-;			"story_flag":"example.time",
-;			"minutes":5,
-;			"hours":5,
-;			"days":3,
-;			"months":1,
-;			"years":0,
-;			"tooltip_text":"STORY_EXAMPLE_TEXT",
-;			"reset_on_halt":false,
-;		},
-;	],
-;	"unlock_story":"example.story.complete",
-;	"unlock_set":5,
-;	"show_when":{
-;		
-;	}
-;}
-;]}
-;]}
-
-[languages]
-
-en="100%"
-uk_UA="70%"
-
-[configs]
-
-IOE_CONFIG_INPUTS={
-	"ship_slot_9":{
-		"name":"IOE_CONFIG_SHIP_SLOT_9",
-		"description":"IOE_CONFIG_SHIP_SLOT_9_TOOLTIP",
-		"type":"Input",
-		"default":[ "9" ]
-	},
-	"ship_slot_minus":{
-		"name":"IOE_CONFIG_SHIP_SLOT_MINUS",
-		"description":"IOE_CONFIG_SHIP_SLOT_MINUS_TOOLTIP",
-		"type":"Input",
-		"script":"",
-		"default":[ "Minus" ]
-	},
-	"ship_slot_equal":{
-		"name":"IOE_CONFIG_SHIP_SLOT_EQUAL",
-		"description":"IOE_CONFIG_SHIP_SLOT_EQUAL_TOOLTIP",
-		"type":"Input",
-		"default":[ "Equal" ]
-	},
+TAG_ALLOW_ACHIEVEMENTS={
+"type": "bool",
+"value": false
+}
+TAG_OVERHAUL={
+"type": "bool",
+"value": true
+}
+TAG_QOL={
+"type": "bool",
+"value": true
+}
+TAG_ADD_TRANSIT_TIPS={
+"type": "array",
+"value": [ "IOER_TRANSIT_TIP_1", "IOER_TRANSIT_TIP_2", "IOER_TRANSIT_TIP_3", "IOER_TRANSIT_TIP_4", "IOER_TRANSIT_TIP_5" ]
 }
 
 [links]
 
-HEVLIB_GITHUB={"URL":"https://github.com/rwqfsfasxc100/Industries-Of-Enceladus-Rewrite"}
-HEVLIB_DISCORD={"URL":"https://discord.com/channels/426287934870781952/1324503298295988327"}
-HEVLIB_NEXUS={"URL":"https://www.nexusmods.com/dvringsofsaturn/mods/12"}
-HEVLIB_DONATIONS={"URL":"https://ko-fi.com/00hev"}
-HEVLIB_WIKI={"URL":"https://delta-v.kodera.pl/index.php/Mod:Industries_of_Enceladus"}
-HEVLIB_BUGREPORTS={"URL":"https://forms.gle/vUoarawnYjy3hXJi9"}
+HEVLIB_GITHUB={
+"URL": "https://github.com/rwqfsfasxc100/Industries-Of-Enceladus-Rewrite"
+}
+HEVLIB_DISCORD={
+"URL": "https://discord.com/channels/426287934870781952/1324503298295988327"
+}
+HEVLIB_NEXUS={
+"URL": "https://www.nexusmods.com/dvringsofsaturn/mods/12"
+}
+HEVLIB_DONATIONS={
+"URL": "https://ko-fi.com/00hev"
+}
+HEVLIB_WIKI={
+"URL": "https://delta-v.kodera.pl/index.php/Mod:Industries_of_Enceladus"
+}
+HEVLIB_BUGREPORTS={
+"URL": "https://forms.gle/vUoarawnYjy3hXJi9"
+}
+
+[configs]
+
+IOE_CONFIG_INPUTS={
+"ship_slot_9": {
+"default": [ "9" ],
+"description": "IOE_CONFIG_SHIP_SLOT_9_TOOLTIP",
+"display_order_position": 0,
+"name": "IOE_CONFIG_SHIP_SLOT_9",
+"type": "input"
+},
+"ship_slot_equal": {
+"default": [ "Equal" ],
+"description": "IOE_CONFIG_SHIP_SLOT_EQUAL_TOOLTIP",
+"display_order_position": 2,
+"name": "IOE_CONFIG_SHIP_SLOT_EQUAL",
+"type": "input"
+},
+"ship_slot_minus": {
+"default": [ "Minus" ],
+"description": "IOE_CONFIG_SHIP_SLOT_MINUS_TOOLTIP",
+"display_order_position": 1,
+"name": "IOE_CONFIG_SHIP_SLOT_MINUS",
+"type": "input"
+}
+}
 
 [manifest_definitions]
 
@@ -130,3 +85,4 @@ manifest_version=2.2
 manifest_url="https://raw.githubusercontent.com/rwqfsfasxc100/Industries-Of-Enceladus-Rewrite/main/Mod.manifest"
 changelog_path="changelog.txt"
 modlet_priority=-99
+expected_manifest_path="res://IndustriesOfEnceladusRewrite/Mod.manifest"
