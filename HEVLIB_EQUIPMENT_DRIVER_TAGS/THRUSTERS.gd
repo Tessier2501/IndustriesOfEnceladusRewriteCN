@@ -98,7 +98,7 @@ const SYSTEM_MAIN_ENGINE_NANI = {
 	"slots":["propulsion.main"],
 	"type":"TORCH",
 	"system":"SYSTEM_MAIN_ENGINE_NANI",
-	"path":"res://IndustriesOfEnceladusRewrite/sfx/thruster_bits/SYSTEM_MAIN_ENGINE_NANI.tscn"
+	"path":"res://IndustriesOfEnceladusRewrite/sfx/SYSTEM_MAIN_ENGINE_NANI.tscn"
 }
 const SYSTEM_MAIN_ENGINE_GEMINI = {
 	"slots":["propulsion.main"],
@@ -258,7 +258,6 @@ const SYSTEM_MAIN_ENGINE_CRACK = {
 	"slots":["propulsion.main"],
 	"type":"TORCH",
 	"system":"SYSTEM_MAIN_ENGINE_CRACK",
-#	"path":"res://IndustriesOfEnceladusRewrite/sfx/torch-crack.tscn",
 	"main_bright_ratio":2,
 	"price":1575000,
 	"repair_time":48,
@@ -273,7 +272,6 @@ const SYSTEM_MAIN_ENGINE_CRACK = {
 	"fade_seconds":0.1,
 	"wind_up_seconds":0.1,
 	"particle_scale":16,
-#	"particle_scale":32,
 	"randomness":0.2,
 	"min_power":0,
 	"damage_wear_capacity":12800,
@@ -292,7 +290,6 @@ const SYSTEM_MAIN_ENGINE_CRACK = {
 	"ignitions_per_second":8,
 	"gimbal_per_second":0.496,
 	"pulse_per_second":8,
-#	"exhaust_mass":0.04,
 	"exhaust_type":"fusion",
 	"external_power":true,
 	"tune_thrust_max":1,
@@ -307,7 +304,6 @@ const SYSTEM_MAIN_ENGINE_CRACK = {
 	"scale":[0.6,1],
 	"self_modulate":"ff0089",
 	"flare_texture_scale":8,
-#	"flare_override_color":"ff97ec",
 	"flare_color":"ff97ec",
 	"flare_energy":24,
 	"flare_position":[0.003,86],

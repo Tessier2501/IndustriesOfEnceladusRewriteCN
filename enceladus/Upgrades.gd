@@ -63,6 +63,4 @@ func _ready():
 	params_box.move_child(crewQualityLabel,27)
 	params_box.move_child(crewQualityReadout,28)
 	params_box.move_child(crewQualityUnit,29)
-	
-	pass
 
