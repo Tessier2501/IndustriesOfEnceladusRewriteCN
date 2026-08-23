@@ -1,3 +1,32 @@
+# [license]
+# 3-Clause BSD NON-AI License
+# 
+# Copyright 2026 __hev (Benjamin Buckhurst)
+# 
+# Redistribution and use in source and binary forms, with or without modification,
+# are permitted provided that the following conditions are met:
+# 
+# 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+# 
+# 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer
+# in the documentation and/or other materials provided with the distribution.
+# 
+# 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products
+# derived from this software without specific prior written permission.
+# 
+# 4. The source code and the binary form, and any modifications made to them may not be used for the purpose of input data, the training of, or improvement of machine learning algorithms,
+# including but not limited to artificial intelligence, natural language processing, or data mining. This condition applies to any derivatives,
+# modifications, or updates based on the Software code. Any usage of the source code or the binary form in an AI-training dataset is considered a breach of this License.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES,
+# INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+# IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+# OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+# EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+# [/license]
+
 const _000 = {
 	"system":"SYSTEM_SALVAGE_ARM_LIGHT",
 	"price":87500,
@@ -11,26 +40,26 @@ const _000 = {
 
 const _001 = {
 	"system":"SYSTEM_SALVAGE_ARM_LIGHT-L",
+	"price":87500,
 	"name_override":"SYSTEM_SALVAGE_ARM_LIGHT",
 	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
-	"price":87500,
 	"test_protocol":"arm",
 	"warn_if_electric_below":100,
+	"equipment_type":"EQUIPMENT_MANIPULATOR_LIGHT",
 	"slot_type":"HARDPOINT",
 	"alignment":"ALIGNMENT_LEFT",
-	"equipment_type":"EQUIPMENT_MANIPULATOR_LIGHT",
 }
 
 const _002 = {
 	"system":"SYSTEM_SALVAGE_ARM_LIGHT-R",
+	"price":87500,
 	"name_override":"SYSTEM_SALVAGE_ARM_LIGHT",
 	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
-	"price":87500,
 	"test_protocol":"arm",
 	"warn_if_electric_below":100,
+	"equipment_type":"EQUIPMENT_MANIPULATOR_LIGHT",
 	"slot_type":"HARDPOINT",
 	"alignment":"ALIGNMENT_RIGHT",
-	"equipment_type":"EQUIPMENT_MANIPULATOR_LIGHT",
 }
 
 const _003 = {
@@ -58,43 +87,43 @@ const _004 = {
 
 const _005 = {
 	"system":"SYSTEM_SALVAGE_ARM_HEAVY-R",
+	"price":125000,
 	"name_override":"SYSTEM_SALVAGE_ARM_HEAVY",
 	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
-	"price":125000,
 	"test_protocol":"arm",
 	"warn_if_electric_below":100,
+	"equipment_type":"EQUIPMENT_MANIPULATION_ARMS",
 	"slot_type":"HARDPOINT",
 	"alignment":"ALIGNMENT_RIGHT",
-	"equipment_type":"EQUIPMENT_MANIPULATION_ARMS",
 }
 
 const _006 = {
 	"system":"SYSTEM_MWTIGHTBEAM",
-	"manual":"SYSTEM_MWG_MANUAL",
 	"price":165000,
-	"slot_type":"HARDPOINT",
+	"manual":"SYSTEM_MWG_MANUAL",
 	"equipment_type":"EQUIPMENT_MICROWAVES",
+	"slot_type":"HARDPOINT",
 }
 
 const _007 = {
 	"system":"SYSTEM_MWTIGHTBEAM_PDT",
-	"manual":"SYSTEM_PDMWG_MANUAL",
 	"price":265000,
+	"manual":"SYSTEM_PDMWG_MANUAL",
 	"test_protocol":"pdt",
+	"equipment_type":"EQUIPMENT_TURRETS",
 	"slot_type":"HARDPOINT",
 	"alignment":"ALIGNMENT_CENTER",
-	"equipment_type":"EQUIPMENT_TURRETS",
 }
 
 const _008 = {
 	"system":"SYSTEM_MWTIGHTBEAM_PDT-L",
+	"price":265000,
 	"name_override":"SYSTEM_MWTIGHTBEAM_PDT",
 	"manual":"SYSTEM_PDMWG_MANUAL",
-	"price":265000,
 	"test_protocol":"pdt",
+	"equipment_type":"EQUIPMENT_TURRETS",
 	"slot_type":"HARDPOINT",
 	"alignment":"ALIGNMENT_LEFT",
-	"equipment_type":"EQUIPMENT_TURRETS",
 }
 
 const _009 = {
@@ -110,15 +139,15 @@ const _009 = {
 
 const _010 = {
 	"system":"SYSTEM_PDTL",
-	"manual":"SYSTEM_PDTL_MANUAL",
 	"price":300000,
+	"manual":"SYSTEM_PDTL_MANUAL",
 	"test_protocol":"pdt",
-	"slot_type":"HARDPOINT",
-	"alignment":"ALIGNMENT_CENTER",
-	"warn_if_electric_below":100,
 	"story_flag":"hardware.nakamura",
 	"story_flag_min":5,
+	"warn_if_electric_below":100,
 	"equipment_type":"EQUIPMENT_TURRETS",
+	"slot_type":"HARDPOINT",
+	"alignment":"ALIGNMENT_CENTER",
 }
 
 const _011 = {
@@ -137,26 +166,26 @@ const _011 = {
 
 const _012 = {
 	"system":"SYSTEM_PDTL-R",
+	"price":300000,
 	"name_override":"SYSTEM_PDTL",
 	"manual":"SYSTEM_PDTL_MANUAL",
-	"price":300000,
 	"test_protocol":"pdt",
-	"slot_type":"HARDPOINT",
-	"alignment":"ALIGNMENT_RIGHT",
-	"warn_if_electric_below":100,
 	"story_flag":"hardware.nakamura",
 	"story_flag_min":5,
+	"warn_if_electric_below":100,
 	"equipment_type":"EQUIPMENT_TURRETS",
+	"slot_type":"HARDPOINT",
+	"alignment":"ALIGNMENT_RIGHT",
 }
 
 const _013 = {
 	"system":"SYSTEM_DND_HARVTUG",
-	"manual":"SYSTEM_DND_TS_MANUAL",
 	"price":385000,
+	"manual":"SYSTEM_DND_TS_MANUAL",
 	"test_protocol":"drone",
 	"warn_if_electric_below":50,
-	"slot_type":"HARDPOINT",
 	"equipment_type":"EQUIPMENT_NANODRONES",
+	"slot_type":"HARDPOINT",
 }
 
 const _014 = {
@@ -594,20 +623,20 @@ const _053 = {
 
 const _054 = {
 	"system":"SYSTEM_CARGO_PREPROC_P15",
-	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_MANUAL",
 	"price":55000,
+	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_MANUAL",
 	"test_protocol":"cargo",
+	"equipment_type":"EQUIPMENT_MASS_DRIVERS",
 	"slot_type":"CARGO_ACCESSORIES",
-	"equipment_type":"CARGO_ACCESSORIES",
 }
 
 const _055 = {
 	"system":"SYSTEM_CARGO_PREPROC_M35",
-	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_AND_MULTI_MANUAL",
 	"price":815000,
+	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_AND_MULTI_MANUAL",
 	"test_protocol":"cargo",
-	"slot_type":"CARGO_ACCESSORIES",
 	"equipment_type":"CARGO_ACCESSORIES",
+	"slot_type":"CARGO_ACCESSORIES",
 }
 
 const _056 = {
