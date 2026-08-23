@@ -1,8 +1,3 @@
-# This translation file is generated automatically
-# Do not modify anything directly, as this will break things for translators
-# Please use Translation Tracker to modify these yourself, and contact the mod author to implement them
-# https://github.com/rwqfsfasxc100/TranslationTracker/releases/latest
-
 # [license]
 # 3-Clause BSD NON-AI License
 # 

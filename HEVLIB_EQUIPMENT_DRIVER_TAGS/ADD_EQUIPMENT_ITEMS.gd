@@ -46,14 +46,14 @@ const _003 = {
 
 const _004 = {
 	"system":"SYSTEM_SALVAGE_ARM_HEAVY-L",
+	"price":125000,
 	"name_override":"SYSTEM_SALVAGE_ARM_HEAVY",
 	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
-	"price":125000,
 	"test_protocol":"arm",
 	"warn_if_electric_below":100,
+	"equipment_type":"EQUIPMENT_MANIPULATION_ARMS",
 	"slot_type":"HARDPOINT",
 	"alignment":"ALIGNMENT_LEFT",
-	"equipment_type":"EQUIPMENT_MANIPULATION_ARMS",
 }
 
 const _005 = {

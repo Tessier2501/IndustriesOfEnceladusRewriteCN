@@ -27,35 +27,70 @@
 # EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 # [/license]
 
-const OPS = {
-	"slots":["aux.power"],
-	"type":"SMES",
-	"system":"SYSTEM_AUX_SMES_10K",
-	"price":140000,
-	"repair_time":1,
-	"fix_price":24000,
-	"fix_time":4,
-	"capacitor_ratio":0.9,
-	"command":"",
-	"power_draw":50000,
-	"power_supply":10000000,
-	"capacity":10000000,
-	"switch_time":0.1,
-	"mass":6500
+const STORY_ONLY = {
+	"name":"SYSTEM_PDT",
+	"description":"SYSTEM_PDT_TOOLTIP",
+	"story_flag":"hardware.nakamura",
+	"story_min":0,
+	"story_max":5,
+	"mode":"story_only",
+	"progress_zero":0,
+	"progress_complete":5
 }
 
-const MPI = {
-	"slots":["aux.power"],
-	"type":"MPDG",
-	"system":"SYSTEM_AUX_MPD_2000",
-	"price":1425000,
-	"repair_time":1,
-	"fix_price":5000,
-	"fix_time":4,
-	"command":"",
-	"power_draw":300000,
-	"thermal":500000,
-	"power_supply":2000000,
-	"windup_time":5,
-	"mass":16660
+const STORY_PROGRESS = {
+	"name":"RESEARCH_NAME_TEMPLATE",
+	"description":"RESEARCH_TOOLTIP_TEMPLATE",
+	"story_flag":"example.story",
+	"story_min":0,
+	"story_max":-1,
+	"tooltip_text":"STORY_EXAMPLE_TEXT",
+	"mode":"story_progress",
+	"progress_zero":0,
+	"progress_complete":5,
+	"unlock_story":"example.story.complete",
+	"unlock_set":5,
 }
+
+const ISOLATED = {
+	"name":"RESEARCH_NAME_TEMPLATE2",
+	"description":"RESEARCH_TOOLTIP_TEMPLATE",
+	"mode":"isolated",
+	"initiation_price":100000,
+	"tasks":[
+		{
+			"mode":"story",
+			"story_flag":"example.story",
+			"story_min":0,
+			"story_max":10,
+			"tooltip_text":"STORY_EXAMPLE_TEXT",
+			"reset_on_halt":false,
+		},
+		{
+			"mode":"payment",
+			"story_flag":"example.payment",
+			"amount":1000000,
+			"tooltip_text":"STORY_EXAMPLE_TEXT",
+			"reset_on_halt":false,
+		},
+		{
+			"mode":"time",
+			"story_flag":"example.time",
+			"minutes":5,
+			"hours":5,
+			"days":3,
+			"months":1,
+			"years":0,
+			"tooltip_text":"STORY_EXAMPLE_TEXT",
+			"reset_on_halt":false,
+		},
+	],
+	"unlock_story":"example.story.complete",
+	"unlock_set":5,
+	"show_when":{
+		
+	}
+}
+
+
+
