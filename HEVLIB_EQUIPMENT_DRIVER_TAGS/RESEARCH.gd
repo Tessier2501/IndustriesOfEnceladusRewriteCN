@@ -30,11 +30,70 @@
 # EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 # [/license]
 
-extends "res://ships/Front Bumper.gd"
+const STORY_ONLY = {
+	"name":"SYSTEM_PDT",
+	"description":"SYSTEM_PDT_TOOLTIP",
+	"story_flag":"hardware.nakamura",
+	"story_min":0,
+	"story_max":5,
+	"mode":"story_only",
+	"progress_zero":0,
+	"progress_complete":5
+}
 
-export (bool) var removeThis = false
+const STORY_PROGRESS = {
+	"name":"RESEARCH_NAME_TEMPLATE",
+	"description":"RESEARCH_TOOLTIP_TEMPLATE",
+	"story_flag":"example.story",
+	"story_min":0,
+	"story_max":-1,
+	"tooltip_text":"STORY_EXAMPLE_TEXT",
+	"mode":"story_progress",
+	"progress_zero":0,
+	"progress_complete":5,
+	"unlock_story":"example.story.complete",
+	"unlock_set":5,
+}
 
-func _enter_tree():
-	#print("Firing Excavator code")
-	if removeThis:
-		Tool.remove(self)
+const ISOLATED = {
+	"name":"RESEARCH_NAME_TEMPLATE2",
+	"description":"RESEARCH_TOOLTIP_TEMPLATE",
+	"mode":"isolated",
+	"initiation_price":100000,
+	"tasks":[
+		{
+			"mode":"story",
+			"story_flag":"example.story",
+			"story_min":0,
+			"story_max":10,
+			"tooltip_text":"STORY_EXAMPLE_TEXT",
+			"reset_on_halt":false,
+		},
+		{
+			"mode":"payment",
+			"story_flag":"example.payment",
+			"amount":1000000,
+			"tooltip_text":"STORY_EXAMPLE_TEXT",
+			"reset_on_halt":false,
+		},
+		{
+			"mode":"time",
+			"story_flag":"example.time",
+			"minutes":5,
+			"hours":5,
+			"days":3,
+			"months":1,
+			"years":0,
+			"tooltip_text":"STORY_EXAMPLE_TEXT",
+			"reset_on_halt":false,
+		},
+	],
+	"unlock_story":"example.story.complete",
+	"unlock_set":5,
+	"show_when":{
+		
+	}
+}
+
+
+
