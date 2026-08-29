@@ -35,36 +35,41 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 		"leftBay1":{
 			"MINING_COMPANIONS":[
 				{
-				"property":"position",
-				"value":"Vector2( 0, 210 )"
+					"property":"position",
+					"value":Vector2( 0, 210 ),
+					"use_stringified_value":false
 				}
 			],
 			"CLAIM_BEACONS":[
 				{
 					"property":"position",
-					"value":"Vector2( -25, 196 )"
+					"value":Vector2( -25, 196 ),
+					"use_stringified_value":false
 				}
 			]
 		},
 		"leftBay3":{
 			"MINING_COMPANIONS":[
 				{
-				"property":"position",
-				"value":"Vector2( 0, 210 )"
+					"property":"position",
+					"value":Vector2( 0, 210 ),
+					"use_stringified_value":false
 				}
 			]
 		},
 		"rightBay1":{
 			"MINING_COMPANIONS":[
 				{
-				"property":"position",
-				"value":"Vector2( 0, 210 )"
+					"property":"position",
+					"value":Vector2( 0, 210 ),
+					"use_stringified_value":false
 				}
 			],
 			"CLAIM_BEACONS":[
 				{
 					"property":"position",
-					"value":"Vector2( 25, 196 )"
+					"value":Vector2( 25, 196 ),
+					"use_stringified_value":false
 				}
 			]
 		},
@@ -72,7 +77,8 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MINING_COMPANIONS":[
 				{
 					"property":"position",
-					"value":"Vector2( 0, 210 )"
+					"value":Vector2( 0, 210 ),
+					"use_stringified_value":false
 				}
 			]
 		},
@@ -82,17 +88,20 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"feedVelocity",
-					"value":"Vector2( -60, -280 )"
+					"value":Vector2( -60, -280 ),
+					"use_stringified_value":false
 				},
 				{
 					"property":"flip",
-					"value":"true"
+					"value":true,
+					"use_stringified_value":false
 				}
 			],
 			"MASSDRIVERS":[
 				{
 					"property":"position",
-					"value":"Vector2( 0,-90 )"
+					"value":Vector2( 0,-90 ),
+					"use_stringified_value":false
 				}
 			],
 		},
@@ -100,13 +109,15 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"feedVelocity",
-					"value":"Vector2( 60, -280 )"
+					"value":Vector2( 60, -280 ),
+					"use_stringified_value":false
 				}
 			],
 			"MASSDRIVERS":[
 				{
 					"property":"position",
-					"value":"Vector2( 0,-90 )"
+					"value":Vector2( 0,-90 ),
+					"use_stringified_value":false
 				}
 			],
 		},
@@ -116,7 +127,8 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"position",
-					"value":"Vector2( 30, -80 )"
+					"value":Vector2( 30, -80 ),
+					"use_stringified_value":false
 				}
 			]
 		},
@@ -124,7 +136,8 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"position",
-					"value":"Vector2( -30, -80 )"
+					"value":Vector2( -30, -80 ),
+					"use_stringified_value":false
 				}
 			]
 		}
@@ -134,7 +147,8 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"position",
-					"value":"Vector2( 30, 130 )"
+					"value":Vector2( 30, 130 ),
+					"use_stringified_value":false
 				}
 			]
 		},
@@ -142,7 +156,8 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"position",
-					"value":"Vector2( -30, 130 )"
+					"value":Vector2( -30, 130 ),
+					"use_stringified_value":false
 				}
 			]
 		}
@@ -152,7 +167,8 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"position",
-					"value":"Vector2( 25, 130 )"
+					"value":Vector2( 25, 130 ),
+					"use_stringified_value":false
 				}
 			]
 		},
@@ -160,7 +176,8 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"position",
-					"value":"Vector2( -25, 130 )"
+					"value":Vector2( -25, 130 ),
+					"use_stringified_value":false
 				}
 			]
 		}
@@ -170,7 +187,8 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"position",
-					"value":"Vector2( 40, 100 )"
+					"value":Vector2( 40, 100 ),
+					"use_stringified_value":false
 				}
 			]
 		},
@@ -178,7 +196,8 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"position",
-					"value":"Vector2( -40, 100 )"
+					"value":Vector2( -40, 100 ),
+					"use_stringified_value":false
 				}
 			]
 		}
@@ -188,7 +207,8 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"position",
-					"value":"Vector2( 50, 100 )"
+					"value":Vector2( 50, 100 ),
+					"use_stringified_value":false
 				}
 			]
 		},
@@ -196,7 +216,8 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"position",
-					"value":"Vector2( -50, 100 )"
+					"value":Vector2( -50, 100 ),
+					"use_stringified_value":false
 				}
 			]
 		}
@@ -206,7 +227,8 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"position",
-					"value":"Vector2( 105, 90 )"
+					"value":Vector2( 105, 90 ),
+					"use_stringified_value":false
 				}
 			]
 		},
@@ -214,7 +236,8 @@ const WEAPONSLOT_SHIP_TEMPLATES = {
 			"MANIPULATION_ARMS":[
 				{
 					"property":"position",
-					"value":"Vector2( -105, 90 )"
+					"value":Vector2( -105, 90 ),
+					"use_stringified_value":false
 				}
 			]
 		}

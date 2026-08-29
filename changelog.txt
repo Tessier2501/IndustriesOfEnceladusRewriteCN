@@ -1,3 +1,7 @@
+[2.9.15]
+
+1=* Changed weaponslot modifications to use the new property handling
+
 [2.9.14]
 
 1=* Updated translations

@@ -32,49 +32,29 @@
 
 const SYSTEM_DND_HARVTUG = {
 	"name":"SYSTEM_DND_HARVTUG",
-	"path":"res://IndustriesOfEnceladusRewrite/weapons/HarvTug.tscn",
-	"data":[
-		{
-			"property":"visible",
-			"value":"false"
-		}
-	]
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/HarvTug.tscn"
 }
 const SYSTEM_DND_HARVHAUL = {
 	"name":"SYSTEM_DND_HARVHAUL",
-	"path":"res://IndustriesOfEnceladusRewrite/weapons/HarvHaul.tscn",
-	"data":[
-		{
-			"property":"visible",
-			"value":"false"
-		}
-	]
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/HarvHaul.tscn"
 }
 const SYSTEM_SALVAGE_ARM_LIGHT = {
 	"name":"SYSTEM_SALVAGE_ARM_LIGHT",
-	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLight.tscn",
-	"data":[
-		{
-			"property":"visible",
-			"value":"false"
-		}
-	]
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLight.tscn"
 }
 const SYSTEM_SALVAGE_ARM_LIGHT_L = {
 	"name":"SYSTEM_SALVAGE_ARM_LIGHT-L",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLight.tscn",
 	"data":[
 		{
-			"property":"visible",
-			"value":"false"
-		},
-		{
 			"property":"flip",
-			"value":"true"
+			"value":true,
+			"use_stringified_value":false
 		},
 		{
 			"property":"feedVelocity",
-			"value":"Vector2( -72, -320 )"
+			"value":Vector2( -72, -320 ),
+			"use_stringified_value":false
 		}
 	]
 }
@@ -83,40 +63,29 @@ const SYSTEM_SALVAGE_ARM_LIGHT_R = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLight.tscn",
 	"data":[
 		{
-			"property":"visible",
-			"value":"false"
-		},
-		{
 			"property":"feedVelocity",
-			"value":"Vector2( 72, -320 )"
+			"value":Vector2( 72, -320 ),
+			"use_stringified_value":false
 		}
 	]
 }
 const SYSTEM_SALVAGE_ARM_HEAVY = {
 	"name":"SYSTEM_SALVAGE_ARM_HEAVY",
-	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmHeavy.tscn",
-	"data":[
-		{
-			"property":"visible",
-			"value":"false"
-		}
-	]
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmHeavy.tscn"
 }
 const SYSTEM_SALVAGE_ARM_HEAVY_L = {
 	"name":"SYSTEM_SALVAGE_ARM_HEAVY-L",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmHeavy.tscn",
 	"data":[
 		{
-			"property":"visible",
-			"value":"false"
-		},
-		{
 			"property":"flip",
-			"value":"true"
+			"value":true,
+			"use_stringified_value":false
 		},
 		{
 			"property":"feedVelocity",
-			"value":"Vector2( -60, -240 )"
+			"value":Vector2( -60, -240 ),
+			"use_stringified_value":false
 		}
 	]
 }
@@ -125,12 +94,9 @@ const SYSTEM_SALVAGE_ARM_HEAVY_R = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmHeavy.tscn",
 	"data":[
 		{
-			"property":"visible",
-			"value":"false"
-		},
-		{
 			"property":"feedVelocity",
-			"value":"Vector2( 60, -240 )"
+			"value":Vector2( 60, -240 ),
+			"use_stringified_value":false
 		}
 	]
 }
@@ -139,12 +105,9 @@ const SYSTEM_MWTIGHTBEAM = {
 	"path":"res://IndustriesOfEnceladusRewrite/weapons/MWTightBeam.tscn",
 	"data":[
 		{
-			"property":"visible",
-			"value":"false"
-		},
-		{
 			"property":"region_rect",
-			"value":"Rect2( 376, 31, 0, 0 )"
+			"value":Rect2( 376, 31, 0, 0 ),
+			"use_stringified_value":false
 		}
 	]
 }
@@ -153,12 +116,9 @@ const SYSTEM_MWTIGHTBEAM_PDT = {
 	"path":"res://IndustriesOfEnceladusRewrite/weapons/PDT-MWTightBeam.tscn",
 	"data":[
 		{
-			"property":"visible",
-			"value":"false"
-		},
-		{
 			"property":"position",
-			"value":"Vector2( 0, -23 )"
+			"value":Vector2( 0, -23 ),
+			"use_stringified_value":false
 		}
 	]
 }
@@ -167,16 +127,14 @@ const SYSTEM_MWTIGHTBEAM_PDT_L = {
 	"path":"res://IndustriesOfEnceladusRewrite/weapons/PDT-MWTightBeam.tscn",
 	"data":[
 		{
-			"property":"visible",
-			"value":"false"
-		},
-		{
 			"property":"position",
-			"value":"Vector2( -130, 66 )"
+			"value":Vector2( -130, 66 ),
+			"use_stringified_value":false
 		},
 		{
 			"property":"rotation",
-			"value":"-1.0472"
+			"value":-1.0472,
+			"use_stringified_value":false
 		}
 	]
 }
@@ -185,16 +143,14 @@ const SYSTEM_MWTIGHTBEAM_PDT_R = {
 	"path":"res://IndustriesOfEnceladusRewrite/weapons/PDT-MWTightBeam.tscn",
 	"data":[
 		{
-			"property":"visible",
-			"value":"false"
-		},
-		{
 			"property":"position",
-			"value":"Vector2( 130, 66 )"
+			"value":Vector2( 130, 66 ),
+			"use_stringified_value":false
 		},
 		{
 			"property":"rotation",
-			"value":"1.0472"
+			"value":1.0472,
+			"use_stringified_value":false
 		}
 	]
 }
@@ -203,19 +159,23 @@ const SYSTEM_PDTL = {
 	"data":[
 		{
 			"property":"repairReplacementPrice",
-			"value":"300000"
+			"value":300000,
+			"use_stringified_value":false
 		},
 		{
 			"property":"repairFixPrice",
-			"value":"50000"
+			"value":50000,
+			"use_stringified_value":false
 		},
 		{
 			"property":"Pivot/laser/damageWearCapacity",
-			"value":"2250"
+			"value":2250,
+			"use_stringified_value":false
 		},
 		{
 			"property":"rotationPerSecond",
-			"value":"0.5236"
+			"value":0.5236,
+			"use_stringified_value":false
 		}
 	]
 }
@@ -224,19 +184,23 @@ const SYSTEM_PDTL_L = {
 	"data":[
 		{
 			"property":"repairReplacementPrice",
-			"value":"300000"
+			"value":300000,
+			"use_stringified_value":false
 		},
 		{
 			"property":"repairFixPrice",
-			"value":"50000"
+			"value":50000,
+			"use_stringified_value":false
 		},
 		{
 			"property":"Pivot/laser/damageWearCapacity",
-			"value":"2250"
+			"value":2250,
+			"use_stringified_value":false
 		},
 		{
 			"property":"rotationPerSecond",
-			"value":"0.5236"
+			"value":0.5236,
+			"use_stringified_value":false
 		}
 	]
 }
@@ -245,19 +209,23 @@ const SYSTEM_PDTL_R = {
 	"data":[
 		{
 			"property":"repairReplacementPrice",
-			"value":"300000"
+			"value":300000,
+			"use_stringified_value":false
 		},
 		{
 			"property":"repairFixPrice",
-			"value":"50000"
+			"value":50000,
+			"use_stringified_value":false
 		},
 		{
 			"property":"Pivot/laser/damageWearCapacity",
-			"value":"2250"
+			"value":2250,
+			"use_stringified_value":false
 		},
 		{
 			"property":"rotationPerSecond",
-			"value":"0.5236"
+			"value":0.5236,
+			"use_stringified_value":false
 		}
 	]
 }
@@ -266,12 +234,9 @@ const SYSTEM_EXODYN_L = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/StoragePodComboDock-L.tscn",
 	"data":[
 		{
-			"property":"visible",
-			"value":"false"
-		},
-		{
 			"property":"position",
-			"value":"Vector2( 0, 196 )"
+			"value":Vector2( 0, 196 ),
+			"use_stringified_value":false
 		}
 	]
 }
@@ -280,41 +245,30 @@ const SYSTEM_EXODYN_R = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/StoragePodComboDock.tscn",
 	"data":[
 		{
-			"property":"visible",
-			"value":"false"
-		},
-		{
 			"property":"position",
-			"value":"Vector2( 0, 196 )"
+			"value":Vector2( 0, 196 ),
+			"use_stringified_value":false
 		}
 	]
 }
 
 const SYSTEM_SALVAGE_ARM_LONG = {
 	"name":"SYSTEM_SALVAGE_ARM_LONG",
-	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLong.tscn",
-	"data":[
-		{
-			"property":"visible",
-			"value":"false"
-		}
-	]
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLong.tscn"
 }
 const SYSTEM_SALVAGE_ARM_LONG_L = {
 	"name":"SYSTEM_SALVAGE_ARM_LONG-L",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLong.tscn",
 	"data":[
 		{
-			"property":"visible",
-			"value":"false"
-		},
-		{
 			"property":"flip",
-			"value":"true"
+			"value":true,
+			"use_stringified_value":false
 		},
 		{
 			"property":"feedVelocity",
-			"value":"Vector2( -72, -320 )"
+			"value":Vector2( -72, -320 ),
+			"use_stringified_value":false
 		}
 	]
 }
@@ -323,12 +277,9 @@ const SYSTEM_SALVAGE_ARM_LONG_R = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLong.tscn",
 	"data":[
 		{
-			"property":"visible",
-			"value":"false"
-		},
-		{
 			"property":"feedVelocity",
-			"value":"Vector2( 72, -320 )"
+			"value":Vector2( 72, -320 ),
+			"use_stringified_value":false
 		}
 	]
 }
